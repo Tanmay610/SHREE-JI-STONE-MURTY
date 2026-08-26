@@ -1,0 +1,302 @@
+/* About Page Specific Styles */
+
+/* About Hero Specifics */
+.about-hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.about-hero h1 {
+    font-size: 3.5rem;
+}
+
+/* Two Column Layout (Experience / Materials) */
+.two-column-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.two-column-layout.reverse .text-column {
+    order: 2;
+}
+
+.two-column-layout.reverse .image-column {
+    order: 1;
+}
+
+.text-column h2.section-title {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    color: var(--text-dark);
+}
+
+.text-column p {
+    margin-bottom: 1rem;
+    color: var(--text-muted);
+}
+
+.highlight-year {
+    color: var(--primary-color);
+    font-size: 1.1em;
+}
+
+.objective-quote {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-left: 4px solid var(--primary-color);
+    background: var(--bg-light);
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--text-dark);
+    font-family: var(--font-secondary);
+}
+
+/* Experience Image Badge */
+.experience-image-wrapper {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.experience-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius-lg);
+}
+
+.floating-badge {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 1.5rem;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadow-lg);
+    border: 4px solid var(--bg-body);
+}
+
+.floating-badge .badge-number {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.floating-badge .badge-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+/* Specialties Section */
+.specialties-section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.specialties-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.specialty-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    transition: var(--transition-normal);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.specialty-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-light);
+}
+
+.specialty-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.specialty-card h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-dark);
+}
+
+.specialty-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Materials Section */
+.materials-list {
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+.materials-list li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--text-muted);
+}
+
+.materials-list li::before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.materials-list strong {
+    color: var(--text-dark);
+}
+
+.materials-image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.materials-image-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    aspect-ratio: 4/5;
+    box-shadow: var(--shadow-sm);
+}
+
+.materials-image-grid img:nth-child(2) {
+    margin-top: 2rem;
+}
+
+/* Custom Craftsmanship */
+.custom-craftsmanship-section {
+    padding: 5rem 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/hero_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.custom-craft-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.custom-craft-content h2 {
+    color: var(--white);
+    margin-bottom: 1.5rem;
+}
+
+.custom-craft-content .lead-text {
+    font-size: 1.25rem;
+    color: var(--primary-light);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.custom-craft-content p {
+    color: rgba(255,255,255,0.8);
+}
+
+/* CTA Section */
+.cta-section {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 4rem 0;
+}
+
+.cta-section h2 {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-section .btn-outline {
+    border-color: var(--white);
+    color: var(--white);
+}
+
+.cta-section .btn-outline:hover {
+    background: var(--white);
+    color: var(--primary-color);
+}
+
+.cta-section .btn-primary {
+    background: var(--white);
+    color: var(--primary-color);
+}
+.cta-section .btn-primary:hover {
+    background: var(--bg-light);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .two-column-layout,
+    .two-column-layout.reverse {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .two-column-layout.reverse .text-column {
+        order: 1;
+    }
+    
+    .two-column-layout.reverse .image-column {
+        order: 2;
+    }
+
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .floating-badge {
+        width: 100px;
+        height: 100px;
+        bottom: -15px;
+        right: 15px;
+    }
+    
+    .floating-badge .badge-text {
+        font-size: 1.4rem;
+    }
+    
+    .materials-image-grid img:nth-child(2) {
+        margin-top: 0;
+    }
+    
+    .cta-section .btn {
+        display: block;
+        width: 100%;
+        margin-left: 0 !important;
+        margin-top: 1rem;
+    }
+}
