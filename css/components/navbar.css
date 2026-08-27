@@ -183,8 +183,8 @@
         width: 100%;
     }
     
-    /* Hide desktop CTA */
-    .nav-actions {
+    /* Hide desktop CTA but keep hamburger container */
+    .nav-actions .btn-primary {
         display: none;
     }
     
