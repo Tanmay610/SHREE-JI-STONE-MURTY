@@ -35,7 +35,48 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollObserver.observe(el);
     });
 
-    // --- Old Mobile Menu Toggle (Removed) ---
+    // --- Side Drawer Mobile Menu ---
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinksContainer = document.querySelector('.nav-links');
+    
+    if (mobileMenuBtn && navLinksContainer) {
+        // Inject Menu Header
+        const menuHeader = document.createElement('div');
+        menuHeader.className = 'mobile-menu-header';
+        menuHeader.innerHTML = '<h3>My Menu</h3><button class="close-menu-btn" aria-label="Close menu">&times;</button>';
+        navLinksContainer.insertBefore(menuHeader, navLinksContainer.firstChild);
+
+        // Inject Overlay
+        const overlay = document.createElement('div');
+        overlay.className = 'menu-overlay';
+        document.body.appendChild(overlay);
+
+        const closeBtn = menuHeader.querySelector('.close-menu-btn');
+
+        const openMenu = () => {
+            navLinksContainer.classList.add('active');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        };
+
+        const closeMenu = () => {
+            navLinksContainer.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        };
+
+        mobileMenuBtn.addEventListener('click', openMenu);
+        closeBtn.addEventListener('click', closeMenu);
+        overlay.addEventListener('click', closeMenu);
+
+        // Close menu on link click with a slight delay
+        // This ensures mobile browsers register the navigation before the menu moves
+        navLinksContainer.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                setTimeout(closeMenu, 150);
+            });
+        });
+    }
 
     // --- Navbar Scroll Effect ---
     const navbar = document.getElementById('navbar');
