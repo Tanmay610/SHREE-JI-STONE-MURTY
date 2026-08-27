@@ -35,21 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollObserver.observe(el);
     });
 
-    // --- Mobile Menu Toggle ---
-    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-    const navLinksContainer = document.querySelector('.nav-links');
-    if (mobileMenuBtn && navLinksContainer) {
-        mobileMenuBtn.addEventListener('click', () => {
-            navLinksContainer.classList.toggle('active');
-        });
-        
-        // Close menu on link click
-        navLinksContainer.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinksContainer.classList.remove('active');
-            });
-        });
-    }
+    // --- Old Mobile Menu Toggle (Removed) ---
 
     // --- Navbar Scroll Effect ---
     const navbar = document.getElementById('navbar');

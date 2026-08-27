@@ -376,3 +376,18 @@ img {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* ==========================================================================
+   Mobile Adjustments
+   ========================================================================== */
+@media (max-width: 991px) {
+    /* Make space for the bottom navigation bar */
+    body {
+        padding-bottom: 75px;
+    }
+    
+    /* Ensure the floating WhatsApp button doesn't overlap the bottom nav */
+    .whatsapp-float {
+        bottom: 90px; /* 75px bottom nav + 15px gap */
+    }
+}
