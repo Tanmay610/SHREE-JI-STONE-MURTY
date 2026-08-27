@@ -167,6 +167,11 @@
     border-radius: 2px;
 }
 
+/* Hide mobile-only elements on desktop */
+.mobile-menu-header {
+    display: none;
+}
+
 @media (max-width: 991px) {
     .navbar {
         padding: 0.5rem 1rem;
