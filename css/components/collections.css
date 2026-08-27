@@ -1,0 +1,68 @@
+/* ==========================================================================
+   Collections Page Styles
+   ========================================================================== */
+
+.collections-hero {
+    padding: 10rem 0 5rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../images/hero_bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.collections-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent-color);
+}
+
+.collections-hero p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.catalog-section {
+    padding-top: 4rem;
+}
+
+.catalog-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+@media (max-width: 768px) {
+    .collections-hero h1 {
+        font-size: 2.5rem;
+    }
+}

@@ -1,5 +1,57 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Navbar Scroll Effect
+    // --- Luxury Scroll Animations ---
+    const animateTargets = document.querySelectorAll(`
+        section h2, 
+        .section > .container > p, 
+        .product-card, 
+        .contact-card, 
+        .footer-grid > div,
+        .about-container > div,
+        .inquiry-form-container,
+        .inquiry-map,
+        .features-list li,
+        .hero-buttons,
+        .order-step-card
+    `);
+    
+    // Auto-inject the animation class
+    animateTargets.forEach(el => el.classList.add('animate-on-scroll'));
+
+    const scrollObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                // Optional: Stop observing once it has animated in
+                scrollObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        root: null,
+        rootMargin: '0px 0px -10% 0px',
+        threshold: 0.1
+    });
+
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
+        scrollObserver.observe(el);
+    });
+
+    // --- Mobile Menu Toggle ---
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinksContainer = document.querySelector('.nav-links');
+    if (mobileMenuBtn && navLinksContainer) {
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinksContainer.classList.toggle('active');
+        });
+        
+        // Close menu on link click
+        navLinksContainer.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinksContainer.classList.remove('active');
+            });
+        });
+    }
+
+    // --- Navbar Scroll Effect ---
     const navbar = document.getElementById('navbar');
     
     window.addEventListener('scroll', () => {

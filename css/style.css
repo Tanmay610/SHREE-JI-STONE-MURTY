@@ -12,6 +12,10 @@
     --accent-hover: #b5952f;
     --accent-dark: #8b1e28;      /* Deep rich red/burgundy representing pink stone shadow */
     
+    --white: #ffffff;
+    --primary-color: #d4af37;
+    --primary-light: #e3cc81;
+    
     /* Typography */
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Outfit', sans-serif;
@@ -254,4 +258,121 @@ img {
         left: 2rem;
         bottom: -1rem;
     }
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.text-white h1, .text-white h2, .text-white h3, .text-white h4, .text-white h5, .text-white h6 {
+    color: var(--white);
+}
+
+/* ==========================================================================
+   WhatsApp Floating Button
+   ========================================================================== */
+@keyframes pulse-whatsapp {
+    0% {
+        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.6);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(212, 175, 55, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+    }
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #25D366;
+    color: #fff;
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border: none;
+    animation: none;
+}
+
+.whatsapp-float svg {
+    width: 24px;
+    height: 24px;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(37, 211, 102, 0.6);
+    color: #fff;
+}
+
+
+
+/* ==========================================================================
+   How to Order Section
+   ========================================================================== */
+.order-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.order-step-card {
+    background: #fff;
+    padding: 2.5rem 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(212, 175, 55, 0.2); /* Luxury subtle gold border */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.order-step-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.15);
+    border-color: rgba(212, 175, 55, 0.5);
+}
+
+.step-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+}
+
+.order-step-card h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--text-main);
+}
+
+.order-step-card p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   Luxury Scroll Animations
+   ========================================================================== */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
 }
