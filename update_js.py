@@ -10,9 +10,9 @@ if match:
     
     # Replace sliderData with a smaller array
     small_slider_data = '''[
-        {"src": "images/hero_bg.jpg", "title": "Divine", "highlight": "Craftsmanship", "subtitle": "Explore our exquisite collection of premium white marble god statues, intricately carved pink stone temples, and exclusive home decor."},
-        {"src": "images/ganesh ji 11.jpg", "title": "Divine", "highlight": "Ganesh murtys", "subtitle": "Intricately detailed premium marble murtys crafted with devotion and precision."},
-        {"src": "images/shiv ji 08.jpg", "title": "Exquisite", "highlight": "Shiv Ji Statues", "subtitle": "Mesmerizing representations of divine energy, featuring handcrafted details."}
+        {"src": "images/ganesh ji 11.jpg", "title": "Sacred", "highlight": "Ganesh Murtys", "subtitle": "Intricately detailed premium marble murtys crafted with devotion and precision."},
+        {"src": "images/shiv ji 08.jpg", "title": "Exquisite", "highlight": "Shiv Ji Statues", "subtitle": "Mesmerizing representations of divine energy, featuring handcrafted details."},
+        {"src": "images/fountain 14.jpg", "title": "Majestic", "highlight": "Stone Fountains", "subtitle": "Elegant stone water features designed to bring tranquility to your outdoor spaces."}
     ]'''
     
     content = content.replace(f'const sliderData = {full_slider_data};', f'const sliderData = {small_slider_data};')

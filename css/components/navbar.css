@@ -188,136 +188,126 @@
         width: 100%;
     }
     
-    /* Hide desktop CTA but keep hamburger container */
-    .nav-actions .btn-primary {
-        display: none;
+    /* Hide old desktop and mobile menu elements */
+    .nav-actions, .nav-links, .mobile-menu-btn, .menu-overlay {
+        display: none !important;
     }
     
-    .mobile-menu-btn {
-        display: block;
+    /* Center Logo on Mobile */
+    .nav-container {
+        justify-content: center;
+    }
+}
+
+/* ==========================================================================
+   Mobile Bottom Navigation Bar
+   ========================================================================== */
+.mobile-bottom-nav {
+    display: none; /* Hidden on desktop */
+}
+
+@media (max-width: 991px) {
+    .mobile-bottom-nav {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(248, 246, 240, 0.98);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+        justify-content: space-around;
+        align-items: center;
+        padding: 0.5rem 0.5rem 1rem 0.5rem; /* Extra padding at bottom for safe area */
+        z-index: 1000;
+        border-top: 1px solid rgba(212, 175, 55, 0.15);
     }
 
-    /* Off-canvas Side Drawer Navigation */
-    .nav-links {
-        position: fixed;
-        top: 0;
-        left: -100%;
-        width: 80%;
-        max-width: 350px;
-        height: 100vh;
-        /* Premium Warm Cream Background */
-        background: rgba(248, 246, 240, 0.98);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        box-shadow: 5px 0 25px rgba(0, 0, 0, 0.15);
+    .mobile-bottom-nav .nav-item {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 0;
-        z-index: 1001;
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        transition: left 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-        overflow-y: auto;
-    }
-
-    .nav-links.active {
-        left: 0;
-    }
-
-    /* Menu Header injected via JS */
-    .mobile-menu-header {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
         align-items: center;
-        padding: 1.5rem 1.5rem;
-        border-bottom: 1px solid rgba(212, 175, 55, 0.3); /* Subtle gold border */
-        margin-bottom: 0.5rem;
-    }
-    
-    .mobile-menu-header h3 {
+        justify-content: center;
+        text-decoration: none;
         color: var(--text-main);
-        font-family: var(--font-heading);
-        font-size: 1.3rem;
-        margin: 0;
-        font-weight: 600;
-        letter-spacing: 1px;
+        gap: 4px;
+        flex: 1;
+        transition: color 0.3s ease;
     }
 
-    .close-menu-btn {
-        background: none;
-        border: none;
-        font-size: 2rem;
-        color: var(--text-main);
-        cursor: pointer;
-        padding: 0;
-        line-height: 1;
-        transition: transform 0.3s ease;
-    }
-    
-    .close-menu-btn:hover {
-        transform: rotate(90deg);
-        color: var(--accent-color);
+    .mobile-bottom-nav .nav-item svg {
+        width: 24px;
+        height: 24px;
+        stroke: var(--accent-color);
+        fill: none;
+        stroke-width: 1.5;
+        transition: transform 0.3s ease, stroke 0.3s ease;
     }
 
-    .nav-links li {
-        width: 100%;
-        flex: none;
-        display: block;
-    }
-
-    .nav-links a {
+    .mobile-bottom-nav .nav-item span {
         font-family: var(--font-body);
-        font-size: 1rem;
-        display: block;
-        width: 100%;
-        color: var(--text-light);
-        text-align: left;
-        padding: 1.2rem 1.5rem;
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
-        font-weight: 500;
-        border-bottom: 1px solid rgba(212, 175, 55, 0.15); /* Luxury subtle divider */
-        height: auto;
-        transition: all 0.3s ease;
+        font-size: 0.65rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        text-transform: capitalize;
     }
 
-    .nav-links a.active, .nav-links a:hover {
+    .mobile-bottom-nav .nav-item:hover,
+    .mobile-bottom-nav .nav-item.active {
         color: var(--accent-color);
-        background-color: rgba(212, 175, 55, 0.05);
-        padding-left: 2rem; /* Nice hover slide effect */
     }
 
-    .nav-links a::after {
-        display: none; /* No underline effect on mobile */
-    }
-    
-    /* Remove any icons from previous design */
-    .nav-links li:nth-child(n) a::before {
-        display: none;
+    .mobile-bottom-nav .nav-item:hover svg,
+    .mobile-bottom-nav .nav-item.active svg {
+        stroke-width: 2;
+        transform: translateY(-2px);
     }
 
-    /* Dark Overlay */
-    .menu-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background: rgba(0, 0, 0, 0.6);
-        backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(4px);
-        z-index: 999; /* MUST be lower than navbar (1000) */
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.4s ease;
+    /* Prominent Center Button */
+    .mobile-bottom-nav .nav-item-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        flex: 1;
+        top: -15px; /* Elevate it above the bar */
     }
 
-    .menu-overlay.active {
-        opacity: 1;
-        pointer-events: auto;
+    .mobile-bottom-nav .center-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 56px;
+        height: 56px;
+        background: #F3EAE1; /* Very light warm tone for the circle */
+        border-radius: 50%;
+        box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+        margin-bottom: 6px;
+        text-decoration: none;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: 2px solid rgba(212, 175, 55, 0.1);
+    }
+
+    .mobile-bottom-nav .center-button svg {
+        width: 28px;
+        height: 28px;
+        stroke: var(--accent-color);
+        stroke-width: 2;
+        fill: none;
+    }
+
+    .mobile-bottom-nav .center-button:hover {
+        transform: translateY(-4px) scale(1.05);
+        box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+    }
+
+    .mobile-bottom-nav .nav-item-center span {
+        font-family: var(--font-body);
+        font-size: 0.65rem;
+        font-weight: 700;
+        color: var(--text-main);
+        letter-spacing: 0.5px;
     }
 }

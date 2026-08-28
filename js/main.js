@@ -35,48 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollObserver.observe(el);
     });
 
-    // --- Side Drawer Mobile Menu ---
-    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-    const navLinksContainer = document.querySelector('.nav-links');
-
-    if (mobileMenuBtn && navLinksContainer) {
-        // Inject Menu Header
-        const menuHeader = document.createElement('div');
-        menuHeader.className = 'mobile-menu-header';
-        menuHeader.innerHTML = '<h3>My Menu</h3><button class="close-menu-btn" aria-label="Close menu">&times;</button>';
-        navLinksContainer.insertBefore(menuHeader, navLinksContainer.firstChild);
-
-        // Inject Overlay
-        const overlay = document.createElement('div');
-        overlay.className = 'menu-overlay';
-        document.body.appendChild(overlay);
-
-        const closeBtn = menuHeader.querySelector('.close-menu-btn');
-
-        const openMenu = () => {
-            navLinksContainer.classList.add('active');
-            overlay.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        };
-
-        const closeMenu = () => {
-            navLinksContainer.classList.remove('active');
-            overlay.classList.remove('active');
-            document.body.style.overflow = '';
-        };
-
-        mobileMenuBtn.addEventListener('click', openMenu);
-        closeBtn.addEventListener('click', closeMenu);
-        overlay.addEventListener('click', closeMenu);
-
-        // Close menu on link click with a slight delay
-        // This ensures mobile browsers register the navigation before the menu moves
-        navLinksContainer.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                setTimeout(closeMenu, 150);
-            });
-        });
-    }
+    // --- Old Side Drawer Mobile Menu (Removed) ---
 
     // --- Navbar Scroll Effect ---
     const navbar = document.getElementById('navbar');
@@ -188,10 +147,9 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     // --- Hero Swiper Slider ---
     const sliderData = [
-        { "src": "images/hero_bg.jpg", "title": "Divine", "highlight": "Craftsmanship", "subtitle": "Explore our exquisite collection of premium white marble god statues, intricately carved pink stone temples, and exclusive home decor." },
-        { "src": "images/ganesh ji 11.jpg", "title": "Divine", "highlight": "Ganesh murtys", "subtitle": "Intricately detailed premium marble murtys crafted with devotion and precision." },
+        { "src": "images/ganesh ji 11.jpg", "title": "Sacred", "highlight": "Ganesh Murtys", "subtitle": "Intricately detailed premium marble murtys crafted with devotion and precision." },
         { "src": "images/shiv ji 08.jpg", "title": "Exquisite", "highlight": "Shiv Ji Statues", "subtitle": "Mesmerizing representations of divine energy, featuring handcrafted details." },
-        { "src": "images/fountain 03.jpg", "title": "Majestic", "highlight": "Stone Fountains", "subtitle": "Elegant stone water features designed to bring tranquility to your outdoor spaces." }
+        { "src": "images/fountain 14.jpg", "title": "Majestic", "highlight": "Stone Fountains", "subtitle": "Elegant stone water features designed to bring tranquility to your outdoor spaces." }
     ];
     const wrapper = document.getElementById('hero-slider-wrapper');
     const titleEl = document.getElementById('hero-dynamic-title');
@@ -201,10 +159,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (wrapper && sliderData.length > 0) {
         sliderData.forEach(data => {
             const slide = document.createElement('div');
-            slide.className = 'swiper-slide';
+            slide.className = 'swiper-slide hero-slide-bg';
             slide.style.backgroundImage = `url('${data.src}')`;
-            slide.style.backgroundSize = 'cover';
-            slide.style.backgroundPosition = 'center';
             wrapper.appendChild(slide);
         });
 
@@ -305,11 +261,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         new Swiper('.gallery-swiper', {
-            slidesPerView: 1,
+            slidesPerView: 1.25,
+            centeredSlides: true,
             spaceBetween: 20,
             loop: true,
             autoplay: {
-                delay: 2500,
+                delay: 3000,
                 disableOnInteraction: false,
             },
             pagination: {
@@ -317,9 +274,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 clickable: true,
             },
             breakpoints: {
-                640: { slidesPerView: 2, spaceBetween: 20 },
-                768: { slidesPerView: 3, spaceBetween: 30 },
-                1024: { slidesPerView: 4, spaceBetween: 30 },
+                640: { slidesPerView: 2, centeredSlides: false, spaceBetween: 20 },
+                850: { slidesPerView: 3, centeredSlides: false, spaceBetween: 30 },
+                1200: { slidesPerView: 4, centeredSlides: false, spaceBetween: 40 },
             }
         });
     }
