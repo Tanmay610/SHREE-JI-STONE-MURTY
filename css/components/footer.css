@@ -132,7 +132,17 @@
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 2.5rem;
+        text-align: center;
     }
+    
+    .footer-brand .logo {
+        margin: 0 auto 1.5rem !important;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
     .footer-bottom {
         flex-direction: column;
         gap: 1rem;

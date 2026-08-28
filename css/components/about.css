@@ -2,13 +2,14 @@
 
 /* About Hero Specifics */
 .about-hero {
-    min-height: 60vh;
+    height: 45vh !important;
+    min-height: 400px !important;
     display: flex;
     align-items: center;
 }
 
 .about-hero h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 /* Two Column Layout (Experience / Materials) */

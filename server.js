@@ -12,13 +12,13 @@ app.get('/api/products', (req, res) => {
   res.json([
     {
       id: 1,
-      name: "Ganesh Murti",
+      name: "Ganesh murty",
       image: "product_ganesh_1787762900664.jpg",
       price: "₹12,999"
     },
     {
       id: 2,
-      name: "Radha‑Krishna Murti",
+      name: "Radha‑Krishna murty",
       image: "product_radha_krishna_1787762913821.jpg",
       price: "₹9,499"
     },
@@ -32,8 +32,12 @@ app.get('/api/products', (req, res) => {
 });
 
 // Fallback for SPA routing (if needed later)
-app.use((req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+app.use((req, res, next) => {
+  if (req.method === 'GET' && req.accepts('html')) {
+    res.sendFile(path.join(__dirname, 'index.html'));
+  } else {
+    next();
+  }
 });
 
 app.listen(PORT, () => {

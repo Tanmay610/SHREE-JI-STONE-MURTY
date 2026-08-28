@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shree Ji Stone Murty - Premium Marble & Stone Carvings</title>
     <meta name="description"
-        content="Discover premium marble murtis, stone temples, and exquisite stone handicrafts by Shree Ji Stone Murty.">
+        content="Discover premium marble murtys, stone temples, and exquisite stone handicrafts by Shree Ji Stone Murty.">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo.png?v=2">
@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/components/hero.css">
     <link rel="stylesheet" href="css/components/product-cards.css">
     <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -56,18 +57,26 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
-        <video class="hero-bg-video" autoplay loop muted playsinline>
-            <source src="videos/hero.mp4" type="video/mp4">
-        </video>
+        <!-- Swiper Container -->
+        <div class="swiper hero-swiper">
+            <div class="swiper-wrapper" id="hero-slider-wrapper">
+                <!-- Slides will be dynamically injected here -->
+            </div>
+            <!-- Navigation arrows MUST be inside .swiper for Swiper to bind them -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
         <div class="hero-overlay"></div>
-        <div class="container hero-content">
+
+        <div class="hero-content">
             <div class="hero-content-inner">
                 <span class="badge">Master Artisans Since 1995</span>
-                <h1 class="hero-title">Divine Craftsmanship<br><span class="text-highlight">in Every Detail</span></h1>
-                <p class="hero-subtitle">Explore our exquisite collection of premium white marble god statues,
-                    intricately carved pink stone temples, and exclusive home decor.</p>
+                <h1 class="hero-title" id="hero-dynamic-title">Divine Craftsmanship<br><span class="text-highlight"
+                        id="hero-dynamic-highlight">in Every Detail</span></h1>
+                <p class="hero-subtitle" id="hero-dynamic-subtitle">Explore our exquisite collection of premium white
+                    marble god statues, intricately carved pink stone temples, and exclusive home decor.</p>
                 <div class="hero-buttons">
                     <a href="collections.html" class="btn btn-primary btn-lg btn-glow">Explore Collection</a>
                     <a href="about.html" class="btn btn-outline-glass btn-lg">Our Story</a>
@@ -89,14 +98,14 @@
                 <!-- Product Card 1 -->
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="images/product_ganesh.jpg" alt="White Marble Ganesh Murti" loading="lazy">
+                        <img src="images/ganesh ji 01.jpg" alt="White Marble Ganesh murty" loading="lazy">
                         <div class="product-overlay">
                             <a href="inquiry.html" class="btn btn-light">Request Quote</a>
                         </div>
                     </div>
                     <div class="product-info">
                         <span class="product-category">Marble Statues</span>
-                        <h3>Divine Ganesh Murti</h3>
+                        <h3>Divine Ganesh murty</h3>
                         <p>Intricately detailed pure white Makrana marble with subtle gold leaf accents.</p>
                     </div>
                 </div>
@@ -104,14 +113,14 @@
                 <!-- Product Card 2 -->
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="images/product_radha_krishna.jpg" alt="Marble Radha Krishna Statue" loading="lazy">
+                        <img src="images/shiv ji 01.png" alt="Marble Shiv Ji Statue" loading="lazy">
                         <div class="product-overlay">
                             <a href="inquiry.html" class="btn btn-light">Request Quote</a>
                         </div>
                     </div>
                     <div class="product-info">
                         <span class="product-category">Marble Statues</span>
-                        <h3>Radha Krishna Murti</h3>
+                        <h3>Radha Krishna murty</h3>
                         <p>A mesmerizing representation of divine love, featuring hand-painted traditional motifs.</p>
                     </div>
                 </div>
@@ -119,7 +128,7 @@
                 <!-- Product Card 3 -->
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="images/product_temple.jpg" alt="Pink Sandstone Home Temple" loading="lazy">
+                        <img src="images/fountain 01.jpg" alt="Stone Fountain" loading="lazy">
                         <div class="product-overlay">
                             <a href="inquiry.html" class="btn btn-light">Request Quote</a>
                         </div>
@@ -134,6 +143,22 @@
             <div class="text-center" style="margin-top: 4rem;">
                 <a href="collections.html" class="btn btn-outline btn-lg">View Full Catalog</a>
             </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Complete Collection</h2>
+                <p>A glimpse into our masterful creations and divine artistry.</p>
+            </div>
+        </div>
+        <div class="swiper gallery-swiper">
+            <div class="swiper-wrapper" id="gallery-slider-wrapper">
+                <!-- Slides will be dynamically injected here -->
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -171,8 +196,8 @@
             </div>
             <div class="about-image-wrapper">
                 <div class="about-image">
-                    <!-- Using hero image as placeholder for workshop/temple -->
-                    <img src="images/hero_bg.jpg" alt="Temple Craftsmanship">
+                    <!-- Using ganesh ji image -->
+                    <img src="images/ganesh ji 11.jpg" alt="Ganesh Ji Murty Craftsmanship">
                 </div>
                 <div class="experience-badge">
                     <span class="number">25+</span>
@@ -187,7 +212,7 @@
     <section id="how-to-order" class="section bg-light">
         <div class="container">
             <h2 class="section-title text-center">How to place Order?</h2>
-            
+
             <div class="order-steps-grid">
                 <!-- Step 1 -->
                 <div class="order-step-card">
@@ -195,21 +220,23 @@
                     <h4>Send Inquiry</h4>
                     <p>Choose Your products and send Inquiry online or whatsapp.</p>
                 </div>
-                
+
                 <!-- Step 2 -->
                 <div class="order-step-card">
                     <div class="step-icon">📋</div>
                     <h4>Get Quotation</h4>
-                    <p>A Concerned person will create a quotation with final product cost, shipping cost, delivery time, payment method and email or whatsapp you within 24 hours.</p>
+                    <p>A Concerned person will create a quotation with final product cost, shipping cost, delivery time,
+                        payment method and email or whatsapp you within 24 hours.</p>
                 </div>
-                
+
                 <!-- Step 3 -->
                 <div class="order-step-card">
                     <div class="step-icon">💳</div>
                     <h4>Payment Transfer</h4>
-                    <p>After agreeing on the details provided you will make the payment transfer by any method as per your convenience.</p>
+                    <p>After agreeing on the details provided you will make the payment transfer by any method as per
+                        your convenience.</p>
                 </div>
-                
+
                 <!-- Step 4 -->
                 <div class="order-step-card">
                     <div class="step-icon">🚚</div>
@@ -252,8 +279,8 @@
                 <div class="footer-contact">
                     <h4>Get In Touch</h4>
                     <ul>
-                        <li>📍 Panchkula Haryana, India</li>
-                        <li>📞 +91 8445129878</li>
+                        <li>📍 N.H 21 Aagra road Near puliya Sikandra Dist. Dousa – Rajsthan 303326</li>
+                        <li>📞 +91 7877379557</li>
                         <li>✉️ shreejistonemurty@gmail.com</li>
                     </ul>
                 </div>
@@ -277,7 +304,7 @@
     </footer>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/918445129878" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+    <a href="https://wa.me/917877379557" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
         aria-label="Chat on WhatsApp">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
             <path
@@ -286,6 +313,7 @@
     </a>
 
     <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
