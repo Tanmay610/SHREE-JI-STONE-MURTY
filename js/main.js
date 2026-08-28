@@ -147,9 +147,10 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     // --- Hero Swiper Slider ---
     const sliderData = [
-        { "src": "images/ganesh ji 11.jpg", "title": "Sacred", "highlight": "Ganesh Murtys", "subtitle": "Intricately detailed premium marble murtys crafted with devotion and precision." },
-        { "src": "images/shiv ji 08.jpg", "title": "Exquisite", "highlight": "Shiv Ji Statues", "subtitle": "Mesmerizing representations of divine energy, featuring handcrafted details." },
-        { "src": "images/fountain 14.jpg", "title": "Majestic", "highlight": "Stone Fountains", "subtitle": "Elegant stone water features designed to bring tranquility to your outdoor spaces." }
+        { "src": "images/fountain 01.jpg", "title": "Majestic", "highlight": "Stone Fountains", "subtitle": "Elegant stone water features designed to bring tranquility to your outdoor spaces." },
+        { "src": "images/fountain 14.jpg", "title": "Timeless", "highlight": "Artistry", "subtitle": "Handcrafted masterpieces that blend tradition with modern elegance." },
+        { "src": "images/fountain 21.jpg", "title": "Luxurious", "highlight": "Craftsmanship", "subtitle": "Elevate your surroundings with our premium, intricately carved stone fountains." },
+        { "src": "images/fountain 12.jpg", "title": "Serene", "highlight": "Ambience", "subtitle": "Transform any landscape into a peaceful retreat with the soothing flow of water." }
     ];
     const wrapper = document.getElementById('hero-slider-wrapper');
     const titleEl = document.getElementById('hero-dynamic-title');
