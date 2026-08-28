@@ -219,7 +219,7 @@
         box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
         justify-content: space-around;
         align-items: center;
-        padding: 0.5rem 0.5rem 1rem 0.5rem; /* Extra padding at bottom for safe area */
+        padding: 0.5rem 0.5rem max(0.5rem, env(safe-area-inset-bottom)) 0.5rem;
         z-index: 1000;
         border-top: 1px solid rgba(212, 175, 55, 0.15);
     }
