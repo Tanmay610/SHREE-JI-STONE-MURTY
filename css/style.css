@@ -314,6 +314,20 @@ img {
     color: #fff;
 }
 
+/* Adjust WhatsApp button for mobile devices to sit above the bottom nav */
+@media (max-width: 991px) {
+    .whatsapp-float {
+        bottom: 95px; /* Push it up above the 70px bottom nav */
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    .whatsapp-float svg {
+        width: 28px;
+        height: 28px;
+    }
+}
+
 
 
 /* ==========================================================================
