@@ -244,7 +244,17 @@ document.addEventListener('DOMContentLoaded', () => {
         { "src": "images/shiv ji 07.jpg", "title": "Shiv Ji Statues" },
         { "src": "images/shiv ji 08.jpg", "title": "Shiv Ji Statues" },
         { "src": "images/shiv ji 09.png", "title": "Shiv Ji Statues" },
-        { "src": "images/shiv ji 10.jpg", "title": "Shiv Ji Statues" }
+        { "src": "images/shiv ji 10.jpg", "title": "Shiv Ji Statues" },
+        { "src": "images/hanumaan ji marble murty 01.jpg", "title": "Hanuman Ji murtys" },
+        { "src": "images/hanumaan ji marble murty 02.jpeg", "title": "Hanuman Ji murtys" },
+        { "src": "images/hanumaan ji marble murty 03.jpg", "title": "Hanuman Ji murtys" },
+        { "src": "images/hanumaan ji marble murty 04.jpg", "title": "Hanuman Ji murtys" },
+        { "src": "images/hanumaan ji marble murty 05.jpg", "title": "Hanuman Ji murtys" },
+        { "src": "images/hanumaan ji marble murty 06.jpg", "title": "Hanuman Ji murtys" },
+        { "src": "images/hanumaan ji marble murty 07.jpg", "title": "Hanuman Ji murtys" },
+        { "src": "images/hanumaan ji marble murty 08.jpg", "title": "Hanuman Ji murtys" },
+        { "src": "images/hanumaan ji marble murty 09.jpg", "title": "Hanuman Ji murtys" },
+        { "src": "images/hanumaan ji marble murty 10.jpg", "title": "Hanuman Ji murtys" }
     ];
     const galleryWrapper = document.getElementById('gallery-slider-wrapper');
 
