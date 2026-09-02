@@ -607,7 +607,7 @@ img {
 
 .search-result-img {
     width: 100%;
-    height: 140px;
+    aspect-ratio: 4 / 3;
     object-fit: cover;
     border-radius: 12px;
 }
@@ -640,5 +640,46 @@ img {
     font-size: 1.2rem;
     grid-column: 1 / -1;
     padding: 2rem 0;
+}
+
+/* Responsive adjustments for search modal */
+@media (max-width: 768px) {
+    .search-modal {
+        padding-top: 10vh;
+    }
+
+    .search-modal-content {
+        width: 92%;
+        gap: 1.2rem;
+    }
+
+    #search-input {
+        padding: 16px 16px 16px 50px;
+        font-size: 1.1rem;
+    }
+
+    .search-input-icon {
+        left: 16px;
+    }
+    
+    .search-input-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .close-search-btn {
+        top: -45px;
+    }
+
+    .search-results {
+        max-height: 60vh;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .search-result-img {
+        aspect-ratio: 16 / 9; /* Slightly wider on mobile for a cinematic feel */
+    }
 }
 
