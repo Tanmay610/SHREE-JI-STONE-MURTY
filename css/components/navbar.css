@@ -188,13 +188,31 @@
         width: 100%;
     }
     
-    /* Hide old desktop and mobile menu elements */
-    .nav-actions, .nav-links, .mobile-menu-btn, .menu-overlay {
+    /* Hide old desktop menu elements */
+    .nav-links, .mobile-menu-btn, .menu-overlay {
         display: none !important;
     }
     
+    .nav-actions .btn-primary {
+        display: none !important;
+    }
+    
+    .nav-actions {
+        position: absolute !important;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        /* display: flex is inline, so we just position it */
+    }
+
+    .nav-actions .search-btn {
+        width: 36px !important;
+        height: 36px !important;
+    }
+
     /* Center Logo on Mobile */
     .nav-container {
+        position: relative;
         justify-content: center;
     }
 }
