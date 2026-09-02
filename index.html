@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="css/components/product-cards.css">
     <link rel="stylesheet" href="css/components/footer.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/record-label.css">
 </head>
 
 <body>
@@ -57,110 +58,47 @@
         </div>
     </nav>
 
-    <section id="home" class="hero">
-        <!-- Swiper Container -->
-        <div class="swiper hero-swiper">
-            <div class="swiper-wrapper" id="hero-slider-wrapper">
-                <!-- Slides will be dynamically injected here -->
-            </div>
-            <!-- Navigation arrows MUST be inside .swiper for Swiper to bind them -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
+    <!-- Portal Hero -->
+    <div class="record-theme">
+        <section class="portal-hero">
+            <div class="hero-sticky">
+                <img src="images/fountain 01.jpg" alt="Divine Craftsmanship" class="hero-image">
+                <div class="hero-duotone"></div>
+                <div class="hero-veil"></div>
+                
+                <div class="hero-panel left"></div>
+                <div class="hero-panel right"></div>
+                
+                <div class="hero-dots">
+                    <div class="accent-dot amber"></div>
+                    <div class="accent-dot teal"></div>
+                </div>
 
-        <div class="hero-overlay"></div>
+                <div class="hero-meta top-left">
+                    <span class="label">EST. 1995</span>
+                </div>
+                
+                <h1 class="hero-wordmark" style="font-size: clamp(2rem, 8vw, 7rem); line-height: 1.1;">
+                    <span class="hero-wordmark-span left">SHREE JI</span>
+                    <span class="hero-wordmark-span right">STONE MURTY</span>
+                </h1>
 
-        <div class="hero-content">
-            <div class="hero-content-inner">
-                <span class="badge">Master Artisans Since 1995</span>
-                <h1 class="hero-title" id="hero-dynamic-title">Divine Craftsmanship<br><span class="text-highlight"
-                        id="hero-dynamic-highlight">in Every Detail</span></h1>
-                <p class="hero-subtitle" id="hero-dynamic-subtitle">Explore our exquisite collection of premium white
-                    marble god statues, intricately carved pink stone temples, and exclusive home decor.</p>
-                <div class="hero-buttons">
-                    <a href="collections.html" class="btn btn-primary btn-lg btn-glow">Explore Collection</a>
-                    <a href="about.html" class="btn btn-outline-glass btn-lg">Our Story</a>
+                <div class="hero-meta bottom-right">
+                    <span class="label">Rajsthan, India</span>
                 </div>
             </div>
+        </section>
+    </div>
+
+    <!-- Categories / Products Section (CoverFlow 3D) -->
+    <section id="products" class="bg-light">
+        <!-- The CoverFlowCarousel will mount inside this div -->
+        <div id="coverflow-container"></div>
+        <div class="text-center" style="margin-top: 1rem; padding-bottom: 4rem; position: relative; z-index: 20;">
+            <a href="collections.html" class="btn btn-outline btn-lg" style="color: #101317; border-color: #101317;">View Full Catalog</a>
         </div>
     </section>
 
-    <!-- Categories / Products Section -->
-    <section id="products" class="section products-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Premium Collection</h2>
-                <p>Meticulously handcrafted masterpieces that bring divine energy and unparalleled beauty to your
-                    spaces.</p>
-            </div>
-
-            <div class="products-grid">
-                <!-- Product Card 1 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/ganesh ji 01.jpg" alt="White Marble Ganesh murty" loading="lazy">
-                        <div class="product-overlay">
-                            <a href="inquiry.html" class="btn btn-light">Request Quote</a>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <span class="product-category">Marble Statues</span>
-                        <h3>Divine Ganesh murty</h3>
-                        <p>Intricately detailed pure white Makrana marble with subtle gold leaf accents.</p>
-                    </div>
-                </div>
-
-                <!-- Product Card 2 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/shiv ji 01.png" alt="Marble Shiv Ji Statue" loading="lazy">
-                        <div class="product-overlay">
-                            <a href="inquiry.html" class="btn btn-light">Request Quote</a>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <span class="product-category">Marble Statues</span>
-                        <h3>Shiv Ji murty</h3>
-                        <p>A mesmerizing representation of Lord Shiva, featuring hand-painted traditional motifs.</p>
-                    </div>
-                </div>
-
-                <!-- Product Card 3 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/fountain 01.jpg" alt="Stone Fountain" loading="lazy">
-                        <div class="product-overlay">
-                            <a href="inquiry.html" class="btn btn-light">Request Quote</a>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <span class="product-category">Fountains</span>
-                        <h3>Stone Fountain</h3>
-                        <p>A beautifully proportioned outdoor fountain crafted from authentic stone.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center" style="margin-top: 4rem;">
-                <a href="collections.html" class="btn btn-outline btn-lg">View Full Catalog</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="section bg-light">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Complete Collection</h2>
-                <p>A glimpse into our masterful creations and divine artistry.</p>
-            </div>
-        </div>
-        <div class="swiper gallery-swiper">
-            <div class="swiper-wrapper" id="gallery-slider-wrapper">
-                <!-- Slides will be dynamically injected here -->
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
 
     <!-- About Section -->
     <section id="about" class="section about-section">
@@ -340,6 +278,8 @@
         </a>
     </nav>
 
+    <script src="js/coverflow.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/record-label.js"></script>
 </body>
 </html>

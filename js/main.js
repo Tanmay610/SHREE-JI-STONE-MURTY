@@ -299,39 +299,47 @@ document.addEventListener('DOMContentLoaded', () => {
         { "src": "images/MARBLE BENCH 21.jpg", "title": "Marble Bench" },
         { "src": "images/MARBLE BENCH 22.jpg", "title": "Marble Bench" }
     ];
-    const galleryWrapper = document.getElementById('gallery-slider-wrapper');
-
-    if (galleryWrapper && galleryData.length > 0) {
-        galleryData.forEach(data => {
-            const slide = document.createElement('div');
-            slide.className = 'swiper-slide';
-            const img = document.createElement('img');
-            img.src = data.src;
-            img.alt = data.title;
-            img.loading = 'lazy';
-
-            slide.appendChild(img);
-            galleryWrapper.appendChild(slide);
-        });
-
-        new Swiper('.gallery-swiper', {
-            slidesPerView: 1.25,
-            centeredSlides: true,
-            spaceBetween: 20,
-            loop: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.gallery-swiper .swiper-pagination',
-                clickable: true,
-            },
-            breakpoints: {
-                640: { slidesPerView: 2, centeredSlides: false, spaceBetween: 20 },
-                850: { slidesPerView: 3, centeredSlides: false, spaceBetween: 30 },
-                1200: { slidesPerView: 4, centeredSlides: false, spaceBetween: 40 },
-            }
+    // --- Premium Products Slider (CoverFlow 3D) ---
+    const premiumData = [
+        { 
+            tag: "#Premium", titleLine1: "STONE FOUNTAIN", titleLine2: "– MASTERPIECE",
+            desc: "An elegant, hand-carved stone fountain to bring tranquility to your garden or courtyard.",
+            img: "images/fountain 04.jpg" 
+        },
+        { 
+            tag: "#Exclusive", titleLine1: "STONE FOUNTAIN", titleLine2: "– LUXURY",
+            desc: "A breathtaking centerpiece featuring intricate artisanal detailing.",
+            img: "images/fountain 03.jpg" 
+        },
+        { 
+            tag: "#Signature", titleLine1: "STONE FOUNTAIN", titleLine2: "– HERITAGE",
+            desc: "Classic Indian stone carving that stands the test of time.",
+            img: "images/fountain 11.jpg" 
+        },
+        { 
+            tag: "#Divine", titleLine1: "GANESH MURTY", titleLine2: "– MAKRANA",
+            desc: "Intricately detailed pure white Makrana marble Ganesh with subtle gold leaf accents.",
+            img: "images/ganesh ji 01.jpg" 
+        },
+        { 
+            tag: "#Divine", titleLine1: "SHIV JI MURTY", titleLine2: "– HAND PAINTED",
+            desc: "A mesmerizing representation of Lord Shiva, featuring hand-painted traditional motifs.",
+            img: "images/shiv ji 01.png" 
+        },
+        { 
+            tag: "#Divine", titleLine1: "LAKSHMI NARAYAN", titleLine2: "– SACRED",
+            desc: "A divine depiction of prosperity and preservation.",
+            img: "images/Lakshmi narayan ji marble murty 01.jpg" 
+        }
+    ];
+    
+    const coverflowContainer = document.getElementById('coverflow-container');
+    if (coverflowContainer && typeof CoverFlowCarousel !== 'undefined') {
+        new CoverFlowCarousel(coverflowContainer, {
+            items: premiumData,
+            sectionLabel: "OUR PREMIUM COLLECTION"
         });
     }
+
+
 });

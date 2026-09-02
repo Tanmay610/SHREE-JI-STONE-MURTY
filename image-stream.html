@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Stream Hero Demo</title>
+    <style>
+        :root {
+            --foreground: #101317;
+            --background: #FAFAFA;
+            --muted-foreground: #6b7280;
+            --border: #e5e7eb;
+        }
+        
+        body {
+            margin: 0;
+            padding: 2rem;
+            font-family: system-ui, -apple-system, sans-serif;
+            background: var(--background);
+            color: var(--foreground);
+            display: flex;
+            justify-content: center;
+        }
+
+        .demo-container {
+            width: 100%;
+            max-width: 1200px;
+            height: 560px;
+            border-radius: 0.5rem;
+            border: 1px solid var(--border);
+            background: var(--background);
+        }
+
+        /* Overlay Content Styles */
+        .overlay-content {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            padding: 3rem 0;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .overlay-header {
+            padding: 0 1.5rem;
+        }
+
+        .overlay-title {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            font-weight: 500;
+            letter-spacing: -0.025em;
+            margin: 0;
+            text-wrap: balance;
+        }
+
+        @media (min-width: 640px) {
+            .overlay-title {
+                font-size: 3rem;
+                line-height: 1;
+            }
+        }
+
+        .overlay-desc {
+            max-width: 28rem;
+            padding: 0 1.5rem;
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            color: var(--muted-foreground);
+            margin: 0;
+            text-wrap: balance;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="hero-container" class="demo-container">
+        <!-- Content overlaid on top of the 3D stream -->
+        <div class="overlay-content">
+            <div class="overlay-header">
+                <h1 class="overlay-title">
+                    Your work,
+                    <br />
+                    front and centre.
+                </h1>
+            </div>
+            <p class="overlay-desc">
+                A hero that leads with the images instead of describing them. Swap in
+                your own and the corridor rebuilds around them.
+            </p>
+        </div>
+    </div>
+
+    <!-- Include the Vanilla JS Component -->
+    <script src="js/image-stream-hero.js"></script>
+    <script>
+        const IMAGES = [
+            { src: "https://images.unsplash.com/photo-1544265005-4c071671fc6c?auto=format&fit=crop&q=80&w=800", alt: "Statue" },
+            { src: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&q=80&w=800", alt: "Art" },
+            { src: "https://images.unsplash.com/photo-1605330366620-302383820fa4?auto=format&fit=crop&q=80&w=800", alt: "Sculpture" },
+            { src: "https://images.unsplash.com/photo-1555621644-2ea1cb133f93?auto=format&fit=crop&q=80&w=800", alt: "Marble" },
+            { src: "https://images.unsplash.com/photo-1604085448661-d7ec59b58097?auto=format&fit=crop&q=80&w=800", alt: "Abstract" },
+            { src: "https://images.unsplash.com/photo-1544256718-3b610b263b61?auto=format&fit=crop&q=80&w=800", alt: "Temple" },
+            { src: "https://images.unsplash.com/photo-1574063991244-1f7481ba4940?auto=format&fit=crop&q=80&w=800", alt: "Statue head" },
+            { src: "https://images.unsplash.com/photo-1518118014377-ec56bb957b98?auto=format&fit=crop&q=80&w=800", alt: "Fountain" },
+            { src: "https://images.unsplash.com/photo-1563229867-0c1fc2317772?auto=format&fit=crop&q=80&w=800", alt: "Ganesh" },
+            { src: "https://images.unsplash.com/photo-1584622156829-450f6d35dc64?auto=format&fit=crop&q=80&w=800", alt: "Shiva" },
+            { src: "https://images.unsplash.com/photo-1581404917879-53e19259f56e?auto=format&fit=crop&q=80&w=800", alt: "Architecture" },
+            { src: "https://images.unsplash.com/photo-1598928373302-3c22421376dc?auto=format&fit=crop&q=80&w=800", alt: "Pillars" }
+        ];
+
+        // Initialize the component
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('hero-container');
+            new ImageStreamHero(container, {
+                images: IMAGES,
+                cards: 9,
+                speed: 18,
+                axis: 55
+            });
+        });
+    </script>
+</body>
+</html>

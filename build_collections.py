@@ -19,7 +19,7 @@ categories = [
     {"id": "kali", "name": "Kali Mataji", "prefixes": ["kali mata"]},
     {"id": "durga", "name": "Durga Mataji", "prefixes": ["durga mata"]},
     {"id": "mahaveer", "name": "Mahaveer Jain", "prefixes": ["mahaveer jain"]},
-    {"id": "bal_radha_krishna", "name": "Balaram Radha and Krishna ji", "prefixes": ["bal gopal radha and krishna"]}
+    {"id": "bal_radha_krishna", "name": " Radha and Krishna ji", "prefixes": ["bal gopal radha and krishna"]}
 ]
 
 filters_html = '            <div class="catalog-filters">\n'

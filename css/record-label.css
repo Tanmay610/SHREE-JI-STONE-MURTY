@@ -1,0 +1,474 @@
+/* record-label.css */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&family=Syne:wght@600;700;800&display=swap');
+
+.record-theme {
+    --ground: #FAFAFA;
+    --secondary-ground: #F0F0F0;
+    --ink: #1A1A1A;
+    --secondary-ink: #555555;
+    --muted: #AAAAAA;
+    --amber: #D97A22;
+    --teal: #245A60;
+    --hairline: rgba(10, 12, 14, .13);
+
+    --font-display: 'Syne', sans-serif;
+    --font-sans: 'Sora', sans-serif;
+
+    background-color: var(--ground);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: clip;
+    position: relative; /* ensure containment */
+    display: block;
+    width: 100%;
+}
+
+/* Reset inside the theme wrapper so we don't conflict with global styles */
+.record-theme *, .record-theme *::before, .record-theme *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography */
+.record-theme h1, .record-theme h2, .record-theme h3, .record-theme h4, .record-theme h5, .record-theme h6, .record-theme .display-text {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.record-theme .label {
+    font-family: var(--font-sans);
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--secondary-ink);
+}
+
+.record-theme .text-small {
+    font-size: 14px;
+    color: var(--secondary-ink);
+}
+
+.record-theme .text-amber { color: var(--amber); }
+.record-theme .text-teal { color: var(--teal); }
+
+.record-theme a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+/* Layout Utilities */
+.record-theme .rl-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 5vw;
+}
+
+.record-theme .pill-btn {
+    border: 1px solid var(--hairline);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    background: transparent;
+    color: var(--ink);
+    cursor: pointer;
+    transition: border-color 0.2s ease, color 0.2s ease;
+    display: inline-block;
+}
+
+.record-theme .pill-btn:hover {
+    border-color: var(--amber);
+    color: var(--amber);
+}
+
+/* Portal Hero */
+.record-theme .portal-hero {
+    height: 250vh; /* scrollable space */
+    position: relative;
+}
+
+.record-theme .hero-sticky {
+    position: sticky;
+    top: 58px; /* account for existing navbar if it's fixed */
+    height: calc(100vh - 58px);
+    overflow: hidden;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.record-theme .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -3;
+    transform-origin: center;
+    transform: scale(1.1);
+    will-change: transform;
+}
+
+.record-theme .hero-duotone {
+    position: absolute;
+    inset: 0;
+    background: var(--teal);
+    mix-blend-mode: overlay;
+    opacity: 0;
+    z-index: -2;
+    will-change: opacity;
+}
+
+.record-theme .hero-veil {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle, transparent 40%, rgba(250,250,250,0.8) 100%);
+    z-index: -1;
+}
+
+.record-theme .hero-panel {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50.5%;
+    background: var(--ground);
+    z-index: 10;
+    will-change: transform;
+}
+
+.record-theme .hero-panel.left { left: 0; transform-origin: left; }
+.record-theme .hero-panel.right { right: 0; transform-origin: right; }
+
+.record-theme .hero-dots {
+    position: absolute;
+    inset: 0;
+    z-index: 15;
+    pointer-events: none;
+}
+
+.record-theme .accent-dot {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    will-change: transform;
+}
+
+.record-theme .accent-dot.amber { background: var(--amber); }
+.record-theme .accent-dot.teal { background: var(--teal); }
+
+.record-theme .hero-wordmark {
+    position: relative;
+    z-index: 20;
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 10vw, 8rem);
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: -0.02em;
+    will-change: transform, letter-spacing;
+}
+
+.record-theme .hero-wordmark-span {
+    display: inline-block;
+    will-change: transform;
+}
+
+.record-theme .hero-meta {
+    position: absolute;
+    z-index: 20;
+    padding: 24px 5vw;
+}
+
+.record-theme .hero-meta.top-left { top: 0; left: 0; }
+.record-theme .hero-meta.bottom-right { bottom: 0; right: 0; text-align: right; }
+
+/* Statement Fold */
+.record-theme .statement-fold {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10vh 0;
+    overflow: hidden;
+}
+
+.record-theme .statement-content {
+    position: relative;
+    z-index: 2;
+    max-width: 22ch;
+}
+
+.record-theme .statement-text {
+    font-size: clamp(24px, 3.6vw, 52px);
+    line-height: 1.2;
+    margin-top: 1rem;
+}
+
+.record-theme .statement-index {
+    position: absolute;
+    top: -20%;
+    left: -10%;
+    font-family: var(--font-display);
+    font-size: 30vw;
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--hairline);
+    z-index: -1;
+    pointer-events: none;
+    line-height: 1;
+}
+
+.record-theme .statement-image {
+    position: absolute;
+    right: -10vw;
+    top: 50%;
+    width: 40vw;
+    height: 40vw;
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    opacity: 0.3;
+    z-index: 1;
+    transform-origin: center;
+    will-change: transform;
+}
+
+/* Releases (Throwable Deck) */
+.record-theme .releases {
+    padding: 15vh 0;
+    background: var(--secondary-ground);
+    overflow: hidden;
+}
+
+.record-theme .releases-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .record-theme .releases-grid { grid-template-columns: 1fr; }
+}
+
+.record-theme .releases-info {
+    max-width: 400px;
+}
+
+.record-theme .releases-info h2 {
+    font-size: clamp(2rem, 4vw, 4rem);
+    margin-bottom: 1.5rem;
+}
+
+.record-theme .releases-info p {
+    color: var(--secondary-ink);
+    margin-bottom: 2rem;
+}
+
+.record-theme .btn-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.record-theme .deck-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    perspective: 1000px;
+    touch-action: pan-y;
+}
+
+.record-theme .deck-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--ground);
+    border: 1px solid var(--hairline);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border-radius: 4px;
+    overflow: hidden;
+    user-select: none;
+    will-change: transform;
+    cursor: grab;
+    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.record-theme .deck-card:active { cursor: grabbing; }
+.record-theme .deck-card.dragging { transition: none; }
+
+.record-theme .deck-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.record-theme .deck-meta {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem;
+    background: linear-gradient(to top, rgba(250,250,250,0.9), transparent);
+    pointer-events: none;
+}
+
+.record-theme .deck-hints {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    border-top: 1px solid var(--hairline);
+    padding-top: 1rem;
+}
+
+.record-theme .deck-dots {
+    display: flex;
+    gap: 8px;
+}
+
+.record-theme .deck-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--muted);
+    transition: background 0.3s;
+}
+.record-theme .deck-dot.active { background: var(--amber); }
+
+/* Roster and Dates */
+.record-theme .roster-dates {
+    padding: 15vh 0;
+}
+
+.record-theme .roster-section { margin-bottom: 8rem; }
+
+.record-theme .hairline-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--hairline);
+    transition: color 0.3s ease;
+}
+
+.record-theme .hairline-row:first-child { border-top: 1px solid var(--hairline); }
+.record-theme .hairline-row:hover { color: var(--amber); }
+
+.record-theme .row-name {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    text-transform: uppercase;
+}
+
+/* Dates Table */
+.record-theme .dates-table { width: 100%; }
+
+.record-theme .dates-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--hairline);
+    margin-bottom: 1rem;
+}
+
+.record-theme .dates-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--hairline);
+    align-items: center;
+}
+
+.record-theme .dates-col-main {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .record-theme .dates-header { display: none; }
+    .record-theme .dates-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .record-theme .dates-col-main { grid-column: span 2; }
+}
+
+/* Close */
+.record-theme .close-section {
+    padding-top: 15vh;
+    background: var(--secondary-ground);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.record-theme .close-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 4rem;
+}
+
+@media (max-width: 768px) {
+    .record-theme .close-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+}
+
+.record-theme .close-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--hairline);
+}
+
+.record-theme .close-wordmark-container {
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    transform: translateY(25%);
+}
+
+.record-theme .close-wordmark {
+    font-family: var(--font-display);
+    font-size: 18vw;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 0.8;
+    color: var(--secondary-ground);
+    -webkit-text-stroke: 1px var(--hairline);
+    white-space: nowrap;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .record-theme .portal-hero { height: 100vh; }
+    .record-theme .hero-sticky { position: relative; }
+    .record-theme .hero-panel, .record-theme .hero-duotone { display: none; }
+    .record-theme .hero-image { transform: none; }
+    .record-theme .hero-wordmark { letter-spacing: -0.02em; transform: none; }
+    .record-theme .deck-card { transition: none; }
+}
