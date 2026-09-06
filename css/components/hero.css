@@ -285,11 +285,31 @@
     padding: 15px; /* Creates an outer border of the gap color */
 }
 
-/* Adjust for mobile to stack */
+/* Adjust for mobile to stack symmetrically */
 @media (max-width: 768px) {
     .hero-grid-custom {
-        grid-template-columns: 1fr;
-        grid-template-rows: 50% 25% 25%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 60% 40%;
+        gap: 10px;
+        padding: 10px;
+    }
+    .hero-grid-custom .main-img {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    .hero-grid-custom .side-img-top {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .hero-grid-custom .side-img-bottom {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    /* Hide arrows on mobile for a cleaner look */
+    .hero-auto-slider .swiper-button-prev,
+    .hero-auto-slider .swiper-button-next {
+        display: none !important;
     }
 }
 
@@ -315,26 +335,11 @@
     grid-row: 2 / 3;
 }
 
-/* Mobile overrides for grid area */
-@media (max-width: 768px) {
-    .hero-grid-custom .main-img {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-    }
-    .hero-grid-custom .side-img-top {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-    }
-    .hero-grid-custom .side-img-bottom {
-        grid-column: 1 / 2;
-        grid-row: 3 / 4;
-    }
-}
-
 .hero-grid-custom .grid-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center 20%; /* Bias towards top to avoid cropping faces */
     transition: transform 6s ease;
 }
 
