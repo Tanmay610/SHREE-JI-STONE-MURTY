@@ -155,6 +155,40 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             });
         });
+
+        // --- Sorting Logic ---
+        const sortSelect = document.getElementById('sortSelect');
+        if (sortSelect) {
+            // Keep original order for "relevance"
+            const originalOrder = Array.from(productCards);
+
+            sortSelect.addEventListener('change', (e) => {
+                const sortType = e.target.value;
+                const catalogGrid = document.getElementById('catalogGrid');
+                
+                // Get currently visible cards or all cards to sort
+                let cardsArray = Array.from(productCards);
+
+                if (sortType === 'price-asc' || sortType === 'price-desc') {
+                    cardsArray.sort((a, b) => {
+                        const priceStrA = a.querySelector('.card-price strong')?.textContent || '0';
+                        const priceStrB = b.querySelector('.card-price strong')?.textContent || '0';
+                        const priceA = parseInt(priceStrA.replace(/[^0-9]/g, '')) || 0;
+                        const priceB = parseInt(priceStrB.replace(/[^0-9]/g, '')) || 0;
+                        
+                        return sortType === 'price-asc' ? priceA - priceB : priceB - priceA;
+                    });
+                } else {
+                    // Relevance - restore original order
+                    cardsArray = originalOrder;
+                }
+
+                // Re-append to grid in sorted order
+                cardsArray.forEach(card => {
+                    catalogGrid.appendChild(card);
+                });
+            });
+        }
     }
 });
 

@@ -38,34 +38,36 @@
 }
 
 .filter-btn {
-    background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    padding: 0.7rem 1.8rem;
-    border-radius: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 0.5rem 0.2rem;
+    margin: 0 0.8rem;
+    border-radius: 0;
     font-family: var(--font-body);
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: #4a4a4a;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
-    letter-spacing: 0.03em;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+    box-shadow: none;
 }
 
 .filter-btn:hover {
     color: #1a1a2e;
-    border-color: #d4af37;
     transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(212, 175, 55, 0.15);
+    border-bottom: 2px solid rgba(212, 175, 55, 0.4);
 }
 
 .filter-btn.active {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-    border-color: #1a1a2e;
-    color: #d4af37;
-    font-weight: 600;
-    box-shadow: 0 8px 20px rgba(26, 26, 46, 0.25);
+    background: transparent;
+    border-bottom: 2px solid #d4af37;
+    color: #1a1a2e;
+    font-weight: 700;
     transform: translateY(-2px);
+    box-shadow: none;
 }
 
 /* ==========================================================================
@@ -318,27 +320,28 @@
 
 /* --- View Details Button --- */
 .btn-teal-view {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-    color: #d4af37;
+    background: transparent;
+    color: #1a1a2e;
+    border: 1px solid rgba(26, 26, 46, 0.25);
     text-decoration: none;
-    padding: 11px 24px;
-    font-size: 0.8rem;
-    font-weight: 700;
+    padding: 10px 26px;
+    font-size: 0.75rem;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
     display: inline-block;
-    border-radius: 6px;
+    border-radius: 0; /* Sharp, modern luxury edge */
     align-self: flex-start;
     margin-top: auto;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(212, 175, 55, 0.2);
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .btn-teal-view:hover {
-    background: linear-gradient(135deg, #d4af37 0%, #c9a227 100%);
-    color: #1a1a2e;
-    border-color: #d4af37;
-    box-shadow: 0 4px 16px rgba(212, 175, 55, 0.3);
+    background: #1a1a2e;
+    color: #fff;
+    border-color: #1a1a2e;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(26, 26, 46, 0.15);
 }
 
 /* ==========================================================================
