@@ -145,27 +145,10 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    // --- Hero Swiper Slider ---
-    const sliderData = [
-        { "src": "images/fountain 01.jpg", "title": "Majestic", "highlight": "Stone Fountains", "subtitle": "Elegant stone water features designed to bring tranquility to your outdoor spaces." },
-        { "src": "images/fountain 14.jpg", "title": "Timeless", "highlight": "Artistry", "subtitle": "Handcrafted masterpieces that blend tradition with modern elegance." },
-        { "src": "images/fountain 21.jpg", "title": "Luxurious", "highlight": "Craftsmanship", "subtitle": "Elevate your surroundings with our premium, intricately carved stone fountains." },
-        { "src": "images/fountain 12.jpg", "title": "Serene", "highlight": "Ambience", "subtitle": "Transform any landscape into a peaceful retreat with the soothing flow of water." }
-    ];
-    const wrapper = document.getElementById('hero-slider-wrapper');
-    const titleEl = document.getElementById('hero-dynamic-title');
-    const subtitleEl = document.getElementById('hero-dynamic-subtitle');
-    const contentInner = document.querySelector('.hero-content-inner');
-
-    if (wrapper && sliderData.length > 0) {
-        sliderData.forEach(data => {
-            const slide = document.createElement('div');
-            slide.className = 'swiper-slide hero-slide-bg';
-            slide.style.backgroundImage = `url('${data.src}')`;
-            wrapper.appendChild(slide);
-        });
-
-        const heroSwiper = new Swiper('.hero-swiper', {
+    // --- Hero 3-Image Auto Slider ---
+    const heroAutoSlider = document.querySelector('.hero-auto-slider');
+    if (heroAutoSlider && typeof Swiper !== 'undefined') {
+        new Swiper('.hero-auto-slider', {
             effect: 'fade',
             fadeEffect: { crossFade: true },
             loop: true,
@@ -178,24 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-            on: {
-                slideChange: function () {
-                    const activeIndex = this.realIndex;
-                    const data = sliderData[activeIndex];
-
-                    contentInner.style.opacity = 0;
-                    contentInner.style.transform = 'translateY(10px)';
-
-                    setTimeout(() => {
-                        titleEl.innerHTML = `${data.title}<br><span class="text-highlight">${data.highlight}</span>`;
-                        subtitleEl.textContent = data.subtitle;
-
-                        contentInner.style.transition = 'all 0.8s ease';
-                        contentInner.style.opacity = 1;
-                        contentInner.style.transform = 'translateY(0)';
-                    }, 400);
-                }
-            }
+            allowTouchMove: false
         });
     }
 

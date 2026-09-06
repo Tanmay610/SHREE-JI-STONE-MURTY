@@ -92,7 +92,7 @@
 
 /* Portal Hero */
 .record-theme .portal-hero {
-    height: 250vh; /* scrollable space */
+    height: 100vh; /* full screen height */
     position: relative;
 }
 
