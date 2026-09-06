@@ -93,16 +93,16 @@ class CoverFlowCarousel {
                             ${item.tag || ''}
                         </span>
                     </div>
-                    <div style="position: absolute; bottom: 14px; left: 14px; right: 14px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-radius: 14px; padding: 20px 14px; display: flex; flex-direction: column; align-items: center; gap: 4px; box-shadow: 0 8px 30px rgba(0,0,0,0.15); pointer-events: auto; border: 1px solid rgba(255,255,255,1);">
-                        <h2 class="cf-title" style="font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: #101317; margin: 0; line-height: 1.2;">
-                            ${item.titleLine1 || ''}
-                        </h2>
-                        ${item.titleLine2 ? `<span style="font-size: 0.95rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #555; line-height: 1.2;">${item.titleLine2}</span>` : ''}
-                        <div style="width: 32px; height: 2px; background-color: #c5a880; border-radius: 2px; margin: 8px auto 6px; box-shadow: 0 0 8px rgba(197,168,128,0.3);"></div>
-                        ${item.desc ? `<p style="font-size: 0.8rem; font-style: italic; color: #555; max-width: 260px; margin: 0 0 14px; line-height: 1.4;">${item.desc}</p>` : ''}
-                        <a href="${item.ctaUrl || '#'}" style="display: inline-flex; align-items: center; gap: 6px; padding: 9px 22px; border-radius: 9999px; background: #101317; color: #fff; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: transform 200ms ease, box-shadow 200ms ease;">
-                            <span>${item.ctaText || "View Menu"}</span>
-                            <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                    <div style="position: absolute; bottom: 12px; left: 12px; right: 12px; background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border-radius: 12px; padding: 12px; display: flex; flex-direction: column; align-items: center; gap: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.12); pointer-events: auto; border: 1px solid rgba(255,255,255,0.8);">
+                        <div style="display: flex; flex-direction: column; align-items: center; line-height: 1.2;">
+                            <h2 class="cf-title" style="font-size: 1rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: #101317; margin: 0;">
+                                ${item.titleLine1 || ''}
+                            </h2>
+                            ${item.titleLine2 ? `<span style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #666;">${item.titleLine2}</span>` : ''}
+                        </div>
+                        <a href="${item.ctaUrl || '#'}" style="display: inline-flex; align-items: center; gap: 4px; padding: 6px 16px; border-radius: 999px; background: #101317; color: #fff; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+                            <span>${item.ctaText || "View Collection"}</span>
+                            <svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                             </svg>
                         </a>

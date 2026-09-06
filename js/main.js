@@ -17,11 +17,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // Auto-inject the animation class
     animateTargets.forEach(el => el.classList.add('animate-on-scroll'));
 
+    // --- Stagger: Add delay classes to grid children ---
+    const staggerContainers = document.querySelectorAll('.products-grid, .catalog-grid, .order-steps-grid, .footer-grid');
+    staggerContainers.forEach(container => {
+        const children = container.querySelectorAll('.animate-on-scroll');
+        children.forEach((child, i) => {
+            child.classList.add(`stagger-${(i % 6) + 1}`);
+        });
+    });
+
+    // --- Direction Variants for About Section ---
+    const aboutLeft = document.querySelector('.about-container > div:first-child');
+    const aboutRight = document.querySelector('.about-container > div:last-child');
+    if (aboutLeft) aboutLeft.classList.add('anim-left');
+    if (aboutRight) aboutRight.classList.add('anim-right');
+
     const scrollObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('is-visible');
-                // Optional: Stop observing once it has animated in
                 scrollObserver.unobserve(entry.target);
             }
         });
@@ -134,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 productCards.forEach(card => {
                     if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
-                        card.style.display = 'block';
+                        card.style.display = '';  // Reset to CSS default (flex)
                     } else {
                         card.style.display = 'none';
                     }
@@ -307,5 +321,94 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    /* ==========================================================================
+       Product Details Modal Logic
+       ========================================================================== */
+    const productModal = document.getElementById('productModal');
+    if (productModal) {
+        const modalCloseBtn = productModal.querySelector('.modal-close-btn');
+        const modalProductImage = document.getElementById('modalProductImage');
+        const modalProductTitle = document.getElementById('modalProductTitle');
+        const modalProductSku = document.getElementById('modalProductSku');
+        const modalProductPrice = document.getElementById('modalProductPrice');
+        const modalProductSize = document.getElementById('modalProductSize');
+        const modalProductMaterial = document.getElementById('modalProductMaterial');
+        const modalWhatsappBtn = document.getElementById('modalWhatsappBtn');
+
+        // Function to close modal
+        const closeModal = () => {
+            productModal.classList.remove('active');
+            document.body.style.overflow = ''; // Restore scroll
+        };
+
+        modalCloseBtn.addEventListener('click', closeModal);
+
+        // Close on background click
+        productModal.addEventListener('click', (e) => {
+            if (e.target === productModal) {
+                closeModal();
+            }
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && productModal.classList.contains('active')) {
+                closeModal();
+            }
+        });
+
+        // Delegate click event to document for dynamically added product cards
+        document.addEventListener('click', (e) => {
+            const btn = e.target.closest('.view-details-btn');
+            if (btn) {
+                e.preventDefault();
+                const card = btn.closest('.product-card');
+                if (card) {
+                    // Extract data
+                    const title = card.querySelector('h3').textContent;
+                    const imgSrc = card.querySelector('img').src;
+                    const sku = card.getAttribute('data-sku') || 'N/A';
+                    const price = card.getAttribute('data-price') || 'On Request';
+                    const size = card.getAttribute('data-size') || 'Customizable';
+                    const material = card.getAttribute('data-material') || 'Premium Marble';
+
+                    // Populate modal
+                    modalProductTitle.textContent = title;
+                    modalProductImage.src = imgSrc;
+                    modalProductSku.textContent = sku;
+                    modalProductPrice.textContent = price;
+                    modalProductSize.textContent = size;
+                    modalProductMaterial.textContent = material;
+
+                    // Update WhatsApp link
+                    const message = encodeURIComponent(`Hi, I'm inquiring about the ${title} (SKU: ${sku}). Please provide more details.`);
+                    modalWhatsappBtn.href = `https://wa.me/918947967791?text=${message}`;
+
+                    // Show modal
+                    productModal.classList.add('active');
+                    document.body.style.overflow = 'hidden'; // Prevent background scroll
+                }
+            }
+        });
+    }
+
+    // Grid/List View Toggles
+    const btnGrid = document.getElementById('btnGrid');
+    const btnList = document.getElementById('btnList');
+    const catalogGrid = document.getElementById('catalogGrid');
+
+    if (btnGrid && btnList && catalogGrid) {
+        btnGrid.addEventListener('click', () => {
+            catalogGrid.classList.remove('list-view');
+            btnGrid.classList.add('active');
+            btnList.classList.remove('active');
+        });
+
+        btnList.addEventListener('click', () => {
+            catalogGrid.classList.add('list-view');
+            btnList.classList.add('active');
+            btnGrid.classList.remove('active');
+        });
+    }
 
 });
