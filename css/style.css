@@ -54,7 +54,7 @@ body {
     background-color: var(--bg-primary);
     color: var(--text-main);
     line-height: 1.6;
-    overflow-x: clip;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1309,5 +1309,33 @@ a {
     .instagram-float svg, .facebook-float svg {
         width: 28px;
         height: 28px;
+    }
+}
+
+/* Social Container Refactor */
+.social-float-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.social-float-container .facebook-float,
+.social-float-container .instagram-float,
+.social-float-container .whatsapp-float {
+    position: relative !important;
+    bottom: auto !important;
+    right: auto !important;
+    z-index: auto !important;
+}
+
+@media (max-width: 991px) {
+    .social-float-container {
+        bottom: 95px; /* Above bottom nav */
+        right: 20px;
+        gap: 10px;
     }
 }

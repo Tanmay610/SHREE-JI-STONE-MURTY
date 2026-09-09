@@ -500,7 +500,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "title": "Ganesh murtys"
         },
         {
-                "src": "images/ganesh ji 01.jpg",
+                "src": "images/ganesh ji 18 .jpg.png",
                 "title": "Ganesh murtys"
         },
         {
@@ -540,7 +540,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "title": "Ganesh murtys"
         },
         {
-                "src": "images/ganesh ji 11.jpg",
+                "src": "images/ganesh ji 17.jpg.png",
                 "title": "Ganesh murtys"
         },
         {
@@ -696,7 +696,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { 
             tag: "#Divine", titleLine1: "GANESH MURTY", titleLine2: "– MAKRANA",
             desc: "Intricately detailed pure white Makrana marble Ganesh with subtle gold leaf accents.",
-            img: "images/ganesh ji 01.jpg" 
+            img: "images/ganesh ji 18 .jpg.png" 
         },
         { 
             tag: "#Divine", titleLine1: "SHIV JI MURTY", titleLine2: "– HAND PAINTED",

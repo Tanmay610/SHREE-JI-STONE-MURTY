@@ -586,3 +586,20 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* Mobile Filter Scroll Fix */
+@media (max-width: 768px) {
+    .catalog-filters {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 1rem;
+        -webkit-overflow-scrolling: touch;
+        gap: 0.5rem;
+    }
+    .filter-btn {
+        white-space: nowrap;
+        margin: 0;
+        flex-shrink: 0;
+    }
+}
