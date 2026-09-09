@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { title: "Stone Fountain – Heritage", tag: "Fountain", img: "images/fountain 11.jpg", url: "collections.html" },
         { title: "Ganesh Murty – Makrana", tag: "Statue", img: "images/ganesh ji 18 .jpg.png", url: "collections.html" },
         { title: "Shiv Ji Murty – Hand Painted", tag: "Statue", img: "images/shiv ji 01.png", url: "collections.html" },
-        { title: "Lakshmi Narayan – Sacred", tag: "Statue", img: "images/Lakshmi narayan ji marble murty 01.jpg", url: "collections.html" },
+        { title: "Lakshmi Narayan – Sacred", tag: "Statue", img: "images/LAKSHMI JI AND NARAYAN JI MARBLE MURTY  (1).png", url: "collections.html" },
         { title: "Goutam Buddha Marble Murty", tag: "Statue", img: "images/GOUTAM BUDHA MARBLE MURTY 09.jpg", url: "collections.html" },
         { title: "Hanuman Ji Marble Murty", tag: "Statue", img: "images/hanumaan ji marble murty 01.jpg", url: "collections.html" },
         { title: "Mahaveer Jain Marble Murty", tag: "Statue", img: "images/MAHAVEER JAIN MARBLE MURTY 01 (1).jpg", url: "collections.html" },

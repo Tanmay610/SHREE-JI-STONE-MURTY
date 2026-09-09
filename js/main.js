@@ -248,55 +248,43 @@ document.addEventListener('DOMContentLoaded', () => {
                 "title": "Parshuram Ji Murty"
         },
         {
-                "src": "images/GANGA MAA MARBLE MURTY 01.jpg",
+                "src": "images/GANGA MAA MARBLE MURTY  (1).png",
                 "title": "Ganga Maa Murty"
         },
         {
-                "src": "images/GANGA MAA MARBLE MURTY 02.jpg",
+                "src": "images/GANGA MAA MARBLE MURTY  (2).png",
                 "title": "Ganga Maa Murty"
         },
         {
-                "src": "images/GANGA MAA MARBLE MURTY 03.png",
+                "src": "images/GANGA MAA MARBLE MURTY  (3).png",
                 "title": "Ganga Maa Murty"
         },
         {
-                "src": "images/GANGA MAA MARBLE MURTY 04.jpg",
+                "src": "images/GANGA MAA MARBLE MURTY  (4).png",
                 "title": "Ganga Maa Murty"
         },
         {
-                "src": "images/GANGA MAA MARBLE MURTY 05.jpg",
+                "src": "images/GANGA MAA MARBLE MURTY  (5).png",
                 "title": "Ganga Maa Murty"
         },
         {
-                "src": "images/Lakshmi narayan ji marble murty 01.jpg",
+                "src": "images/LAKSHMI JI AND NARAYAN JI MARBLE MURTY  (1).png",
                 "title": "Lakshmi Narayan Ji Murty"
         },
         {
-                "src": "images/Lakshmi narayan ji marble murty 02 .jpeg.jpg",
+                "src": "images/LAKSHMI JI AND NARAYAN JI MARBLE MURTY  (2).png",
                 "title": "Lakshmi Narayan Ji Murty"
         },
         {
-                "src": "images/Lakshmi narayan ji marble murty 03 .jpeg.jpg",
+                "src": "images/LAKSHMI JI AND NARAYAN JI MARBLE MURTY  (3).png",
                 "title": "Lakshmi Narayan Ji Murty"
         },
         {
-                "src": "images/Lakshmi narayan ji marble murty 04 .jpeg.jpg",
+                "src": "images/LAKSHMI JI AND NARAYAN JI MARBLE MURTY  (4).png",
                 "title": "Lakshmi Narayan Ji Murty"
         },
         {
-                "src": "images/Lakshmi narayan ji marble murty 05.jpeg.jpg",
-                "title": "Lakshmi Narayan Ji Murty"
-        },
-        {
-                "src": "images/Lakshmi narayan ji marble murty 06 .jpeg.jpg",
-                "title": "Lakshmi Narayan Ji Murty"
-        },
-        {
-                "src": "images/Lakshmi narayan ji marble murty 08 .jpeg.jpg",
-                "title": "Lakshmi Narayan Ji Murty"
-        },
-        {
-                "src": "images/Lakshmi narayan ji marble murty 09 .jpeg.jpg",
+                "src": "images/LAKSHMI JI AND NARAYAN JI MARBLE MURTY  (5).png",
                 "title": "Lakshmi Narayan Ji Murty"
         },
         {
@@ -674,6 +662,18 @@ document.addEventListener('DOMContentLoaded', () => {
         {
                 "src": "images/shiv ji  (9).png",
                 "title": "Shiv Ji Statues"
+        },
+        {
+                "src": "images/RAM DARBAR MARBLE MURTY  (1).png",
+                "title": "Ram Darbar Murty"
+        },
+        {
+                "src": "images/RAM DARBAR MARBLE MURTY  (2).png",
+                "title": "Ram Darbar Murty"
+        },
+        {
+                "src": "images/RAM DARBAR MARBLE MURTY  (3).png",
+                "title": "Ram Darbar Murty"
         }
 ];
     // --- Premium Products Slider (CoverFlow 3D) ---
@@ -706,7 +706,12 @@ document.addEventListener('DOMContentLoaded', () => {
         { 
             tag: "#Divine", titleLine1: "LAKSHMI NARAYAN", titleLine2: "– SACRED",
             desc: "A divine depiction of prosperity and preservation.",
-            img: "images/Lakshmi narayan ji marble murty 01.jpg" 
+            img: "images/LAKSHMI JI AND NARAYAN JI MARBLE MURTY  (1).png" 
+        },
+        { 
+            tag: "#Divine", titleLine1: "RAM DARBAR", titleLine2: "– MAKRANA",
+            desc: "Exquisite Ram Darbar carved in pure Makrana marble with devotion.",
+            img: "images/RAM DARBAR MARBLE MURTY  (1).png" 
         }
     ];
     

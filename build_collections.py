@@ -11,7 +11,7 @@ categories = [
     {"id": "hanuman", "name": "Hanuman Ji", "prefixes": ["hanumaan ji"]},
     {"id": "fountain", "name": "Fountains", "prefixes": ["fountain", "fountin"]},
     {"id": "ganga", "name": "Ganga Maa", "prefixes": ["ganga maa"]},
-    {"id": "lakshmi_narayan", "name": "Lakshmi Narayan Ji", "prefixes": ["lakshmi narayan"]},
+    {"id": "lakshmi_narayan", "name": "Lakshmi Narayan Ji", "prefixes": ["lakshmi narayan", "lakshmi ji and narayan ji"]},
     {"id": "parshuram", "name": "Parshuram Ji", "prefixes": ["bhagwan parshuram"]},
     {"id": "bench", "name": "Marble Bench", "prefixes": ["marble bench"]},
     {"id": "datta", "name": "Datta Maharaj", "prefixes": ["datta maharaj"]},
@@ -20,7 +20,8 @@ categories = [
     {"id": "kali", "name": "Kali Mataji", "prefixes": ["kali mata"]},
     {"id": "durga", "name": "Durga Mataji", "prefixes": ["durga mata"]},
     {"id": "mahaveer", "name": "Mahaveer Jain", "prefixes": ["mahaveer jain"]},
-    {"id": "bal_radha_krishna", "name": " Radha and Krishna ji", "prefixes": ["bal gopal radha and krishna"]}
+    {"id": "bal_radha_krishna", "name": " Radha and Krishna ji", "prefixes": ["bal gopal radha and krishna"]},
+    {"id": "ram_darbar", "name": "Ram Darbar", "prefixes": ["ram darbar"]}
 ]
 
 products_data = []

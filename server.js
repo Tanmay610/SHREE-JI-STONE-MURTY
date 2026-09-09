@@ -1,11 +1,22 @@
 // server.js
 const express = require('express');
 const path = require('path');
+const compression = require('compression');
+const helmet = require('helmet');
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
-// Serve static files (frontend)
-app.use(express.static(path.join(__dirname)));
+// Security and Performance Middlewares
+app.use(helmet({
+  contentSecurityPolicy: false, // Keep false to not break existing frontend scripts/styles
+}));
+app.use(compression());
+
+// Serve static files (frontend) with caching
+app.use(express.static(path.join(__dirname), {
+  maxAge: '30d',
+  etag: true
+}));
 
 // Example API endpoint – returns a static product list
 app.get('/api/products', (req, res) => {

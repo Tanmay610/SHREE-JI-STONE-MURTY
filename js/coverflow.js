@@ -86,7 +86,7 @@ class CoverFlowCarousel {
             card.style.transformOrigin = 'center center';
             card.style.transition = 'all 800ms cubic-bezier(0.25, 1, 0.5, 1)';
             card.innerHTML = `
-                <img src="${item.img}" alt="${item.titleLine1 || ''}" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;" />
+                <img src="${item.img}" alt="${item.titleLine1 || ''}" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;" />
                 <div class="card-content" style="position: absolute; inset: 0; pointer-events: none; z-index: 20; transition: opacity 500ms ease, transform 500ms ease;">
                     <div style="position: absolute; top: 16px; right: 16px; background: rgba(255,255,255,0.95); padding: 5px 14px; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); backdrop-filter: blur(8px);">
                         <span style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; color: #101317; text-transform: uppercase;">
