@@ -149,3 +149,9 @@
         text-align: center;
     }
 }
+
+@media (max-width: 991px) {
+    .footer {
+        padding-bottom: 250px !important;
+    }
+}

@@ -301,3 +301,9 @@
         margin-top: 1rem;
     }
 }
+\n@media (max-width: 768px) {\n
+    /* Mobile stacked grid fix */
+    .materials-image-grid {
+        grid-template-columns: 1fr;
+    }
+\n}
