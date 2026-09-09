@@ -83,7 +83,7 @@ for file in files:
                         <img src="images/{file}" alt="{matched_cat["name"]}" loading="lazy">
                         <div class="watermark-overlay">© SHREE JI</div>
                         <a href="https://wa.me/918947967791?text={sku}" class="zoom-whatsapp" target="_blank">
-                            <i class="fab fa-whatsapp"></i> <small>+91 8947967791</small>
+                            <i class="fab fa-whatsapp"></i> <small>+91 7877379557</small>
                         </a>
                     </div>
                     <div class="product-info">

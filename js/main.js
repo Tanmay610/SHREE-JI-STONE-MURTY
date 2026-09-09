@@ -215,104 +215,467 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Gallery Swiper Slider ---
     const galleryData = [
-        { "src": "images/fountain 01.jpg", "title": "Stone Fountains" },
-        { "src": "images/fountain 02.jpg", "title": "Stone Fountains" },
-        { "src": "images/fountain 03.jpg", "title": "Stone Fountains" },
-        { "src": "images/fountain 04.jpg", "title": "Stone Fountains" },
-        { "src": "images/fountain 06.jpg", "title": "Stone Fountains" },
-        { "src": "images/fountain 07.jpg", "title": "Stone Fountains" },
-        { "src": "images/fountain 08.jpg", "title": "Stone Fountains" },
-        { "src": "images/fountain 09.jpg", "title": "Stone Fountains" },
-        { "src": "images/fountain 10.jpg", "title": "Stone Fountains" },
-        { "src": "images/fountain 11.jpg", "title": "Stone Fountains" },
-        { "src": "images/fountain 12.jpg", "title": "Stone Fountains" },
-        { "src": "images/fountain 13.jpg", "title": "Stone Fountains" },
-        { "src": "images/fountain 14.jpg", "title": "Stone Fountains" },
-        { "src": "images/fountain 15.jpg", "title": "Stone Fountains" },
-        { "src": "images/fountain 16.jpg", "title": "Stone Fountains" },
-        { "src": "images/fountain 17.jpg", "title": "Stone Fountains" },
-        { "src": "images/fountain 18.jpg", "title": "Stone Fountains" },
-        { "src": "images/fountain 19.jpg", "title": "Stone Fountains" },
-        { "src": "images/fountain 20.jpg", "title": "Stone Fountains" },
-        { "src": "images/fountain 21.jpg", "title": "Stone Fountains" },
-        { "src": "images/fountain 22.jpg", "title": "Stone Fountains" },
-        { "src": "images/fountin 05.jpg", "title": "Stone Fountains" },
-        { "src": "images/ganesh ji 01.jpg", "title": "Ganesh murtys" },
-        { "src": "images/ganesh ji 02.jpg", "title": "Ganesh murtys" },
-        { "src": "images/ganesh ji 03.jpg", "title": "Ganesh murtys" },
-        { "src": "images/ganesh ji 04.jpg", "title": "Ganesh murtys" },
-        { "src": "images/ganesh ji 05.jpg", "title": "Ganesh murtys" },
-        { "src": "images/ganesh ji 06.jpg", "title": "Ganesh murtys" },
-        { "src": "images/ganesh ji 07.jpg", "title": "Ganesh murtys" },
-        { "src": "images/ganesh ji 08.jpg", "title": "Ganesh murtys" },
-        { "src": "images/ganesh ji 09.jpg", "title": "Ganesh murtys" },
-        { "src": "images/ganesh ji 10.jpg", "title": "Ganesh murtys" },
-        { "src": "images/ganesh ji 11.jpg", "title": "Ganesh murtys" },
-        { "src": "images/ganesh ji 12.jpg", "title": "Ganesh murtys" },
-        { "src": "images/shiv ji 01.png", "title": "Shiv Ji Statues" },
-        { "src": "images/shiv ji 02.jpg", "title": "Shiv Ji Statues" },
-        { "src": "images/shiv ji 03.jpg", "title": "Shiv Ji Statues" },
-        { "src": "images/shiv ji 04.jpg", "title": "Shiv Ji Statues" },
-        { "src": "images/shiv ji 05.jpg", "title": "Shiv Ji Statues" },
-        { "src": "images/shiv ji 06.jpg", "title": "Shiv Ji Statues" },
-        { "src": "images/shiv ji 07.jpg", "title": "Shiv Ji Statues" },
-        { "src": "images/shiv ji 08.jpg", "title": "Shiv Ji Statues" },
-        { "src": "images/shiv ji 09.png", "title": "Shiv Ji Statues" },
-        { "src": "images/shiv ji 10.jpg", "title": "Shiv Ji Statues" },
-        { "src": "images/hanumaan ji marble murty 01.jpg", "title": "Hanuman Ji murtys" },
-        { "src": "images/hanumaan ji marble murty 02.jpeg", "title": "Hanuman Ji murtys" },
-        { "src": "images/hanumaan ji marble murty 03.jpg", "title": "Hanuman Ji murtys" },
-        { "src": "images/hanumaan ji marble murty 04.jpg", "title": "Hanuman Ji murtys" },
-        { "src": "images/hanumaan ji marble murty 05.jpg", "title": "Hanuman Ji murtys" },
-        { "src": "images/hanumaan ji marble murty 06.jpg", "title": "Hanuman Ji murtys" },
-        { "src": "images/hanumaan ji marble murty 07.jpg", "title": "Hanuman Ji murtys" },
-        { "src": "images/hanumaan ji marble murty 08.jpg", "title": "Hanuman Ji murtys" },
-        { "src": "images/hanumaan ji marble murty 09.jpg", "title": "Hanuman Ji murtys" },
-        { "src": "images/hanumaan ji marble murty 10.jpg", "title": "Hanuman Ji murtys" },
-        { "src": "images/GANGA MAA MARBLE MURTY 01.jpg", "title": "Ganga Maa Murty" },
-        { "src": "images/GANGA MAA MARBLE MURTY 02.jpg", "title": "Ganga Maa Murty" },
-        { "src": "images/GANGA MAA MARBLE MURTY 03.png", "title": "Ganga Maa Murty" },
-        { "src": "images/GANGA MAA MARBLE MURTY 04.jpg", "title": "Ganga Maa Murty" },
-        { "src": "images/GANGA MAA MARBLE MURTY 05.jpg", "title": "Ganga Maa Murty" },
-        { "src": "images/Lakshmi narayan ji marble murty 01.jpg", "title": "Lakshmi Narayan Ji Murty" },
-        { "src": "images/Lakshmi narayan ji marble murty 02 .jpeg.jpg", "title": "Lakshmi Narayan Ji Murty" },
-        { "src": "images/Lakshmi narayan ji marble murty 03 .jpeg.jpg", "title": "Lakshmi Narayan Ji Murty" },
-        { "src": "images/Lakshmi narayan ji marble murty 04 .jpeg.jpg", "title": "Lakshmi Narayan Ji Murty" },
-        { "src": "images/Lakshmi narayan ji marble murty 05.jpeg.jpg", "title": "Lakshmi Narayan Ji Murty" },
-        { "src": "images/Lakshmi narayan ji marble murty 06 .jpeg.jpg", "title": "Lakshmi Narayan Ji Murty" },
-        { "src": "images/Lakshmi narayan ji marble murty 08 .jpeg.jpg", "title": "Lakshmi Narayan Ji Murty" },
-        { "src": "images/Lakshmi narayan ji marble murty 09 .jpeg.jpg", "title": "Lakshmi Narayan Ji Murty" },
-        { "src": "images/BHAGWAN PARSHURAM JI MARBLE MURTY 01.jpg", "title": "Parshuram Ji Murty" },
-        { "src": "images/BHAGWAN PARSHURAM JI MARBLE MURTY 02.jpg", "title": "Parshuram Ji Murty" },
-        { "src": "images/BHAGWAN PARSHURAM JI MARBLE MURTY 03.jpg", "title": "Parshuram Ji Murty" },
-        { "src": "images/BHAGWAN PARSHURAM JI MARBLE MURTY 04.jpg", "title": "Parshuram Ji Murty" },
-        { "src": "images/BHAGWAN PARSHURAM JI MARBLE MURTY 05.jpg", "title": "Parshuram Ji Murty" },
-        { "src": "images/BHAGWAN PARSHURAM JI MARBLE MURTY 06.jpg", "title": "Parshuram Ji Murty" },
-        { "src": "images/BHAGWAN PARSHURAM JI MARBLE MURTY 07.jpg", "title": "Parshuram Ji Murty" },
-        { "src": "images/BHAGWAN PARSHURAM JI MARBLE MURTY 08.jpg", "title": "Parshuram Ji Murty" },
-        { "src": "images/MARBLE BENCH 01.jpg", "title": "Marble Bench" },
-        { "src": "images/MARBLE BENCH 02.jpg", "title": "Marble Bench" },
-        { "src": "images/MARBLE BENCH 03.jpg", "title": "Marble Bench" },
-        { "src": "images/MARBLE BENCH 04.jpg", "title": "Marble Bench" },
-        { "src": "images/MARBLE BENCH 05.jpg", "title": "Marble Bench" },
-        { "src": "images/MARBLE BENCH 06.jpg", "title": "Marble Bench" },
-        { "src": "images/MARBLE BENCH 07.jpg", "title": "Marble Bench" },
-        { "src": "images/MARBLE BENCH 08.png", "title": "Marble Bench" },
-        { "src": "images/MARBLE BENCH 09.jpg", "title": "Marble Bench" },
-        { "src": "images/MARBLE BENCH 10.jpg", "title": "Marble Bench" },
-        { "src": "images/MARBLE BENCH 11.jpg", "title": "Marble Bench" },
-        { "src": "images/MARBLE BENCH 12.jpg", "title": "Marble Bench" },
-        { "src": "images/MARBLE BENCH 13.jpg", "title": "Marble Bench" },
-        { "src": "images/MARBLE BENCH 14.jpg", "title": "Marble Bench" },
-        { "src": "images/MARBLE BENCH 15.jpg", "title": "Marble Bench" },
-        { "src": "images/MARBLE BENCH 16.jpg", "title": "Marble Bench" },
-        { "src": "images/MARBLE BENCH 17.jpg", "title": "Marble Bench" },
-        { "src": "images/MARBLE BENCH 18.jpg", "title": "Marble Bench" },
-        { "src": "images/MARBLE BENCH 19.jpg", "title": "Marble Bench" },
-        { "src": "images/MARBLE BENCH 20.jpg", "title": "Marble Bench" },
-        { "src": "images/MARBLE BENCH 21.jpg", "title": "Marble Bench" },
-        { "src": "images/MARBLE BENCH 22.jpg", "title": "Marble Bench" }
-    ];
+        {
+                "src": "images/BHAGWAN PARSHURAM JI MARBLE MURTY 01.jpg",
+                "title": "Parshuram Ji Murty"
+        },
+        {
+                "src": "images/BHAGWAN PARSHURAM JI MARBLE MURTY 02.jpg",
+                "title": "Parshuram Ji Murty"
+        },
+        {
+                "src": "images/BHAGWAN PARSHURAM JI MARBLE MURTY 03.jpg",
+                "title": "Parshuram Ji Murty"
+        },
+        {
+                "src": "images/BHAGWAN PARSHURAM JI MARBLE MURTY 04.jpg",
+                "title": "Parshuram Ji Murty"
+        },
+        {
+                "src": "images/BHAGWAN PARSHURAM JI MARBLE MURTY 05.jpg",
+                "title": "Parshuram Ji Murty"
+        },
+        {
+                "src": "images/BHAGWAN PARSHURAM JI MARBLE MURTY 06.jpg",
+                "title": "Parshuram Ji Murty"
+        },
+        {
+                "src": "images/BHAGWAN PARSHURAM JI MARBLE MURTY 07.jpg",
+                "title": "Parshuram Ji Murty"
+        },
+        {
+                "src": "images/BHAGWAN PARSHURAM JI MARBLE MURTY 08.jpg",
+                "title": "Parshuram Ji Murty"
+        },
+        {
+                "src": "images/GANGA MAA MARBLE MURTY 01.jpg",
+                "title": "Ganga Maa Murty"
+        },
+        {
+                "src": "images/GANGA MAA MARBLE MURTY 02.jpg",
+                "title": "Ganga Maa Murty"
+        },
+        {
+                "src": "images/GANGA MAA MARBLE MURTY 03.png",
+                "title": "Ganga Maa Murty"
+        },
+        {
+                "src": "images/GANGA MAA MARBLE MURTY 04.jpg",
+                "title": "Ganga Maa Murty"
+        },
+        {
+                "src": "images/GANGA MAA MARBLE MURTY 05.jpg",
+                "title": "Ganga Maa Murty"
+        },
+        {
+                "src": "images/Lakshmi narayan ji marble murty 01.jpg",
+                "title": "Lakshmi Narayan Ji Murty"
+        },
+        {
+                "src": "images/Lakshmi narayan ji marble murty 02 .jpeg.jpg",
+                "title": "Lakshmi Narayan Ji Murty"
+        },
+        {
+                "src": "images/Lakshmi narayan ji marble murty 03 .jpeg.jpg",
+                "title": "Lakshmi Narayan Ji Murty"
+        },
+        {
+                "src": "images/Lakshmi narayan ji marble murty 04 .jpeg.jpg",
+                "title": "Lakshmi Narayan Ji Murty"
+        },
+        {
+                "src": "images/Lakshmi narayan ji marble murty 05.jpeg.jpg",
+                "title": "Lakshmi Narayan Ji Murty"
+        },
+        {
+                "src": "images/Lakshmi narayan ji marble murty 06 .jpeg.jpg",
+                "title": "Lakshmi Narayan Ji Murty"
+        },
+        {
+                "src": "images/Lakshmi narayan ji marble murty 08 .jpeg.jpg",
+                "title": "Lakshmi Narayan Ji Murty"
+        },
+        {
+                "src": "images/Lakshmi narayan ji marble murty 09 .jpeg.jpg",
+                "title": "Lakshmi Narayan Ji Murty"
+        },
+        {
+                "src": "images/MARBLE BENCH 01.jpg",
+                "title": "Marble Bench"
+        },
+        {
+                "src": "images/MARBLE BENCH 02.jpg",
+                "title": "Marble Bench"
+        },
+        {
+                "src": "images/MARBLE BENCH 03.jpg",
+                "title": "Marble Bench"
+        },
+        {
+                "src": "images/MARBLE BENCH 04.jpg",
+                "title": "Marble Bench"
+        },
+        {
+                "src": "images/MARBLE BENCH 05.jpg",
+                "title": "Marble Bench"
+        },
+        {
+                "src": "images/MARBLE BENCH 06.jpg",
+                "title": "Marble Bench"
+        },
+        {
+                "src": "images/MARBLE BENCH 07.jpg",
+                "title": "Marble Bench"
+        },
+        {
+                "src": "images/MARBLE BENCH 08.png",
+                "title": "Marble Bench"
+        },
+        {
+                "src": "images/MARBLE BENCH 09.jpg",
+                "title": "Marble Bench"
+        },
+        {
+                "src": "images/MARBLE BENCH 10.jpg",
+                "title": "Marble Bench"
+        },
+        {
+                "src": "images/MARBLE BENCH 11.jpg",
+                "title": "Marble Bench"
+        },
+        {
+                "src": "images/MARBLE BENCH 12.jpg",
+                "title": "Marble Bench"
+        },
+        {
+                "src": "images/MARBLE BENCH 13.jpg",
+                "title": "Marble Bench"
+        },
+        {
+                "src": "images/MARBLE BENCH 14.jpg",
+                "title": "Marble Bench"
+        },
+        {
+                "src": "images/MARBLE BENCH 15.jpg",
+                "title": "Marble Bench"
+        },
+        {
+                "src": "images/MARBLE BENCH 16.jpg",
+                "title": "Marble Bench"
+        },
+        {
+                "src": "images/MARBLE BENCH 17.jpg",
+                "title": "Marble Bench"
+        },
+        {
+                "src": "images/MARBLE BENCH 18.jpg",
+                "title": "Marble Bench"
+        },
+        {
+                "src": "images/MARBLE BENCH 19.jpg",
+                "title": "Marble Bench"
+        },
+        {
+                "src": "images/MARBLE BENCH 20.jpg",
+                "title": "Marble Bench"
+        },
+        {
+                "src": "images/MARBLE BENCH 21.jpg",
+                "title": "Marble Bench"
+        },
+        {
+                "src": "images/MARBLE BENCH 22.jpg",
+                "title": "Marble Bench"
+        },
+        {
+                "src": "images/fountain 01.jpg",
+                "title": "Stone Fountains"
+        },
+        {
+                "src": "images/fountain 02.jpg",
+                "title": "Stone Fountains"
+        },
+        {
+                "src": "images/fountain 03.jpg",
+                "title": "Stone Fountains"
+        },
+        {
+                "src": "images/fountain 04.jpg",
+                "title": "Stone Fountains"
+        },
+        {
+                "src": "images/fountain 06.jpg",
+                "title": "Stone Fountains"
+        },
+        {
+                "src": "images/fountain 07.jpg",
+                "title": "Stone Fountains"
+        },
+        {
+                "src": "images/fountain 08.jpg",
+                "title": "Stone Fountains"
+        },
+        {
+                "src": "images/fountain 09.jpg",
+                "title": "Stone Fountains"
+        },
+        {
+                "src": "images/fountain 10.jpg",
+                "title": "Stone Fountains"
+        },
+        {
+                "src": "images/fountain 11.jpg",
+                "title": "Stone Fountains"
+        },
+        {
+                "src": "images/fountain 12.jpg",
+                "title": "Stone Fountains"
+        },
+        {
+                "src": "images/fountain 13.jpg",
+                "title": "Stone Fountains"
+        },
+        {
+                "src": "images/fountain 14.jpg",
+                "title": "Stone Fountains"
+        },
+        {
+                "src": "images/fountain 15.jpg",
+                "title": "Stone Fountains"
+        },
+        {
+                "src": "images/fountain 16.jpg",
+                "title": "Stone Fountains"
+        },
+        {
+                "src": "images/fountain 17.jpg",
+                "title": "Stone Fountains"
+        },
+        {
+                "src": "images/fountain 18.jpg",
+                "title": "Stone Fountains"
+        },
+        {
+                "src": "images/fountain 19.jpg",
+                "title": "Stone Fountains"
+        },
+        {
+                "src": "images/fountain 20.jpg",
+                "title": "Stone Fountains"
+        },
+        {
+                "src": "images/fountain 21.jpg",
+                "title": "Stone Fountains"
+        },
+        {
+                "src": "images/fountain 22.jpg",
+                "title": "Stone Fountains"
+        },
+        {
+                "src": "images/fountin 05.jpg",
+                "title": "Stone Fountains"
+        },
+        {
+                "src": "images/ganesh ji  21.jpg.png",
+                "title": "Ganesh murtys"
+        },
+        {
+                "src": "images/ganesh ji  22 .jpg.png",
+                "title": "Ganesh murtys"
+        },
+        {
+                "src": "images/ganesh ji  23 .jpg.png",
+                "title": "Ganesh murtys"
+        },
+        {
+                "src": "images/ganesh ji  24 .jpg.png",
+                "title": "Ganesh murtys"
+        },
+        {
+                "src": "images/ganesh ji  25 .png",
+                "title": "Ganesh murtys"
+        },
+        {
+                "src": "images/ganesh ji  26 .png",
+                "title": "Ganesh murtys"
+        },
+        {
+                "src": "images/ganesh ji 01.jpg",
+                "title": "Ganesh murtys"
+        },
+        {
+                "src": "images/ganesh ji 02.jpg",
+                "title": "Ganesh murtys"
+        },
+        {
+                "src": "images/ganesh ji 03.jpg",
+                "title": "Ganesh murtys"
+        },
+        {
+                "src": "images/ganesh ji 04.jpg",
+                "title": "Ganesh murtys"
+        },
+        {
+                "src": "images/ganesh ji 05.jpg",
+                "title": "Ganesh murtys"
+        },
+        {
+                "src": "images/ganesh ji 06.jpg",
+                "title": "Ganesh murtys"
+        },
+        {
+                "src": "images/ganesh ji 07.jpg",
+                "title": "Ganesh murtys"
+        },
+        {
+                "src": "images/ganesh ji 08.jpg",
+                "title": "Ganesh murtys"
+        },
+        {
+                "src": "images/ganesh ji 09.jpg",
+                "title": "Ganesh murtys"
+        },
+        {
+                "src": "images/ganesh ji 10.jpg",
+                "title": "Ganesh murtys"
+        },
+        {
+                "src": "images/ganesh ji 11.jpg",
+                "title": "Ganesh murtys"
+        },
+        {
+                "src": "images/ganesh ji 12.jpg",
+                "title": "Ganesh murtys"
+        },
+        {
+                "src": "images/ganesh ji 17.jpg.png",
+                "title": "Ganesh murtys"
+        },
+        {
+                "src": "images/ganesh ji 18 .jpg.png",
+                "title": "Ganesh murtys"
+        },
+        {
+                "src": "images/ganesh ji 19 .png",
+                "title": "Ganesh murtys"
+        },
+        {
+                "src": "images/ganesh ji 20 .jpg.png",
+                "title": "Ganesh murtys"
+        },
+        {
+                "src": "images/hanumaan ji marble murty 01.jpg",
+                "title": "Hanuman Ji murtys"
+        },
+        {
+                "src": "images/hanumaan ji marble murty 02.jpeg",
+                "title": "Hanuman Ji murtys"
+        },
+        {
+                "src": "images/hanumaan ji marble murty 03.jpg",
+                "title": "Hanuman Ji murtys"
+        },
+        {
+                "src": "images/hanumaan ji marble murty 04.jpg",
+                "title": "Hanuman Ji murtys"
+        },
+        {
+                "src": "images/hanumaan ji marble murty 05.jpg",
+                "title": "Hanuman Ji murtys"
+        },
+        {
+                "src": "images/hanumaan ji marble murty 06.jpg",
+                "title": "Hanuman Ji murtys"
+        },
+        {
+                "src": "images/hanumaan ji marble murty 07.jpg",
+                "title": "Hanuman Ji murtys"
+        },
+        {
+                "src": "images/hanumaan ji marble murty 08.jpg",
+                "title": "Hanuman Ji murtys"
+        },
+        {
+                "src": "images/hanumaan ji marble murty 09.jpg",
+                "title": "Hanuman Ji murtys"
+        },
+        {
+                "src": "images/hanumaan ji marble murty 10.jpg",
+                "title": "Hanuman Ji murtys"
+        },
+        {
+                "src": "images/hanumaan ji marble murty 11.jpg.png",
+                "title": "Hanuman Ji murtys"
+        },
+        {
+                "src": "images/hanumaan ji marble murty 12 .jpg.png",
+                "title": "Hanuman Ji murtys"
+        },
+        {
+                "src": "images/hanumaan ji marble murty 13 .jpg.png",
+                "title": "Hanuman Ji murtys"
+        },
+        {
+                "src": "images/hanumaan ji marble murty 14 .jpg.png",
+                "title": "Hanuman Ji murtys"
+        },
+        {
+                "src": "images/hanumaan ji marble murty 15 .jpg.png",
+                "title": "Hanuman Ji murtys"
+        },
+        {
+                "src": "images/hanumaan ji marble murty 16 .jpg.png",
+                "title": "Hanuman Ji murtys"
+        },
+        {
+                "src": "images/shiv ji  (1).png",
+                "title": "Shiv Ji Statues"
+        },
+        {
+                "src": "images/shiv ji  (10).png",
+                "title": "Shiv Ji Statues"
+        },
+        {
+                "src": "images/shiv ji  (11).png",
+                "title": "Shiv Ji Statues"
+        },
+        {
+                "src": "images/shiv ji  (13).png",
+                "title": "Shiv Ji Statues"
+        },
+        {
+                "src": "images/shiv ji  (2).png",
+                "title": "Shiv Ji Statues"
+        },
+        {
+                "src": "images/shiv ji  (3).png",
+                "title": "Shiv Ji Statues"
+        },
+        {
+                "src": "images/shiv ji  (4).png",
+                "title": "Shiv Ji Statues"
+        },
+        {
+                "src": "images/shiv ji  (5).png",
+                "title": "Shiv Ji Statues"
+        },
+        {
+                "src": "images/shiv ji  (6).png",
+                "title": "Shiv Ji Statues"
+        },
+        {
+                "src": "images/shiv ji  (7).png",
+                "title": "Shiv Ji Statues"
+        },
+        {
+                "src": "images/shiv ji  (8).png",
+                "title": "Shiv Ji Statues"
+        },
+        {
+                "src": "images/shiv ji  (9).png",
+                "title": "Shiv Ji Statues"
+        }
+];
     // --- Premium Products Slider (CoverFlow 3D) ---
     const premiumData = [
         { 
@@ -338,7 +701,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { 
             tag: "#Divine", titleLine1: "SHIV JI MURTY", titleLine2: "– HAND PAINTED",
             desc: "A mesmerizing representation of Lord Shiva, featuring hand-painted traditional motifs.",
-            img: "images/shiv ji 01.png" 
+            img: "images/shiv ji  (1).png" 
         },
         { 
             tag: "#Divine", titleLine1: "LAKSHMI NARAYAN", titleLine2: "– SACRED",

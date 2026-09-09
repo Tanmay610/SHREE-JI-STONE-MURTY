@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Multipliers for different sizes (rough estimates for demo)
     const sizeMultipliers = {
-        "6": 0.5,   // half price
         "12": 1.0,  // base price
         "18": 1.8,
         "24": 2.8,

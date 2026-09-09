@@ -1226,3 +1226,88 @@ a {
     }
 }
 
+
+.instagram-float {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 4px 12px rgba(225, 48, 108, 0.4);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border: none;
+    animation: none;
+}
+.instagram-float i {
+    font-size: 32px;
+}
+.instagram-float:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(225, 48, 108, 0.6);
+    color: #fff;
+}
+
+.facebook-float {
+    position: fixed;
+    bottom: 170px;
+    right: 30px;
+    background: #1877F2;
+    color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 4px 12px rgba(24, 119, 242, 0.4);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border: none;
+    animation: none;
+}
+.facebook-float i {
+    font-size: 32px;
+}
+.facebook-float:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(24, 119, 242, 0.6);
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+    .instagram-float {
+        bottom: 155px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    .facebook-float {
+        bottom: 215px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    .instagram-float i, .facebook-float i {
+        font-size: 28px;
+    }
+}
+
+.instagram-float svg, .facebook-float svg {
+    width: 32px;
+    height: 32px;
+}
+@media (max-width: 991px) {
+    .instagram-float svg, .facebook-float svg {
+        width: 28px;
+        height: 28px;
+    }
+}
