@@ -66,7 +66,11 @@ for file in files:
     if matched_cat:
         # Generate mock details based on file name or index for consistency
         sku = f"SJM-{matched_cat['id'][:3].upper()}-{str(abs(hash(file)) % 9999).zfill(4)}"
-        base_price = 15000 if matched_cat["id"] != "fountain" else 35000
+        base_price = 15000
+        if matched_cat["id"] == "fountain":
+            base_price = 35000
+        elif matched_cat["id"] == "bal_radha_krishna":
+            base_price = 22000
         material = "Premium Makrana Marble" if matched_cat["id"] != "fountain" else "Natural Sandstone & Marble"
         
         products_data.append({
