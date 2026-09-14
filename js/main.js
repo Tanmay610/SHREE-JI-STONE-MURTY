@@ -171,10 +171,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 if (sortType === 'price-asc' || sortType === 'price-desc') {
                     cardsArray.sort((a, b) => {
-                        const priceStrA = a.querySelector('.card-price strong')?.textContent || '0';
-                        const priceStrB = b.querySelector('.card-price strong')?.textContent || '0';
-                        const priceA = parseInt(priceStrA.replace(/[^0-9]/g, '')) || 0;
-                        const priceB = parseInt(priceStrB.replace(/[^0-9]/g, '')) || 0;
+                        const priceA = parseInt(a.getAttribute('data-price')) || 0;
+                        const priceB = parseInt(b.getAttribute('data-price')) || 0;
                         
                         return sortType === 'price-asc' ? priceA - priceB : priceB - priceA;
                     });

@@ -1,19 +1,27 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Shared Data for Search
-    const searchData = [
-        { title: "Stone Fountain – Masterpiece", tag: "Fountain", img: "images/fountain 04.jpg", url: "collections.html" },
-        { title: "Stone Fountain – Luxury", tag: "Fountain", img: "images/fountain 03.jpg", url: "collections.html" },
-        { title: "Stone Fountain – Heritage", tag: "Fountain", img: "images/fountain 11.jpg", url: "collections.html" },
-        { title: "Ganesh Murty – Makrana", tag: "Statue", img: "images/ganesh ji 18 .jpg.png", url: "collections.html" },
-        { title: "Shiv Ji Murty – Hand Painted", tag: "Statue", img: "images/shiv ji 01.png", url: "collections.html" },
-        { title: "Lakshmi Narayan – Sacred", tag: "Statue", img: "images/LAKSHMI JI AND NARAYAN JI MARBLE MURTY  (1).png", url: "collections.html" },
-        { title: "Goutam Buddha Marble Murty", tag: "Statue", img: "images/GOUTAM BUDHA MARBLE MURTY 09.jpg", url: "collections.html" },
-        { title: "Hanuman Ji Marble Murty", tag: "Statue", img: "images/hanumaan ji marble murty 01.jpg", url: "collections.html" },
-        { title: "Mahaveer Jain Marble Murty", tag: "Statue", img: "images/MAHAVEER JAIN MARBLE MURTY 01 (1).jpg", url: "collections.html" },
-        { title: "Kali Mata Ji Marble Murty", tag: "Statue", img: "images/KALI MATA JI MARBLE MURTY 01.jpg", url: "collections.html" },
-        { title: "Parwati Mata Ji Marble Murty", tag: "Statue", img: "images/PARWATI MATA JI MARBLE MURTY 01.jpg", url: "collections.html" },
-        { title: "Marble Bench", tag: "Garden", img: "images/MARBLE BENCH 22.jpg", url: "collections.html" }
-    ];
+    // Dynamic Data for Search
+    let searchData = [];
+
+    // Asynchronously load products data so search works on all pages
+    const script = document.createElement('script');
+    script.src = 'js/products_data.js?v=8'; // bumped cache version
+    script.onload = () => {
+        if (window.PRODUCTS_DATA) {
+            searchData = window.PRODUCTS_DATA.map(p => {
+                let tag = "Statue";
+                if (p.category === "fountain") tag = "Fountain";
+                if (p.category === "bench") tag = "Garden";
+                
+                return {
+                    title: p.title,
+                    tag: tag,
+                    img: p.image,
+                    url: `product.html?sku=${p.sku}`
+                };
+            });
+        }
+    };
+    document.head.appendChild(script);
 
     const searchBtn = document.querySelector('.search-btn');
     const searchModal = document.getElementById('search-modal');

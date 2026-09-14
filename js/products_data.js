@@ -1,6 +1,6 @@
 window.PRODUCTS_DATA = [
     {
-        "sku": "SJM-BAL-7988",
+        "sku": "SJM-BAL-6406",
         "title": " Radha and Krishna ji",
         "image": "images/BAL GOPAL RADHA AND KRISHNA JI MARVBLE MURTY 01.jpg",
         "basePrice": 22000,
@@ -8,7 +8,7 @@ window.PRODUCTS_DATA = [
         "category": "bal_radha_krishna"
     },
     {
-        "sku": "SJM-BAL-4374",
+        "sku": "SJM-BAL-5450",
         "title": " Radha and Krishna ji",
         "image": "images/BAL GOPAL RADHA AND KRISHNA JI MARVBLE MURTY 02.jpg",
         "basePrice": 22000,
@@ -16,7 +16,7 @@ window.PRODUCTS_DATA = [
         "category": "bal_radha_krishna"
     },
     {
-        "sku": "SJM-BAL-0736",
+        "sku": "SJM-BAL-7700",
         "title": " Radha and Krishna ji",
         "image": "images/BAL GOPAL RADHA AND KRISHNA JI MARVBLE MURTY 03 .jpg",
         "basePrice": 22000,
@@ -24,7 +24,7 @@ window.PRODUCTS_DATA = [
         "category": "bal_radha_krishna"
     },
     {
-        "sku": "SJM-BAL-7298",
+        "sku": "SJM-BAL-3976",
         "title": " Radha and Krishna ji",
         "image": "images/BAL GOPAL RADHA AND KRISHNA JI MARVBLE MURTY 04 .jpg",
         "basePrice": 22000,
@@ -32,7 +32,7 @@ window.PRODUCTS_DATA = [
         "category": "bal_radha_krishna"
     },
     {
-        "sku": "SJM-BAL-2637",
+        "sku": "SJM-BAL-6362",
         "title": " Radha and Krishna ji",
         "image": "images/BAL GOPAL RADHA AND KRISHNA JI MARVBLE MURTY 05.jpg",
         "basePrice": 22000,
@@ -40,7 +40,7 @@ window.PRODUCTS_DATA = [
         "category": "bal_radha_krishna"
     },
     {
-        "sku": "SJM-BAL-8482",
+        "sku": "SJM-BAL-6521",
         "title": " Radha and Krishna ji",
         "image": "images/BAL GOPAL RADHA AND KRISHNA JI MARVBLE MURTY 06.jpg",
         "basePrice": 22000,
@@ -48,7 +48,7 @@ window.PRODUCTS_DATA = [
         "category": "bal_radha_krishna"
     },
     {
-        "sku": "SJM-BAL-0794",
+        "sku": "SJM-BAL-2642",
         "title": " Radha and Krishna ji",
         "image": "images/BAL GOPAL RADHA AND KRISHNA JI MARVBLE MURTY 07.jpg",
         "basePrice": 22000,
@@ -56,7 +56,7 @@ window.PRODUCTS_DATA = [
         "category": "bal_radha_krishna"
     },
     {
-        "sku": "SJM-BAL-0073",
+        "sku": "SJM-BAL-4114",
         "title": " Radha and Krishna ji",
         "image": "images/BAL GOPAL RADHA AND KRISHNA JI MARVBLE MURTY 08 .jpg",
         "basePrice": 22000,
@@ -64,7 +64,7 @@ window.PRODUCTS_DATA = [
         "category": "bal_radha_krishna"
     },
     {
-        "sku": "SJM-PAR-2881",
+        "sku": "SJM-PAR-4237",
         "title": "Parshuram Ji",
         "image": "images/BHAGWAN PARSHURAM JI MARBLE MURTY 01.jpg",
         "basePrice": 15000,
@@ -72,7 +72,7 @@ window.PRODUCTS_DATA = [
         "category": "parshuram"
     },
     {
-        "sku": "SJM-PAR-0702",
+        "sku": "SJM-PAR-0660",
         "title": "Parshuram Ji",
         "image": "images/BHAGWAN PARSHURAM JI MARBLE MURTY 02.jpg",
         "basePrice": 15000,
@@ -80,7 +80,7 @@ window.PRODUCTS_DATA = [
         "category": "parshuram"
     },
     {
-        "sku": "SJM-PAR-7631",
+        "sku": "SJM-PAR-7132",
         "title": "Parshuram Ji",
         "image": "images/BHAGWAN PARSHURAM JI MARBLE MURTY 03.jpg",
         "basePrice": 15000,
@@ -88,7 +88,7 @@ window.PRODUCTS_DATA = [
         "category": "parshuram"
     },
     {
-        "sku": "SJM-PAR-2781",
+        "sku": "SJM-PAR-8350",
         "title": "Parshuram Ji",
         "image": "images/BHAGWAN PARSHURAM JI MARBLE MURTY 04.jpg",
         "basePrice": 15000,
@@ -96,7 +96,7 @@ window.PRODUCTS_DATA = [
         "category": "parshuram"
     },
     {
-        "sku": "SJM-PAR-7217",
+        "sku": "SJM-PAR-6502",
         "title": "Parshuram Ji",
         "image": "images/BHAGWAN PARSHURAM JI MARBLE MURTY 05.jpg",
         "basePrice": 15000,
@@ -104,7 +104,7 @@ window.PRODUCTS_DATA = [
         "category": "parshuram"
     },
     {
-        "sku": "SJM-PAR-3994",
+        "sku": "SJM-PAR-4708",
         "title": "Parshuram Ji",
         "image": "images/BHAGWAN PARSHURAM JI MARBLE MURTY 06.jpg",
         "basePrice": 15000,
@@ -112,7 +112,7 @@ window.PRODUCTS_DATA = [
         "category": "parshuram"
     },
     {
-        "sku": "SJM-PAR-2015",
+        "sku": "SJM-PAR-6854",
         "title": "Parshuram Ji",
         "image": "images/BHAGWAN PARSHURAM JI MARBLE MURTY 07.jpg",
         "basePrice": 15000,
@@ -120,7 +120,7 @@ window.PRODUCTS_DATA = [
         "category": "parshuram"
     },
     {
-        "sku": "SJM-PAR-6134",
+        "sku": "SJM-PAR-3038",
         "title": "Parshuram Ji",
         "image": "images/BHAGWAN PARSHURAM JI MARBLE MURTY 08.jpg",
         "basePrice": 15000,
@@ -128,287 +128,287 @@ window.PRODUCTS_DATA = [
         "category": "parshuram"
     },
     {
-        "sku": "SJM-DAT-7063",
+        "sku": "SJM-DAT-6791",
         "title": "Datta Maharaj",
         "image": "images/DATTA MAHARAJ MARBLE MURTY 01.jpg",
-        "basePrice": 15000,
+        "basePrice": 24500,
         "material": "Premium Makrana Marble",
         "category": "datta"
     },
     {
-        "sku": "SJM-DAT-3646",
+        "sku": "SJM-DAT-9126",
         "title": "Datta Maharaj",
         "image": "images/DATTA MAHARAJ MARBLE MURTY 02.jpg",
-        "basePrice": 15000,
+        "basePrice": 24500,
         "material": "Premium Makrana Marble",
         "category": "datta"
     },
     {
-        "sku": "SJM-DAT-4252",
+        "sku": "SJM-DAT-5237",
         "title": "Datta Maharaj",
         "image": "images/DATTA MAHARAJ MARBLE MURTY 03.jpg",
-        "basePrice": 15000,
+        "basePrice": 24500,
         "material": "Premium Makrana Marble",
         "category": "datta"
     },
     {
-        "sku": "SJM-DAT-6709",
+        "sku": "SJM-DAT-6245",
         "title": "Datta Maharaj",
         "image": "images/DATTA MAHARAJ MARBLE MURTY 04.jpg",
-        "basePrice": 15000,
+        "basePrice": 24500,
         "material": "Premium Makrana Marble",
         "category": "datta"
     },
     {
-        "sku": "SJM-DAT-8085",
+        "sku": "SJM-DAT-7704",
         "title": "Datta Maharaj",
         "image": "images/DATTA MAHARAJ MARBLE MURTY 05.jpg",
-        "basePrice": 15000,
+        "basePrice": 24500,
         "material": "Premium Makrana Marble",
         "category": "datta"
     },
     {
-        "sku": "SJM-DAT-1766",
+        "sku": "SJM-DAT-3753",
         "title": "Datta Maharaj",
         "image": "images/DATTA MAHARAJ MARBLE MURTY 07.jpg",
-        "basePrice": 15000,
+        "basePrice": 24500,
         "material": "Premium Makrana Marble",
         "category": "datta"
     },
     {
-        "sku": "SJM-DAT-3915",
+        "sku": "SJM-DAT-3582",
         "title": "Datta Maharaj",
         "image": "images/DATTA MAHARAJ MARBLE MURTY 09.jpg",
-        "basePrice": 15000,
+        "basePrice": 24500,
         "material": "Premium Makrana Marble",
         "category": "datta"
     },
     {
-        "sku": "SJM-DAT-3581",
+        "sku": "SJM-DAT-6249",
         "title": "Datta Maharaj",
         "image": "images/DATTA MAHARAJ MARBLE MURTY 10.jpg",
-        "basePrice": 15000,
+        "basePrice": 24500,
         "material": "Premium Makrana Marble",
         "category": "datta"
     },
     {
-        "sku": "SJM-DAT-5664",
+        "sku": "SJM-DAT-9694",
         "title": "Datta Maharaj",
         "image": "images/DATTA MAHARAJ MARBLE MURTY 11.jpg",
-        "basePrice": 15000,
+        "basePrice": 24500,
         "material": "Premium Makrana Marble",
         "category": "datta"
     },
     {
-        "sku": "SJM-DAT-8454",
+        "sku": "SJM-DAT-8869",
         "title": "Datta Maharaj",
         "image": "images/DATTA MAHARAJ MARBLE MURTY 13.jpg",
-        "basePrice": 15000,
+        "basePrice": 24500,
         "material": "Premium Makrana Marble",
         "category": "datta"
     },
     {
-        "sku": "SJM-DUR-4944",
+        "sku": "SJM-DUR-5212",
         "title": "Durga Mataji",
         "image": "images/DURGA MATA JI MARBLE MURTY 01.jpg",
-        "basePrice": 15000,
+        "basePrice": 18500,
         "material": "Premium Makrana Marble",
         "category": "durga"
     },
     {
-        "sku": "SJM-DUR-6783",
+        "sku": "SJM-DUR-9122",
         "title": "Durga Mataji",
         "image": "images/DURGA MATA JI MARBLE MURTY 02.jpg",
-        "basePrice": 15000,
+        "basePrice": 18500,
         "material": "Premium Makrana Marble",
         "category": "durga"
     },
     {
-        "sku": "SJM-DUR-7556",
+        "sku": "SJM-DUR-8160",
         "title": "Durga Mataji",
         "image": "images/DURGA MATA JI MARBLE MURTY 03.jpg",
-        "basePrice": 15000,
+        "basePrice": 18500,
         "material": "Premium Makrana Marble",
         "category": "durga"
     },
     {
-        "sku": "SJM-DUR-0371",
+        "sku": "SJM-DUR-1431",
         "title": "Durga Mataji",
         "image": "images/DURGA MATA JI MARBLE MURTY 04.jpg",
-        "basePrice": 15000,
+        "basePrice": 18500,
         "material": "Premium Makrana Marble",
         "category": "durga"
     },
     {
-        "sku": "SJM-DUR-1858",
+        "sku": "SJM-DUR-5374",
         "title": "Durga Mataji",
         "image": "images/DURGA MATA JI MARBLE MURTY 05 .jpg",
-        "basePrice": 15000,
+        "basePrice": 18500,
         "material": "Premium Makrana Marble",
         "category": "durga"
     },
     {
-        "sku": "SJM-DUR-8379",
+        "sku": "SJM-DUR-6019",
         "title": "Durga Mataji",
         "image": "images/DURGA MATA JI MARBLE MURTY 06.jpg",
-        "basePrice": 15000,
+        "basePrice": 18500,
         "material": "Premium Makrana Marble",
         "category": "durga"
     },
     {
-        "sku": "SJM-DUR-2556",
+        "sku": "SJM-DUR-9541",
         "title": "Durga Mataji",
         "image": "images/DURGA MATA JI MARBLE MURTY 07.jpg",
-        "basePrice": 15000,
+        "basePrice": 18500,
         "material": "Premium Makrana Marble",
         "category": "durga"
     },
     {
-        "sku": "SJM-DUR-4371",
+        "sku": "SJM-DUR-1453",
         "title": "Durga Mataji",
         "image": "images/DURGA MATA JI MARBLE MURTY 08.jpg",
-        "basePrice": 15000,
+        "basePrice": 18500,
         "material": "Premium Makrana Marble",
         "category": "durga"
     },
     {
-        "sku": "SJM-DUR-5308",
+        "sku": "SJM-DUR-1029",
         "title": "Durga Mataji",
         "image": "images/DURGA MATA JI MARBLE MURTY 10.jpg",
-        "basePrice": 15000,
+        "basePrice": 18500,
         "material": "Premium Makrana Marble",
         "category": "durga"
     },
     {
-        "sku": "SJM-DUR-5752",
+        "sku": "SJM-DUR-2752",
         "title": "Durga Mataji",
         "image": "images/DURGA MATA JI MARBLE MURTY 11.jpg",
-        "basePrice": 15000,
+        "basePrice": 18500,
         "material": "Premium Makrana Marble",
         "category": "durga"
     },
     {
-        "sku": "SJM-DUR-9679",
+        "sku": "SJM-DUR-6888",
         "title": "Durga Mataji",
         "image": "images/DURGA MATA JI MARBLE MURTY 12.jpg",
-        "basePrice": 15000,
+        "basePrice": 18500,
         "material": "Premium Makrana Marble",
         "category": "durga"
     },
     {
-        "sku": "SJM-DUR-0591",
+        "sku": "SJM-DUR-0496",
         "title": "Durga Mataji",
         "image": "images/DURGA MATA JI MARBLE MURTY 13 .jpg",
-        "basePrice": 15000,
+        "basePrice": 18500,
         "material": "Premium Makrana Marble",
         "category": "durga"
     },
     {
-        "sku": "SJM-DUR-8278",
+        "sku": "SJM-DUR-2724",
         "title": "Durga Mataji",
         "image": "images/DURGA MATA JI MARBLE MURTY 14 .jpg",
-        "basePrice": 15000,
+        "basePrice": 18500,
         "material": "Premium Makrana Marble",
         "category": "durga"
     },
     {
-        "sku": "SJM-DUR-1671",
+        "sku": "SJM-DUR-5074",
         "title": "Durga Mataji",
         "image": "images/DURGA MATA JI MARBLE MURTY 15 .jpg",
-        "basePrice": 15000,
+        "basePrice": 18500,
         "material": "Premium Makrana Marble",
         "category": "durga"
     },
     {
-        "sku": "SJM-DUR-4066",
+        "sku": "SJM-DUR-1079",
         "title": "Durga Mataji",
         "image": "images/DURGA MATA JI MARBLE MURTY 16 .jpg",
-        "basePrice": 15000,
+        "basePrice": 18500,
         "material": "Premium Makrana Marble",
         "category": "durga"
     },
     {
-        "sku": "SJM-GAN-2002",
+        "sku": "SJM-GAN-7817",
         "title": "Ganga Maa",
         "image": "images/GANGA MAA MARBLE MURTY  (1).png",
-        "basePrice": 15000,
+        "basePrice": 20500,
         "material": "Premium Makrana Marble",
         "category": "ganga"
     },
     {
-        "sku": "SJM-GAN-3218",
+        "sku": "SJM-GAN-3404",
         "title": "Ganga Maa",
         "image": "images/GANGA MAA MARBLE MURTY  (10).png",
-        "basePrice": 15000,
+        "basePrice": 20500,
         "material": "Premium Makrana Marble",
         "category": "ganga"
     },
     {
-        "sku": "SJM-GAN-2629",
+        "sku": "SJM-GAN-7147",
         "title": "Ganga Maa",
         "image": "images/GANGA MAA MARBLE MURTY  (2).png",
-        "basePrice": 15000,
+        "basePrice": 20500,
         "material": "Premium Makrana Marble",
         "category": "ganga"
     },
     {
-        "sku": "SJM-GAN-1552",
+        "sku": "SJM-GAN-7600",
         "title": "Ganga Maa",
         "image": "images/GANGA MAA MARBLE MURTY  (3).png",
-        "basePrice": 15000,
+        "basePrice": 20500,
         "material": "Premium Makrana Marble",
         "category": "ganga"
     },
     {
-        "sku": "SJM-GAN-9133",
+        "sku": "SJM-GAN-8075",
         "title": "Ganga Maa",
         "image": "images/GANGA MAA MARBLE MURTY  (4).png",
-        "basePrice": 15000,
+        "basePrice": 20500,
         "material": "Premium Makrana Marble",
         "category": "ganga"
     },
     {
-        "sku": "SJM-GAN-8983",
+        "sku": "SJM-GAN-6409",
         "title": "Ganga Maa",
         "image": "images/GANGA MAA MARBLE MURTY  (5).png",
-        "basePrice": 15000,
+        "basePrice": 20500,
         "material": "Premium Makrana Marble",
         "category": "ganga"
     },
     {
-        "sku": "SJM-GAN-1191",
+        "sku": "SJM-GAN-4270",
         "title": "Ganga Maa",
         "image": "images/GANGA MAA MARBLE MURTY  (6).png",
-        "basePrice": 15000,
+        "basePrice": 20500,
         "material": "Premium Makrana Marble",
         "category": "ganga"
     },
     {
-        "sku": "SJM-GAN-5079",
+        "sku": "SJM-GAN-4460",
         "title": "Ganga Maa",
         "image": "images/GANGA MAA MARBLE MURTY  (7).png",
-        "basePrice": 15000,
+        "basePrice": 20500,
         "material": "Premium Makrana Marble",
         "category": "ganga"
     },
     {
-        "sku": "SJM-GAN-2252",
+        "sku": "SJM-GAN-8657",
         "title": "Ganga Maa",
         "image": "images/GANGA MAA MARBLE MURTY  (8).png",
-        "basePrice": 15000,
+        "basePrice": 20500,
         "material": "Premium Makrana Marble",
         "category": "ganga"
     },
     {
-        "sku": "SJM-GAN-5085",
+        "sku": "SJM-GAN-5700",
         "title": "Ganga Maa",
         "image": "images/GANGA MAA MARBLE MURTY  (9).png",
-        "basePrice": 15000,
+        "basePrice": 20500,
         "material": "Premium Makrana Marble",
         "category": "ganga"
     },
     {
-        "sku": "SJM-BUD-9177",
+        "sku": "SJM-BUD-1627",
         "title": "Gautam Buddha",
         "image": "images/GOUTAM BUDHA MARBLE MURTY 01.jpg",
         "basePrice": 15000,
@@ -416,7 +416,7 @@ window.PRODUCTS_DATA = [
         "category": "buddha"
     },
     {
-        "sku": "SJM-BUD-1373",
+        "sku": "SJM-BUD-7606",
         "title": "Gautam Buddha",
         "image": "images/GOUTAM BUDHA MARBLE MURTY 02.jpg",
         "basePrice": 15000,
@@ -424,7 +424,7 @@ window.PRODUCTS_DATA = [
         "category": "buddha"
     },
     {
-        "sku": "SJM-BUD-9990",
+        "sku": "SJM-BUD-7169",
         "title": "Gautam Buddha",
         "image": "images/GOUTAM BUDHA MARBLE MURTY 03.jpg",
         "basePrice": 15000,
@@ -432,7 +432,7 @@ window.PRODUCTS_DATA = [
         "category": "buddha"
     },
     {
-        "sku": "SJM-BUD-7388",
+        "sku": "SJM-BUD-3454",
         "title": "Gautam Buddha",
         "image": "images/GOUTAM BUDHA MARBLE MURTY 04.jpg",
         "basePrice": 15000,
@@ -440,7 +440,7 @@ window.PRODUCTS_DATA = [
         "category": "buddha"
     },
     {
-        "sku": "SJM-BUD-4698",
+        "sku": "SJM-BUD-1215",
         "title": "Gautam Buddha",
         "image": "images/GOUTAM BUDHA MARBLE MURTY 05.jpg",
         "basePrice": 15000,
@@ -448,7 +448,7 @@ window.PRODUCTS_DATA = [
         "category": "buddha"
     },
     {
-        "sku": "SJM-BUD-5093",
+        "sku": "SJM-BUD-3163",
         "title": "Gautam Buddha",
         "image": "images/GOUTAM BUDHA MARBLE MURTY 06.jpg",
         "basePrice": 15000,
@@ -456,7 +456,7 @@ window.PRODUCTS_DATA = [
         "category": "buddha"
     },
     {
-        "sku": "SJM-BUD-2250",
+        "sku": "SJM-BUD-7448",
         "title": "Gautam Buddha",
         "image": "images/GOUTAM BUDHA MARBLE MURTY 07.jpg",
         "basePrice": 15000,
@@ -464,7 +464,7 @@ window.PRODUCTS_DATA = [
         "category": "buddha"
     },
     {
-        "sku": "SJM-BUD-8391",
+        "sku": "SJM-BUD-1610",
         "title": "Gautam Buddha",
         "image": "images/GOUTAM BUDHA MARBLE MURTY 08.jpg",
         "basePrice": 15000,
@@ -472,7 +472,7 @@ window.PRODUCTS_DATA = [
         "category": "buddha"
     },
     {
-        "sku": "SJM-BUD-6386",
+        "sku": "SJM-BUD-0314",
         "title": "Gautam Buddha",
         "image": "images/GOUTAM BUDHA MARBLE MURTY 09.jpg",
         "basePrice": 15000,
@@ -480,7 +480,7 @@ window.PRODUCTS_DATA = [
         "category": "buddha"
     },
     {
-        "sku": "SJM-BUD-0083",
+        "sku": "SJM-BUD-0302",
         "title": "Gautam Buddha",
         "image": "images/GOUTAM BUDHA MARBLE MURTY 10.jpg",
         "basePrice": 15000,
@@ -488,7 +488,7 @@ window.PRODUCTS_DATA = [
         "category": "buddha"
     },
     {
-        "sku": "SJM-KAL-4938",
+        "sku": "SJM-KAL-9830",
         "title": "Kali Mataji",
         "image": "images/KALI MATA JI MARBLE MURTY  04 .jpg",
         "basePrice": 15000,
@@ -496,7 +496,7 @@ window.PRODUCTS_DATA = [
         "category": "kali"
     },
     {
-        "sku": "SJM-KAL-4689",
+        "sku": "SJM-KAL-5078",
         "title": "Kali Mataji",
         "image": "images/KALI MATA JI MARBLE MURTY  05 .jpg",
         "basePrice": 15000,
@@ -504,7 +504,7 @@ window.PRODUCTS_DATA = [
         "category": "kali"
     },
     {
-        "sku": "SJM-KAL-8637",
+        "sku": "SJM-KAL-0008",
         "title": "Kali Mataji",
         "image": "images/KALI MATA JI MARBLE MURTY  06 .jpg",
         "basePrice": 15000,
@@ -512,7 +512,7 @@ window.PRODUCTS_DATA = [
         "category": "kali"
     },
     {
-        "sku": "SJM-KAL-2477",
+        "sku": "SJM-KAL-9043",
         "title": "Kali Mataji",
         "image": "images/KALI MATA JI MARBLE MURTY  07 .jpg",
         "basePrice": 15000,
@@ -520,7 +520,7 @@ window.PRODUCTS_DATA = [
         "category": "kali"
     },
     {
-        "sku": "SJM-KAL-7590",
+        "sku": "SJM-KAL-7764",
         "title": "Kali Mataji",
         "image": "images/KALI MATA JI MARBLE MURTY  08 .jpg",
         "basePrice": 15000,
@@ -528,7 +528,7 @@ window.PRODUCTS_DATA = [
         "category": "kali"
     },
     {
-        "sku": "SJM-KAL-7540",
+        "sku": "SJM-KAL-0641",
         "title": "Kali Mataji",
         "image": "images/KALI MATA JI MARBLE MURTY  09 .jpg",
         "basePrice": 15000,
@@ -536,7 +536,7 @@ window.PRODUCTS_DATA = [
         "category": "kali"
     },
     {
-        "sku": "SJM-KAL-5733",
+        "sku": "SJM-KAL-7464",
         "title": "Kali Mataji",
         "image": "images/KALI MATA JI MARBLE MURTY  10 .jpg",
         "basePrice": 15000,
@@ -544,7 +544,7 @@ window.PRODUCTS_DATA = [
         "category": "kali"
     },
     {
-        "sku": "SJM-KAL-6187",
+        "sku": "SJM-KAL-2913",
         "title": "Kali Mataji",
         "image": "images/KALI MATA JI MARBLE MURTY  11 .jpg",
         "basePrice": 15000,
@@ -552,7 +552,7 @@ window.PRODUCTS_DATA = [
         "category": "kali"
     },
     {
-        "sku": "SJM-KAL-7407",
+        "sku": "SJM-KAL-7745",
         "title": "Kali Mataji",
         "image": "images/KALI MATA JI MARBLE MURTY 01.jpg",
         "basePrice": 15000,
@@ -560,7 +560,7 @@ window.PRODUCTS_DATA = [
         "category": "kali"
     },
     {
-        "sku": "SJM-KAL-6374",
+        "sku": "SJM-KAL-0964",
         "title": "Kali Mataji",
         "image": "images/KALI MATA JI MARBLE MURTY 02 .jpg",
         "basePrice": 15000,
@@ -568,7 +568,7 @@ window.PRODUCTS_DATA = [
         "category": "kali"
     },
     {
-        "sku": "SJM-KAL-0693",
+        "sku": "SJM-KAL-3529",
         "title": "Kali Mataji",
         "image": "images/KALI MATA JI MARBLE MURTY 03 .jpg",
         "basePrice": 15000,
@@ -576,63 +576,63 @@ window.PRODUCTS_DATA = [
         "category": "kali"
     },
     {
-        "sku": "SJM-LAK-6712",
+        "sku": "SJM-LAK-0001",
         "title": "Lakshmi Narayan Ji",
         "image": "images/LAKSHMI JI AND NARAYAN JI MARBLE MURTY  (1).png",
-        "basePrice": 15000,
+        "basePrice": 27500,
         "material": "Premium Makrana Marble",
         "category": "lakshmi_narayan"
     },
     {
-        "sku": "SJM-LAK-0596",
+        "sku": "SJM-LAK-1479",
         "title": "Lakshmi Narayan Ji",
         "image": "images/LAKSHMI JI AND NARAYAN JI MARBLE MURTY  (2).png",
-        "basePrice": 15000,
+        "basePrice": 27500,
         "material": "Premium Makrana Marble",
         "category": "lakshmi_narayan"
     },
     {
-        "sku": "SJM-LAK-0860",
+        "sku": "SJM-LAK-7696",
         "title": "Lakshmi Narayan Ji",
         "image": "images/LAKSHMI JI AND NARAYAN JI MARBLE MURTY  (3).png",
-        "basePrice": 15000,
+        "basePrice": 27500,
         "material": "Premium Makrana Marble",
         "category": "lakshmi_narayan"
     },
     {
-        "sku": "SJM-LAK-6118",
+        "sku": "SJM-LAK-2834",
         "title": "Lakshmi Narayan Ji",
         "image": "images/LAKSHMI JI AND NARAYAN JI MARBLE MURTY  (4).png",
-        "basePrice": 15000,
+        "basePrice": 27500,
         "material": "Premium Makrana Marble",
         "category": "lakshmi_narayan"
     },
     {
-        "sku": "SJM-LAK-3259",
+        "sku": "SJM-LAK-3488",
         "title": "Lakshmi Narayan Ji",
         "image": "images/LAKSHMI JI AND NARAYAN JI MARBLE MURTY  (5).png",
-        "basePrice": 15000,
+        "basePrice": 27500,
         "material": "Premium Makrana Marble",
         "category": "lakshmi_narayan"
     },
     {
-        "sku": "SJM-LAK-0516",
+        "sku": "SJM-LAK-4757",
         "title": "Lakshmi Narayan Ji",
         "image": "images/LAKSHMI JI AND NARAYAN JI MARBLE MURTY  (6).png",
-        "basePrice": 15000,
+        "basePrice": 27500,
         "material": "Premium Makrana Marble",
         "category": "lakshmi_narayan"
     },
     {
-        "sku": "SJM-LAK-5764",
+        "sku": "SJM-LAK-6723",
         "title": "Lakshmi Narayan Ji",
         "image": "images/LAKSHMI JI AND NARAYAN JI MARBLE MURTY  (7).png",
-        "basePrice": 15000,
+        "basePrice": 27500,
         "material": "Premium Makrana Marble",
         "category": "lakshmi_narayan"
     },
     {
-        "sku": "SJM-MAH-3985",
+        "sku": "SJM-MAH-0362",
         "title": "Mahaveer Jain",
         "image": "images/MAHAVEER JAIN MARBLE MURTY 01 (1).jpg",
         "basePrice": 15000,
@@ -640,7 +640,7 @@ window.PRODUCTS_DATA = [
         "category": "mahaveer"
     },
     {
-        "sku": "SJM-MAH-5188",
+        "sku": "SJM-MAH-0092",
         "title": "Mahaveer Jain",
         "image": "images/MAHAVEER JAIN MARBLE MURTY 01 (2).jpg",
         "basePrice": 15000,
@@ -648,7 +648,7 @@ window.PRODUCTS_DATA = [
         "category": "mahaveer"
     },
     {
-        "sku": "SJM-MAH-7263",
+        "sku": "SJM-MAH-6720",
         "title": "Mahaveer Jain",
         "image": "images/MAHAVEER JAIN MARBLE MURTY 01 (3).jpg",
         "basePrice": 15000,
@@ -656,7 +656,7 @@ window.PRODUCTS_DATA = [
         "category": "mahaveer"
     },
     {
-        "sku": "SJM-MAH-6529",
+        "sku": "SJM-MAH-3012",
         "title": "Mahaveer Jain",
         "image": "images/MAHAVEER JAIN MARBLE MURTY 01 (4).jpg",
         "basePrice": 15000,
@@ -664,7 +664,7 @@ window.PRODUCTS_DATA = [
         "category": "mahaveer"
     },
     {
-        "sku": "SJM-MAH-1292",
+        "sku": "SJM-MAH-4464",
         "title": "Mahaveer Jain",
         "image": "images/MAHAVEER JAIN MARBLE MURTY 01 (5).jpg",
         "basePrice": 15000,
@@ -672,7 +672,7 @@ window.PRODUCTS_DATA = [
         "category": "mahaveer"
     },
     {
-        "sku": "SJM-MAH-2195",
+        "sku": "SJM-MAH-3243",
         "title": "Mahaveer Jain",
         "image": "images/MAHAVEER JAIN MARBLE MURTY 01 (6).jpg",
         "basePrice": 15000,
@@ -680,7 +680,7 @@ window.PRODUCTS_DATA = [
         "category": "mahaveer"
     },
     {
-        "sku": "SJM-MAH-7134",
+        "sku": "SJM-MAH-5075",
         "title": "Mahaveer Jain",
         "image": "images/MAHAVEER JAIN MARBLE MURTY 01 [7].jpg",
         "basePrice": 15000,
@@ -688,7 +688,7 @@ window.PRODUCTS_DATA = [
         "category": "mahaveer"
     },
     {
-        "sku": "SJM-BEN-5784",
+        "sku": "SJM-BEN-6950",
         "title": "Marble Bench",
         "image": "images/MARBLE BENCH 01.jpg",
         "basePrice": 15000,
@@ -696,7 +696,7 @@ window.PRODUCTS_DATA = [
         "category": "bench"
     },
     {
-        "sku": "SJM-BEN-6536",
+        "sku": "SJM-BEN-8137",
         "title": "Marble Bench",
         "image": "images/MARBLE BENCH 02.jpg",
         "basePrice": 15000,
@@ -704,7 +704,7 @@ window.PRODUCTS_DATA = [
         "category": "bench"
     },
     {
-        "sku": "SJM-BEN-8878",
+        "sku": "SJM-BEN-3448",
         "title": "Marble Bench",
         "image": "images/MARBLE BENCH 03.jpg",
         "basePrice": 15000,
@@ -712,7 +712,7 @@ window.PRODUCTS_DATA = [
         "category": "bench"
     },
     {
-        "sku": "SJM-BEN-4899",
+        "sku": "SJM-BEN-9326",
         "title": "Marble Bench",
         "image": "images/MARBLE BENCH 04.jpg",
         "basePrice": 15000,
@@ -720,7 +720,7 @@ window.PRODUCTS_DATA = [
         "category": "bench"
     },
     {
-        "sku": "SJM-BEN-4896",
+        "sku": "SJM-BEN-4741",
         "title": "Marble Bench",
         "image": "images/MARBLE BENCH 05.jpg",
         "basePrice": 15000,
@@ -728,7 +728,7 @@ window.PRODUCTS_DATA = [
         "category": "bench"
     },
     {
-        "sku": "SJM-BEN-9701",
+        "sku": "SJM-BEN-0402",
         "title": "Marble Bench",
         "image": "images/MARBLE BENCH 06.jpg",
         "basePrice": 15000,
@@ -736,7 +736,7 @@ window.PRODUCTS_DATA = [
         "category": "bench"
     },
     {
-        "sku": "SJM-BEN-0982",
+        "sku": "SJM-BEN-3264",
         "title": "Marble Bench",
         "image": "images/MARBLE BENCH 07.jpg",
         "basePrice": 15000,
@@ -744,7 +744,7 @@ window.PRODUCTS_DATA = [
         "category": "bench"
     },
     {
-        "sku": "SJM-BEN-6053",
+        "sku": "SJM-BEN-3513",
         "title": "Marble Bench",
         "image": "images/MARBLE BENCH 08.png",
         "basePrice": 15000,
@@ -752,7 +752,7 @@ window.PRODUCTS_DATA = [
         "category": "bench"
     },
     {
-        "sku": "SJM-BEN-5616",
+        "sku": "SJM-BEN-4229",
         "title": "Marble Bench",
         "image": "images/MARBLE BENCH 09.jpg",
         "basePrice": 15000,
@@ -760,7 +760,7 @@ window.PRODUCTS_DATA = [
         "category": "bench"
     },
     {
-        "sku": "SJM-BEN-0375",
+        "sku": "SJM-BEN-3378",
         "title": "Marble Bench",
         "image": "images/MARBLE BENCH 10.jpg",
         "basePrice": 15000,
@@ -768,7 +768,7 @@ window.PRODUCTS_DATA = [
         "category": "bench"
     },
     {
-        "sku": "SJM-BEN-1104",
+        "sku": "SJM-BEN-5467",
         "title": "Marble Bench",
         "image": "images/MARBLE BENCH 11.jpg",
         "basePrice": 15000,
@@ -776,7 +776,7 @@ window.PRODUCTS_DATA = [
         "category": "bench"
     },
     {
-        "sku": "SJM-BEN-6176",
+        "sku": "SJM-BEN-5258",
         "title": "Marble Bench",
         "image": "images/MARBLE BENCH 12.jpg",
         "basePrice": 15000,
@@ -784,7 +784,7 @@ window.PRODUCTS_DATA = [
         "category": "bench"
     },
     {
-        "sku": "SJM-BEN-4726",
+        "sku": "SJM-BEN-0440",
         "title": "Marble Bench",
         "image": "images/MARBLE BENCH 13.jpg",
         "basePrice": 15000,
@@ -792,7 +792,7 @@ window.PRODUCTS_DATA = [
         "category": "bench"
     },
     {
-        "sku": "SJM-BEN-3680",
+        "sku": "SJM-BEN-1678",
         "title": "Marble Bench",
         "image": "images/MARBLE BENCH 14.jpg",
         "basePrice": 15000,
@@ -800,7 +800,7 @@ window.PRODUCTS_DATA = [
         "category": "bench"
     },
     {
-        "sku": "SJM-BEN-5798",
+        "sku": "SJM-BEN-7437",
         "title": "Marble Bench",
         "image": "images/MARBLE BENCH 15.jpg",
         "basePrice": 15000,
@@ -808,7 +808,7 @@ window.PRODUCTS_DATA = [
         "category": "bench"
     },
     {
-        "sku": "SJM-BEN-9861",
+        "sku": "SJM-BEN-8902",
         "title": "Marble Bench",
         "image": "images/MARBLE BENCH 16.jpg",
         "basePrice": 15000,
@@ -816,7 +816,7 @@ window.PRODUCTS_DATA = [
         "category": "bench"
     },
     {
-        "sku": "SJM-BEN-5329",
+        "sku": "SJM-BEN-5088",
         "title": "Marble Bench",
         "image": "images/MARBLE BENCH 17.jpg",
         "basePrice": 15000,
@@ -824,7 +824,7 @@ window.PRODUCTS_DATA = [
         "category": "bench"
     },
     {
-        "sku": "SJM-BEN-3372",
+        "sku": "SJM-BEN-0905",
         "title": "Marble Bench",
         "image": "images/MARBLE BENCH 18.jpg",
         "basePrice": 15000,
@@ -832,7 +832,7 @@ window.PRODUCTS_DATA = [
         "category": "bench"
     },
     {
-        "sku": "SJM-BEN-2228",
+        "sku": "SJM-BEN-0428",
         "title": "Marble Bench",
         "image": "images/MARBLE BENCH 19.jpg",
         "basePrice": 15000,
@@ -840,7 +840,7 @@ window.PRODUCTS_DATA = [
         "category": "bench"
     },
     {
-        "sku": "SJM-BEN-8705",
+        "sku": "SJM-BEN-4391",
         "title": "Marble Bench",
         "image": "images/MARBLE BENCH 20.jpg",
         "basePrice": 15000,
@@ -848,7 +848,7 @@ window.PRODUCTS_DATA = [
         "category": "bench"
     },
     {
-        "sku": "SJM-BEN-3367",
+        "sku": "SJM-BEN-4466",
         "title": "Marble Bench",
         "image": "images/MARBLE BENCH 21.jpg",
         "basePrice": 15000,
@@ -856,7 +856,7 @@ window.PRODUCTS_DATA = [
         "category": "bench"
     },
     {
-        "sku": "SJM-BEN-8900",
+        "sku": "SJM-BEN-0917",
         "title": "Marble Bench",
         "image": "images/MARBLE BENCH 22.jpg",
         "basePrice": 15000,
@@ -864,7 +864,7 @@ window.PRODUCTS_DATA = [
         "category": "bench"
     },
     {
-        "sku": "SJM-PAR-1256",
+        "sku": "SJM-PAR-3091",
         "title": "Parvati Mataji",
         "image": "images/PARWATI MATA JI MARBLE MURTY 01.jpg",
         "basePrice": 15000,
@@ -872,7 +872,7 @@ window.PRODUCTS_DATA = [
         "category": "parvati"
     },
     {
-        "sku": "SJM-PAR-7949",
+        "sku": "SJM-PAR-8722",
         "title": "Parvati Mataji",
         "image": "images/PARWATI MATA JI MARBLE MURTY 02.jpg",
         "basePrice": 15000,
@@ -880,7 +880,7 @@ window.PRODUCTS_DATA = [
         "category": "parvati"
     },
     {
-        "sku": "SJM-PAR-3425",
+        "sku": "SJM-PAR-5907",
         "title": "Parvati Mataji",
         "image": "images/PARWATI MATA JI MARBLE MURTY 03.jpg",
         "basePrice": 15000,
@@ -888,7 +888,7 @@ window.PRODUCTS_DATA = [
         "category": "parvati"
     },
     {
-        "sku": "SJM-PAR-2009",
+        "sku": "SJM-PAR-1712",
         "title": "Parvati Mataji",
         "image": "images/PARWATI MATA JI MARBLE MURTY 05 .jpg",
         "basePrice": 15000,
@@ -896,87 +896,87 @@ window.PRODUCTS_DATA = [
         "category": "parvati"
     },
     {
-        "sku": "SJM-RAM-0607",
+        "sku": "SJM-RAM-9172",
         "title": "Ram Darbar",
         "image": "images/RAM DARBAR MARBLE MURTY  (1).png",
-        "basePrice": 15000,
+        "basePrice": 27500,
         "material": "Premium Makrana Marble",
         "category": "ram_darbar"
     },
     {
-        "sku": "SJM-RAM-7868",
+        "sku": "SJM-RAM-8327",
         "title": "Ram Darbar",
         "image": "images/RAM DARBAR MARBLE MURTY  (10).png",
-        "basePrice": 15000,
+        "basePrice": 27500,
         "material": "Premium Makrana Marble",
         "category": "ram_darbar"
     },
     {
-        "sku": "SJM-RAM-5153",
+        "sku": "SJM-RAM-7271",
         "title": "Ram Darbar",
         "image": "images/RAM DARBAR MARBLE MURTY  (2).png",
-        "basePrice": 15000,
+        "basePrice": 27500,
         "material": "Premium Makrana Marble",
         "category": "ram_darbar"
     },
     {
-        "sku": "SJM-RAM-9194",
+        "sku": "SJM-RAM-2589",
         "title": "Ram Darbar",
         "image": "images/RAM DARBAR MARBLE MURTY  (3).png",
-        "basePrice": 15000,
+        "basePrice": 27500,
         "material": "Premium Makrana Marble",
         "category": "ram_darbar"
     },
     {
-        "sku": "SJM-RAM-9854",
+        "sku": "SJM-RAM-1060",
         "title": "Ram Darbar",
         "image": "images/RAM DARBAR MARBLE MURTY  (4).png",
-        "basePrice": 15000,
+        "basePrice": 27500,
         "material": "Premium Makrana Marble",
         "category": "ram_darbar"
     },
     {
-        "sku": "SJM-RAM-0795",
+        "sku": "SJM-RAM-8244",
         "title": "Ram Darbar",
         "image": "images/RAM DARBAR MARBLE MURTY  (5).png",
-        "basePrice": 15000,
+        "basePrice": 27500,
         "material": "Premium Makrana Marble",
         "category": "ram_darbar"
     },
     {
-        "sku": "SJM-RAM-8257",
+        "sku": "SJM-RAM-3998",
         "title": "Ram Darbar",
         "image": "images/RAM DARBAR MARBLE MURTY  (6).png",
-        "basePrice": 15000,
+        "basePrice": 27500,
         "material": "Premium Makrana Marble",
         "category": "ram_darbar"
     },
     {
-        "sku": "SJM-RAM-2859",
+        "sku": "SJM-RAM-9015",
         "title": "Ram Darbar",
         "image": "images/RAM DARBAR MARBLE MURTY  (7).png",
-        "basePrice": 15000,
+        "basePrice": 27500,
         "material": "Premium Makrana Marble",
         "category": "ram_darbar"
     },
     {
-        "sku": "SJM-RAM-5523",
+        "sku": "SJM-RAM-7874",
         "title": "Ram Darbar",
         "image": "images/RAM DARBAR MARBLE MURTY  (8).png",
-        "basePrice": 15000,
+        "basePrice": 27500,
         "material": "Premium Makrana Marble",
         "category": "ram_darbar"
     },
     {
-        "sku": "SJM-RAM-0330",
+        "sku": "SJM-RAM-9631",
         "title": "Ram Darbar",
         "image": "images/RAM DARBAR MARBLE MURTY  (9).png",
-        "basePrice": 15000,
+        "basePrice": 27500,
         "material": "Premium Makrana Marble",
         "category": "ram_darbar"
     },
     {
-        "sku": "SJM-FOU-9826",
+        "sku": "SJM-FOU-4438",
         "title": "Fountains",
         "image": "images/fountain 01.jpg",
         "basePrice": 35000,
@@ -984,7 +984,7 @@ window.PRODUCTS_DATA = [
         "category": "fountain"
     },
     {
-        "sku": "SJM-FOU-3942",
+        "sku": "SJM-FOU-8697",
         "title": "Fountains",
         "image": "images/fountain 02.jpg",
         "basePrice": 35000,
@@ -992,7 +992,7 @@ window.PRODUCTS_DATA = [
         "category": "fountain"
     },
     {
-        "sku": "SJM-FOU-6685",
+        "sku": "SJM-FOU-7035",
         "title": "Fountains",
         "image": "images/fountain 03.jpg",
         "basePrice": 35000,
@@ -1000,7 +1000,7 @@ window.PRODUCTS_DATA = [
         "category": "fountain"
     },
     {
-        "sku": "SJM-FOU-2102",
+        "sku": "SJM-FOU-8510",
         "title": "Fountains",
         "image": "images/fountain 04.jpg",
         "basePrice": 35000,
@@ -1008,7 +1008,7 @@ window.PRODUCTS_DATA = [
         "category": "fountain"
     },
     {
-        "sku": "SJM-FOU-7335",
+        "sku": "SJM-FOU-4299",
         "title": "Fountains",
         "image": "images/fountain 06.jpg",
         "basePrice": 35000,
@@ -1016,7 +1016,7 @@ window.PRODUCTS_DATA = [
         "category": "fountain"
     },
     {
-        "sku": "SJM-FOU-0097",
+        "sku": "SJM-FOU-7218",
         "title": "Fountains",
         "image": "images/fountain 07.jpg",
         "basePrice": 35000,
@@ -1024,7 +1024,7 @@ window.PRODUCTS_DATA = [
         "category": "fountain"
     },
     {
-        "sku": "SJM-FOU-0597",
+        "sku": "SJM-FOU-6538",
         "title": "Fountains",
         "image": "images/fountain 08.jpg",
         "basePrice": 35000,
@@ -1032,7 +1032,7 @@ window.PRODUCTS_DATA = [
         "category": "fountain"
     },
     {
-        "sku": "SJM-FOU-8321",
+        "sku": "SJM-FOU-9777",
         "title": "Fountains",
         "image": "images/fountain 09.jpg",
         "basePrice": 35000,
@@ -1040,7 +1040,7 @@ window.PRODUCTS_DATA = [
         "category": "fountain"
     },
     {
-        "sku": "SJM-FOU-8969",
+        "sku": "SJM-FOU-6743",
         "title": "Fountains",
         "image": "images/fountain 10.jpg",
         "basePrice": 35000,
@@ -1048,7 +1048,7 @@ window.PRODUCTS_DATA = [
         "category": "fountain"
     },
     {
-        "sku": "SJM-FOU-3325",
+        "sku": "SJM-FOU-0302",
         "title": "Fountains",
         "image": "images/fountain 11.jpg",
         "basePrice": 35000,
@@ -1056,7 +1056,7 @@ window.PRODUCTS_DATA = [
         "category": "fountain"
     },
     {
-        "sku": "SJM-FOU-8173",
+        "sku": "SJM-FOU-9792",
         "title": "Fountains",
         "image": "images/fountain 12.jpg",
         "basePrice": 35000,
@@ -1064,7 +1064,7 @@ window.PRODUCTS_DATA = [
         "category": "fountain"
     },
     {
-        "sku": "SJM-FOU-6052",
+        "sku": "SJM-FOU-4023",
         "title": "Fountains",
         "image": "images/fountain 13.jpg",
         "basePrice": 35000,
@@ -1072,7 +1072,7 @@ window.PRODUCTS_DATA = [
         "category": "fountain"
     },
     {
-        "sku": "SJM-FOU-4066",
+        "sku": "SJM-FOU-6895",
         "title": "Fountains",
         "image": "images/fountain 14.jpg",
         "basePrice": 35000,
@@ -1080,7 +1080,7 @@ window.PRODUCTS_DATA = [
         "category": "fountain"
     },
     {
-        "sku": "SJM-FOU-1937",
+        "sku": "SJM-FOU-4108",
         "title": "Fountains",
         "image": "images/fountain 15.jpg",
         "basePrice": 35000,
@@ -1088,7 +1088,7 @@ window.PRODUCTS_DATA = [
         "category": "fountain"
     },
     {
-        "sku": "SJM-FOU-5639",
+        "sku": "SJM-FOU-9949",
         "title": "Fountains",
         "image": "images/fountain 16.jpg",
         "basePrice": 35000,
@@ -1096,7 +1096,7 @@ window.PRODUCTS_DATA = [
         "category": "fountain"
     },
     {
-        "sku": "SJM-FOU-9668",
+        "sku": "SJM-FOU-1034",
         "title": "Fountains",
         "image": "images/fountain 17.jpg",
         "basePrice": 35000,
@@ -1104,7 +1104,7 @@ window.PRODUCTS_DATA = [
         "category": "fountain"
     },
     {
-        "sku": "SJM-FOU-8215",
+        "sku": "SJM-FOU-3457",
         "title": "Fountains",
         "image": "images/fountain 18.jpg",
         "basePrice": 35000,
@@ -1112,7 +1112,7 @@ window.PRODUCTS_DATA = [
         "category": "fountain"
     },
     {
-        "sku": "SJM-FOU-2085",
+        "sku": "SJM-FOU-1708",
         "title": "Fountains",
         "image": "images/fountain 19.jpg",
         "basePrice": 35000,
@@ -1120,7 +1120,7 @@ window.PRODUCTS_DATA = [
         "category": "fountain"
     },
     {
-        "sku": "SJM-FOU-4480",
+        "sku": "SJM-FOU-9369",
         "title": "Fountains",
         "image": "images/fountain 20.jpg",
         "basePrice": 35000,
@@ -1128,7 +1128,7 @@ window.PRODUCTS_DATA = [
         "category": "fountain"
     },
     {
-        "sku": "SJM-FOU-6222",
+        "sku": "SJM-FOU-6303",
         "title": "Fountains",
         "image": "images/fountain 21.jpg",
         "basePrice": 35000,
@@ -1136,7 +1136,7 @@ window.PRODUCTS_DATA = [
         "category": "fountain"
     },
     {
-        "sku": "SJM-FOU-1493",
+        "sku": "SJM-FOU-0742",
         "title": "Fountains",
         "image": "images/fountain 22.jpg",
         "basePrice": 35000,
@@ -1144,7 +1144,7 @@ window.PRODUCTS_DATA = [
         "category": "fountain"
     },
     {
-        "sku": "SJM-FOU-0831",
+        "sku": "SJM-FOU-3338",
         "title": "Fountains",
         "image": "images/fountin 05.jpg",
         "basePrice": 35000,
@@ -1152,87 +1152,87 @@ window.PRODUCTS_DATA = [
         "category": "fountain"
     },
     {
-        "sku": "SJM-GAN-3918",
+        "sku": "SJM-GAN-1375",
         "title": "Ganesh Ji",
         "image": "images/ganesh ji  21.jpg.png",
-        "basePrice": 15000,
+        "basePrice": 20500,
         "material": "Premium Makrana Marble",
         "category": "ganesh"
     },
     {
-        "sku": "SJM-GAN-6741",
+        "sku": "SJM-GAN-0750",
         "title": "Ganesh Ji",
         "image": "images/ganesh ji  22 .jpg.png",
-        "basePrice": 15000,
+        "basePrice": 20500,
         "material": "Premium Makrana Marble",
         "category": "ganesh"
     },
     {
-        "sku": "SJM-GAN-9156",
+        "sku": "SJM-GAN-7006",
         "title": "Ganesh Ji",
         "image": "images/ganesh ji  23 .jpg.png",
-        "basePrice": 15000,
+        "basePrice": 20500,
         "material": "Premium Makrana Marble",
         "category": "ganesh"
     },
     {
-        "sku": "SJM-GAN-1630",
+        "sku": "SJM-GAN-1643",
         "title": "Ganesh Ji",
         "image": "images/ganesh ji  24 .jpg.png",
-        "basePrice": 15000,
+        "basePrice": 20500,
         "material": "Premium Makrana Marble",
         "category": "ganesh"
     },
     {
-        "sku": "SJM-GAN-6081",
+        "sku": "SJM-GAN-4463",
         "title": "Ganesh Ji",
         "image": "images/ganesh ji  25 .png",
-        "basePrice": 15000,
+        "basePrice": 20500,
         "material": "Premium Makrana Marble",
         "category": "ganesh"
     },
     {
-        "sku": "SJM-GAN-6346",
+        "sku": "SJM-GAN-0704",
         "title": "Ganesh Ji",
         "image": "images/ganesh ji  26 .png",
-        "basePrice": 15000,
+        "basePrice": 20500,
         "material": "Premium Makrana Marble",
         "category": "ganesh"
     },
     {
-        "sku": "SJM-GAN-4187",
+        "sku": "SJM-GAN-9885",
         "title": "Ganesh Ji",
         "image": "images/ganesh ji 17.jpg.png",
-        "basePrice": 15000,
+        "basePrice": 20500,
         "material": "Premium Makrana Marble",
         "category": "ganesh"
     },
     {
-        "sku": "SJM-GAN-3629",
+        "sku": "SJM-GAN-3527",
         "title": "Ganesh Ji",
         "image": "images/ganesh ji 18 .jpg.png",
-        "basePrice": 15000,
+        "basePrice": 20500,
         "material": "Premium Makrana Marble",
         "category": "ganesh"
     },
     {
-        "sku": "SJM-GAN-8232",
+        "sku": "SJM-GAN-9627",
         "title": "Ganesh Ji",
         "image": "images/ganesh ji 19 .png",
-        "basePrice": 15000,
+        "basePrice": 20500,
         "material": "Premium Makrana Marble",
         "category": "ganesh"
     },
     {
-        "sku": "SJM-GAN-6328",
+        "sku": "SJM-GAN-5569",
         "title": "Ganesh Ji",
         "image": "images/ganesh ji 20 .jpg.png",
-        "basePrice": 15000,
+        "basePrice": 20500,
         "material": "Premium Makrana Marble",
         "category": "ganesh"
     },
     {
-        "sku": "SJM-HAN-6495",
+        "sku": "SJM-HAN-8422",
         "title": "Hanuman Ji",
         "image": "images/hanumaan ji marble murty 01.jpg",
         "basePrice": 15000,
@@ -1240,7 +1240,7 @@ window.PRODUCTS_DATA = [
         "category": "hanuman"
     },
     {
-        "sku": "SJM-HAN-0764",
+        "sku": "SJM-HAN-1923",
         "title": "Hanuman Ji",
         "image": "images/hanumaan ji marble murty 02.jpeg",
         "basePrice": 15000,
@@ -1248,7 +1248,7 @@ window.PRODUCTS_DATA = [
         "category": "hanuman"
     },
     {
-        "sku": "SJM-HAN-9140",
+        "sku": "SJM-HAN-2732",
         "title": "Hanuman Ji",
         "image": "images/hanumaan ji marble murty 03.jpg",
         "basePrice": 15000,
@@ -1256,23 +1256,23 @@ window.PRODUCTS_DATA = [
         "category": "hanuman"
     },
     {
-        "sku": "SJM-HAN-2402",
-        "title": "Hanuman Ji",
+        "sku": "SJM-PAN-1465",
+        "title": "PanchMukhi Hanuman Ji",
         "image": "images/hanumaan ji marble murty 04.jpg",
-        "basePrice": 15000,
+        "basePrice": 24000,
         "material": "Premium Makrana Marble",
-        "category": "hanuman"
+        "category": "panchmukhi_hanuman"
     },
     {
-        "sku": "SJM-HAN-2342",
-        "title": "Hanuman Ji",
+        "sku": "SJM-PAN-6664",
+        "title": "PanchMukhi Hanuman Ji",
         "image": "images/hanumaan ji marble murty 05.jpg",
-        "basePrice": 15000,
+        "basePrice": 24000,
         "material": "Premium Makrana Marble",
-        "category": "hanuman"
+        "category": "panchmukhi_hanuman"
     },
     {
-        "sku": "SJM-HAN-6007",
+        "sku": "SJM-HAN-2522",
         "title": "Hanuman Ji",
         "image": "images/hanumaan ji marble murty 06.jpg",
         "basePrice": 15000,
@@ -1280,7 +1280,7 @@ window.PRODUCTS_DATA = [
         "category": "hanuman"
     },
     {
-        "sku": "SJM-HAN-0359",
+        "sku": "SJM-HAN-6492",
         "title": "Hanuman Ji",
         "image": "images/hanumaan ji marble murty 07.jpg",
         "basePrice": 15000,
@@ -1288,7 +1288,7 @@ window.PRODUCTS_DATA = [
         "category": "hanuman"
     },
     {
-        "sku": "SJM-HAN-7499",
+        "sku": "SJM-HAN-6816",
         "title": "Hanuman Ji",
         "image": "images/hanumaan ji marble murty 08.jpg",
         "basePrice": 15000,
@@ -1296,7 +1296,7 @@ window.PRODUCTS_DATA = [
         "category": "hanuman"
     },
     {
-        "sku": "SJM-HAN-7168",
+        "sku": "SJM-HAN-9059",
         "title": "Hanuman Ji",
         "image": "images/hanumaan ji marble murty 09.jpg",
         "basePrice": 15000,
@@ -1304,7 +1304,7 @@ window.PRODUCTS_DATA = [
         "category": "hanuman"
     },
     {
-        "sku": "SJM-HAN-8260",
+        "sku": "SJM-HAN-1536",
         "title": "Hanuman Ji",
         "image": "images/hanumaan ji marble murty 10.jpg",
         "basePrice": 15000,
@@ -1312,7 +1312,7 @@ window.PRODUCTS_DATA = [
         "category": "hanuman"
     },
     {
-        "sku": "SJM-HAN-3572",
+        "sku": "SJM-HAN-6853",
         "title": "Hanuman Ji",
         "image": "images/hanumaan ji marble murty 11.jpg.png",
         "basePrice": 15000,
@@ -1320,7 +1320,7 @@ window.PRODUCTS_DATA = [
         "category": "hanuman"
     },
     {
-        "sku": "SJM-HAN-2975",
+        "sku": "SJM-HAN-0326",
         "title": "Hanuman Ji",
         "image": "images/hanumaan ji marble murty 12 .jpg.png",
         "basePrice": 15000,
@@ -1328,7 +1328,7 @@ window.PRODUCTS_DATA = [
         "category": "hanuman"
     },
     {
-        "sku": "SJM-HAN-3810",
+        "sku": "SJM-HAN-4634",
         "title": "Hanuman Ji",
         "image": "images/hanumaan ji marble murty 13 .jpg.png",
         "basePrice": 15000,
@@ -1336,7 +1336,7 @@ window.PRODUCTS_DATA = [
         "category": "hanuman"
     },
     {
-        "sku": "SJM-HAN-8856",
+        "sku": "SJM-HAN-7232",
         "title": "Hanuman Ji",
         "image": "images/hanumaan ji marble murty 14 .jpg.png",
         "basePrice": 15000,
@@ -1344,7 +1344,7 @@ window.PRODUCTS_DATA = [
         "category": "hanuman"
     },
     {
-        "sku": "SJM-HAN-5921",
+        "sku": "SJM-HAN-0916",
         "title": "Hanuman Ji",
         "image": "images/hanumaan ji marble murty 15 .jpg.png",
         "basePrice": 15000,
@@ -1352,15 +1352,15 @@ window.PRODUCTS_DATA = [
         "category": "hanuman"
     },
     {
-        "sku": "SJM-HAN-5742",
-        "title": "Hanuman Ji",
+        "sku": "SJM-PAN-0655",
+        "title": "PanchMukhi Hanuman Ji",
         "image": "images/hanumaan ji marble murty 16 .jpg.png",
-        "basePrice": 15000,
+        "basePrice": 24000,
         "material": "Premium Makrana Marble",
-        "category": "hanuman"
+        "category": "panchmukhi_hanuman"
     },
     {
-        "sku": "SJM-SHI-7927",
+        "sku": "SJM-SHI-7113",
         "title": "Shiv Ji",
         "image": "images/shiv ji  (1).png",
         "basePrice": 15000,
@@ -1368,7 +1368,7 @@ window.PRODUCTS_DATA = [
         "category": "shiv"
     },
     {
-        "sku": "SJM-SHI-0916",
+        "sku": "SJM-SHI-5738",
         "title": "Shiv Ji",
         "image": "images/shiv ji  (10).png",
         "basePrice": 15000,
@@ -1376,7 +1376,7 @@ window.PRODUCTS_DATA = [
         "category": "shiv"
     },
     {
-        "sku": "SJM-SHI-1858",
+        "sku": "SJM-SHI-0555",
         "title": "Shiv Ji",
         "image": "images/shiv ji  (11).png",
         "basePrice": 15000,
@@ -1384,7 +1384,7 @@ window.PRODUCTS_DATA = [
         "category": "shiv"
     },
     {
-        "sku": "SJM-SHI-7550",
+        "sku": "SJM-SHI-2265",
         "title": "Shiv Ji",
         "image": "images/shiv ji  (13).png",
         "basePrice": 15000,
@@ -1392,7 +1392,7 @@ window.PRODUCTS_DATA = [
         "category": "shiv"
     },
     {
-        "sku": "SJM-SHI-0906",
+        "sku": "SJM-SHI-6094",
         "title": "Shiv Ji",
         "image": "images/shiv ji  (2).png",
         "basePrice": 15000,
@@ -1400,7 +1400,7 @@ window.PRODUCTS_DATA = [
         "category": "shiv"
     },
     {
-        "sku": "SJM-SHI-8947",
+        "sku": "SJM-SHI-1055",
         "title": "Shiv Ji",
         "image": "images/shiv ji  (3).png",
         "basePrice": 15000,
@@ -1408,7 +1408,7 @@ window.PRODUCTS_DATA = [
         "category": "shiv"
     },
     {
-        "sku": "SJM-SHI-8186",
+        "sku": "SJM-SHI-0961",
         "title": "Shiv Ji",
         "image": "images/shiv ji  (4).png",
         "basePrice": 15000,
@@ -1416,7 +1416,7 @@ window.PRODUCTS_DATA = [
         "category": "shiv"
     },
     {
-        "sku": "SJM-SHI-4923",
+        "sku": "SJM-SHI-8072",
         "title": "Shiv Ji",
         "image": "images/shiv ji  (5).png",
         "basePrice": 15000,
@@ -1424,7 +1424,7 @@ window.PRODUCTS_DATA = [
         "category": "shiv"
     },
     {
-        "sku": "SJM-SHI-7235",
+        "sku": "SJM-SHI-6751",
         "title": "Shiv Ji",
         "image": "images/shiv ji  (6).png",
         "basePrice": 15000,
@@ -1432,7 +1432,7 @@ window.PRODUCTS_DATA = [
         "category": "shiv"
     },
     {
-        "sku": "SJM-SHI-0639",
+        "sku": "SJM-SHI-6851",
         "title": "Shiv Ji",
         "image": "images/shiv ji  (7).png",
         "basePrice": 15000,
@@ -1440,7 +1440,7 @@ window.PRODUCTS_DATA = [
         "category": "shiv"
     },
     {
-        "sku": "SJM-SHI-8867",
+        "sku": "SJM-SHI-3399",
         "title": "Shiv Ji",
         "image": "images/shiv ji  (8).png",
         "basePrice": 15000,
@@ -1448,7 +1448,7 @@ window.PRODUCTS_DATA = [
         "category": "shiv"
     },
     {
-        "sku": "SJM-SHI-1486",
+        "sku": "SJM-SHI-8288",
         "title": "Shiv Ji",
         "image": "images/shiv ji  (9).png",
         "basePrice": 15000,

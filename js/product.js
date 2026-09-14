@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!product) {
         document.getElementById('pdTitle').textContent = "Product Not Found";
+        const debugInfo = document.createElement('p');
+        debugInfo.textContent = `Debug: Looked for SKU '${sku}'. Data loaded: ${window.PRODUCTS_DATA ? window.PRODUCTS_DATA.length : 'NONE'}`;
+        document.getElementById('pdTitle').parentNode.appendChild(debugInfo);
         return;
     }
 
@@ -25,10 +28,44 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('pdImage').alt = product.title;
 
     // 4. Handle Size & Pricing logic
+    const category = product.category;
+    const priceDisplay = document.getElementById('pdPrice');
+    const priceWrap = document.querySelector('.pd-price-wrap');
+    const sizeSelector = document.querySelector('.pd-size-selector');
+    const whatsappBtn = document.getElementById('btnWhatsappCheckout');
+
+    if (category === 'fountain' || category === 'bench') {
+        priceWrap.style.display = 'none';
+        sizeSelector.style.display = 'none';
+        whatsappBtn.innerHTML = '<i class="fas fa-envelope"></i> Contact for pricing or more details';
+        whatsappBtn.href = `inquiry.html?sku=${product.sku}`;
+        return; // Skip standard size/price logic
+    }
+
+    const customPrices = {
+        'ganesh': { "12": 20500, "15": 24000, "18": 35500, "24": 55500, "30": 65500 },
+        'panchmukhi_hanuman': { "12": 24000, "18": 38500, "24": 55000, "30": 67500 },
+        'ganga': { "12": 20500, "18": 36500, "24": 48500, "30": 65000 },
+        'lakshmi_narayan': { "12": 27500, "18": 38500, "24": 49500, "30": 69500 },
+        'datta': { "12": 24500, "18": 38500, "24": 49500, "30": 69500 },
+        'durga': { "12": 18500, "18": 35000, "24": 45500, "30": 60000 },
+        'ram_darbar': { "12": 27500, "18": 42000, "24": 62500, "30": 79500 }
+    };
+
+    let activeCustomPrices = null;
+    if (customPrices[category]) {
+        activeCustomPrices = customPrices[category];
+        // Rebuild size buttons for categories with custom prices
+        const sizeOptionsContainer = document.querySelector('.size-options');
+        sizeOptionsContainer.innerHTML = Object.keys(activeCustomPrices).map((size, index) => {
+            return `<button class="size-btn ${index === 0 ? 'active' : ''}" data-size="${size}">${size} inch</button>`;
+        }).join('');
+    }
+
     // We assume the basePrice in the DB is for 12 inch.
     const basePrice = product.basePrice;
     
-    // Multipliers for different sizes (rough estimates for demo)
+    // Multipliers for different sizes for categories without custom pricing
     const sizeMultipliers = {
         "12": 1.0,  // base price
         "18": 1.8,
@@ -36,16 +73,17 @@ document.addEventListener('DOMContentLoaded', () => {
         "30": 4.0
     };
 
-    const priceDisplay = document.getElementById('pdPrice');
-    const sizeButtons = document.querySelectorAll('.size-btn');
-    const whatsappBtn = document.getElementById('btnWhatsappCheckout');
-
-    let currentSize = "12";
-    let currentPrice = basePrice;
+    let sizeButtons = document.querySelectorAll('.size-btn');
+    let currentSize = sizeButtons[0] ? sizeButtons[0].getAttribute('data-size') : "12";
+    let currentPrice = activeCustomPrices ? activeCustomPrices[currentSize] : basePrice;
 
     function updatePriceAndLink() {
-        // Calculate new price
-        currentPrice = Math.round(basePrice * sizeMultipliers[currentSize]);
+        if (activeCustomPrices) {
+            currentPrice = activeCustomPrices[currentSize];
+        } else {
+            // Calculate new price using fallback multiplier logic
+            currentPrice = Math.round(basePrice * (sizeMultipliers[currentSize] || 1.0));
+        }
         
         // Format with commas (e.g., 15,000)
         priceDisplay.textContent = currentPrice.toLocaleString('en-IN');

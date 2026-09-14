@@ -9,6 +9,7 @@ categories = [
     {"id": "ganesh", "name": "Ganesh Ji", "prefixes": ["ganesh ji"]},
     {"id": "shiv", "name": "Shiv Ji", "prefixes": ["shiv ji"]},
     {"id": "hanuman", "name": "Hanuman Ji", "prefixes": ["hanumaan ji"]},
+    {"id": "panchmukhi_hanuman", "name": "PanchMukhi Hanuman Ji", "prefixes": ["panchmukhi hanuman"]},
     {"id": "fountain", "name": "Fountains", "prefixes": ["fountain", "fountin"]},
     {"id": "ganga", "name": "Ganga Maa", "prefixes": ["ganga maa"]},
     {"id": "lakshmi_narayan", "name": "Lakshmi Narayan Ji", "prefixes": ["lakshmi narayan", "lakshmi ji and narayan ji"]},
@@ -40,10 +41,10 @@ top_bar_html = '''
                 </div>
                 <div class="sort-dropdown">
                     <span>Sort by</span>
-                    <select>
-                        <option>Relevance</option>
-                        <option>Price: Low to High</option>
-                        <option>Price: High to Low</option>
+                    <select id="sortSelect">
+                        <option value="relevance">Relevance</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
                     </select>
                 </div>
             </div>
@@ -55,22 +56,42 @@ for file in files:
     if file.startswith('.') or file == 'logo.png': continue
     file_lower = file.lower()
     matched_cat = None
-    for cat in categories:
-        for prefix in cat["prefixes"]:
-            if file_lower.startswith(prefix):
-                matched_cat = cat
+    
+    # Hardcoded overrides for specific PanchMukhi Hanuman Ji files
+    panchmukhi_files = [
+        "hanumaan ji marble murty 04.jpg",
+        "hanumaan ji marble murty 05.jpg",
+        "hanumaan ji marble murty 16 .jpg.png"
+    ]
+    
+    if file_lower in panchmukhi_files:
+        matched_cat = next(cat for cat in categories if cat["id"] == "panchmukhi_hanuman")
+    else:
+        for cat in categories:
+            for prefix in cat["prefixes"]:
+                if file_lower.startswith(prefix):
+                    matched_cat = cat
+                    break
+            if matched_cat:
                 break
-        if matched_cat:
-            break
             
     if matched_cat:
-        # Generate mock details based on file name or index for consistency
-        sku = f"SJM-{matched_cat['id'][:3].upper()}-{str(abs(hash(file)) % 9999).zfill(4)}"
-        base_price = 15000
-        if matched_cat["id"] == "fountain":
-            base_price = 35000
-        elif matched_cat["id"] == "bal_radha_krishna":
-            base_price = 22000
+        # Generate deterministic details based on file name
+        import hashlib
+        stable_hash = int(hashlib.md5(file.encode('utf-8')).hexdigest(), 16)
+        sku = f"SJM-{matched_cat['id'][:3].upper()}-{str(stable_hash % 9999).zfill(4)}"
+        base_prices = {
+            "fountain": 35000,
+            "ganesh": 20500,
+            "bal_radha_krishna": 22000,
+            "panchmukhi_hanuman": 24000,
+            "ganga": 20500,
+            "lakshmi_narayan": 27500,
+            "datta": 24500,
+            "durga": 18500,
+            "ram_darbar": 27500
+        }
+        base_price = base_prices.get(matched_cat["id"], 15000)
         material = "Premium Makrana Marble" if matched_cat["id"] != "fountain" else "Natural Sandstone & Marble"
         
         products_data.append({
@@ -82,7 +103,14 @@ for file in files:
             "category": matched_cat["id"]
         })
         
-        grid_html += f'''                <div class="product-card" data-category="{matched_cat["id"]}">
+        price_display = f"<strong>₹ {base_price}</strong> INR"
+        sizes_display = 'Available Sizes: 12" H X 3" D X 8.5" W (Customizable)'
+        
+        if matched_cat["id"] in ["fountain", "bench"]:
+            price_display = f'<a href="inquiry.html?sku={sku}" style="text-decoration: underline; color: inherit;"><strong>Contact for pricing or more details</strong></a>'
+            sizes_display = ""
+            
+        grid_html += f'''                <div class="product-card" data-category="{matched_cat["id"]}" data-price="{base_price}">
                     <div class="product-image-container">
                         <span class="badge-in-stock">IN STOCK</span>
                         <img src="images/{file}" alt="{matched_cat["name"]}" loading="lazy">
@@ -94,10 +122,10 @@ for file in files:
                     <div class="product-info">
                         <h3>{matched_cat["name"]}</h3>
                         <div class="card-sku">Product ID : {sku}</div>
-                        <div class="card-price">Price : <strong>₹ {base_price}</strong> INR</div>
+                        <div class="card-price">Price : {price_display}</div>
                         
                         <p class="list-desc">Handcrafted {matched_cat["name"]} in premium makrana marble with exquisite detailing. This masterpiece perfectly exemplifies our mastery in traditional stone carving.</p>
-                        <div class="list-sizes">Available Sizes: 12" H X 3" D X 8.5" W (Customizable)</div>
+                        <div class="list-sizes">{sizes_display}</div>
                         
                         <a href="product.html?sku={sku}" class="btn-teal-view">VIEW DETAILS</a>
                     </div>
