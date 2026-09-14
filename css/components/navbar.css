@@ -1,9 +1,45 @@
 /* ==========================================================================
+   Announcement Bar (Marquee)
+   ========================================================================== */
+.announcement-bar {
+    background-color: #0b0f19; /* Deep luxury dark */
+    color: #d4af37; /* Gold */
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    padding: 10px 0;
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
+    overflow: hidden;
+    white-space: nowrap;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.marquee {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 35s linear infinite;
+}
+
+.marquee:hover {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+/* ==========================================================================
    Luxurious Navbar Component
    ========================================================================== */
 .navbar {
     position: fixed;
-    top: 0;
+    top: 36px; /* Below the announcement bar */
     left: 0;
     width: 100%;
     z-index: 1000;
@@ -179,14 +215,14 @@
         padding: 0.5rem 1rem;
         border-radius: 0;
         width: 100%;
-        top: 0;
+        top: 36px;
         border: none;
         background: rgba(248, 246, 240, 0.95);
         backdrop-filter: blur(12px);
     }
     
     .navbar.scrolled {
-        top: 0;
+        top: 36px;
         width: 100%;
     }
     

@@ -27,12 +27,19 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css?v=2">
-    <link rel="stylesheet" href="css/components/navbar.css">
+    <link rel="stylesheet" href="css/components/navbar.css?v=3">
     <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/components/collections.css">
 </head>
 
 <body>
 
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="marquee">
+            <span>PREMIUM DEVOTIONAL ITEMS &nbsp;&nbsp;&nbsp; — &nbsp;&nbsp;&nbsp; ॥ जय श्री राम ॥ &nbsp;&nbsp;&nbsp; — &nbsp;&nbsp;&nbsp; ॥ हर हर महादेव ॥ &nbsp;&nbsp;&nbsp; — &nbsp;&nbsp;&nbsp; ॥ जय बजरंगबली ॥ &nbsp;&nbsp;&nbsp; — &nbsp;&nbsp;&nbsp; PREMIUM DEVOTIONAL ITEMS &nbsp;&nbsp;&nbsp; — &nbsp;&nbsp;&nbsp; ॥ जय श्री राम ॥ &nbsp;&nbsp;&nbsp; — &nbsp;&nbsp;&nbsp; ॥ हर हर महादेव ॥ &nbsp;&nbsp;&nbsp; — &nbsp;&nbsp;&nbsp; ॥ जय बजरंगबली ॥ &nbsp;&nbsp;&nbsp; — &nbsp;&nbsp;&nbsp; PREMIUM DEVOTIONAL ITEMS &nbsp;&nbsp;&nbsp; — &nbsp;&nbsp;&nbsp; ॥ जय श्री राम ॥ &nbsp;&nbsp;&nbsp; — &nbsp;&nbsp;&nbsp; ॥ हर हर महादेव ॥ &nbsp;&nbsp;&nbsp; — &nbsp;&nbsp;&nbsp; ॥ जय बजरंगबली ॥</span>
+        </div>
+    </div>
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
@@ -119,6 +126,121 @@
                 </div>
             </div>
         </div>
+    <!-- Customer Reviews -->
+    <section class="reviews-section section" style="padding-top: 4rem; padding-bottom: 2rem;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <p style="font-style: italic; font-size: 1.1rem; color: var(--accent-color); margin-bottom: 0.5rem;">भक्तों की समीक्षाएं</p>
+                <h2 class="section-title" style="margin-bottom: 0.5rem; font-size: 2.5rem; color: var(--primary-color);">
+                    Customer <span style="color: var(--primary-color);">Reviews</span>
+                </h2>
+                <div style="display: flex; align-items: center; justify-content: center; gap: 10px; color: #d4af37; font-size: 1.1rem; margin-top: 1rem;">
+                    <div style="display: flex; gap: 2px;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span style="color: #666; font-size: 0.95rem;">4.8/5 from 24 reviews</span>
+                </div>
+            </div>
+
+            <div class="reviews-slider-container" style="overflow-x: auto; scroll-behavior: smooth; scroll-snap-type: x mandatory; padding-bottom: 1rem; -webkit-overflow-scrolling: touch;" id="reviewsSlider">
+                <div style="display: flex; gap: 1.5rem; width: max-content; padding: 0 1rem;">
+                    
+                    <!-- Review 1 -->
+                    <div class="review-card" style="width: min(320px, 85vw); background: #fff; padding: 2rem; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.2); box-shadow: 0 4px 15px rgba(0,0,0,0.03); scroll-snap-align: start; flex-shrink: 0; display: flex; flex-direction: column;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <div style="color: #d4af37; font-size: 0.9rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <span style="color: #999; font-size: 0.8rem;">2 months ago</span>
+                        </div>
+                        <p style="color: #555; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">"The craftsmanship on the Radha Krishna murti is breathtaking. Every detail is perfect, and the marble quality is truly premium. Highly recommended!"</p>
+                        <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+                            <div>
+                                <h4 style="color: var(--primary-color); font-size: 1rem; margin-bottom: 0.2rem;">Neha Sharma</h4>
+                                <span style="color: #888; font-size: 0.8rem;">Mumbai, Maharashtra</span>
+                            </div>
+                            <div style="color: #2e7d32; font-size: 0.75rem; font-weight: 600; padding: 4px 8px; background: rgba(46, 125, 50, 0.1); border-radius: 4px; display: flex; align-items: center; gap: 4px;">
+                                <i class="fas fa-check-circle"></i> VERIFIED
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="review-card" style="width: min(320px, 85vw); background: #fff; padding: 2rem; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.2); box-shadow: 0 4px 15px rgba(0,0,0,0.03); scroll-snap-align: start; flex-shrink: 0; display: flex; flex-direction: column;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <div style="color: #d4af37; font-size: 0.9rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <span style="color: #999; font-size: 0.8rem;">4 months ago</span>
+                        </div>
+                        <p style="color: #555; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">"I ordered a custom size Panchmukhi Hanuman Ji. The team at Shree Ji Stone Murty delivered exactly what we prayed for. Truly divine work."</p>
+                        <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+                            <div>
+                                <h4 style="color: var(--primary-color); font-size: 1rem; margin-bottom: 0.2rem;">Rajesh Verma</h4>
+                                <span style="color: #888; font-size: 0.8rem;">Delhi</span>
+                            </div>
+                            <div style="color: #2e7d32; font-size: 0.75rem; font-weight: 600; padding: 4px 8px; background: rgba(46, 125, 50, 0.1); border-radius: 4px; display: flex; align-items: center; gap: 4px;">
+                                <i class="fas fa-check-circle"></i> VERIFIED
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="review-card" style="width: min(320px, 85vw); background: #fff; padding: 2rem; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.2); box-shadow: 0 4px 15px rgba(0,0,0,0.03); scroll-snap-align: start; flex-shrink: 0; display: flex; flex-direction: column;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <div style="color: #d4af37; font-size: 0.9rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <span style="color: #999; font-size: 0.8rem;">5 months ago</span>
+                        </div>
+                        <p style="color: #555; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">"The marble fountain we received is a masterpiece. It transformed our garden. Excellent packaging and safe delivery to Bangalore."</p>
+                        <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+                            <div>
+                                <h4 style="color: var(--primary-color); font-size: 1rem; margin-bottom: 0.2rem;">Anita Desai</h4>
+                                <span style="color: #888; font-size: 0.8rem;">Bangalore, Karnataka</span>
+                            </div>
+                            <div style="color: #2e7d32; font-size: 0.75rem; font-weight: 600; padding: 4px 8px; background: rgba(46, 125, 50, 0.1); border-radius: 4px; display: flex; align-items: center; gap: 4px;">
+                                <i class="fas fa-check-circle"></i> VERIFIED
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 4 -->
+                    <div class="review-card" style="width: min(320px, 85vw); background: #fff; padding: 2rem; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.2); box-shadow: 0 4px 15px rgba(0,0,0,0.03); scroll-snap-align: start; flex-shrink: 0; display: flex; flex-direction: column;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <div style="color: #d4af37; font-size: 0.9rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                            <span style="color: #999; font-size: 0.8rem;">7 months ago</span>
+                        </div>
+                        <p style="color: #555; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">"Beautiful finishing and expressions on the face of Ganesh Ji. The communication throughout the custom order was very professional."</p>
+                        <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+                            <div>
+                                <h4 style="color: var(--primary-color); font-size: 1rem; margin-bottom: 0.2rem;">Amit Patel</h4>
+                                <span style="color: #888; font-size: 0.8rem;">Ahmedabad, Gujarat</span>
+                            </div>
+                            <div style="color: #2e7d32; font-size: 0.75rem; font-weight: 600; padding: 4px 8px; background: rgba(46, 125, 50, 0.1); border-radius: 4px; display: flex; align-items: center; gap: 4px;">
+                                <i class="fas fa-check-circle"></i> VERIFIED
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem; color: #888; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.1em;">
+                DRAG TO EXPLORE <i class="fas fa-arrow-right" style="margin-left: 5px;"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended Products -->
+    <section class="recommended-section section" style="background-color: var(--secondary-color); padding-top: 2rem;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h2 class="section-title" style="margin-bottom: 0.5rem; font-size: 2.5rem; color: var(--primary-color);">Frequently Bought Together</h2>
+                <div style="display: flex; align-items: center; justify-content: center; gap: 10px; color: var(--accent-color);">
+                    <span style="height: 1px; background-color: var(--accent-color); width: 40px; display: inline-block;"></span>
+                    <p style="font-style: italic; font-size: 1.1rem; margin: 0;">Complete your sacred collection</p>
+                    <span style="height: 1px; background-color: var(--accent-color); width: 40px; display: inline-block;"></span>
+                </div>
+            </div>
+            <div class="products-grid catalog-grid" id="recommendedGrid">
+                <!-- Recommended products injected here via JS -->
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
@@ -186,8 +308,8 @@
 
     <!-- Scripts -->
     <!-- Load the generated products database first -->
-    <script src="js/products_data.js?v=7"></script>
-    <script src="js/product.js?v=7"></script>
+    <script src="js/products_data.js?v=10"></script>
+    <script src="js/product.js?v=10"></script>
     <script src="js/main.js"></script>
 </body>
 

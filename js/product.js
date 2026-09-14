@@ -109,4 +109,90 @@ document.addEventListener('DOMContentLoaded', () => {
             updatePriceAndLink();
         });
     });
+
+    // --- Recommended Products Logic ---
+    if (window.PRODUCTS_DATA) {
+        let recommended = window.PRODUCTS_DATA.filter(p => p.category === category && p.sku !== product.sku);
+        // Shuffle
+        recommended.sort(() => 0.5 - Math.random());
+        // Pick 4
+        recommended = recommended.slice(0, 4);
+        
+        // If not enough, pad with others
+        if (recommended.length < 4) {
+            let others = window.PRODUCTS_DATA.filter(p => p.category !== category && p.sku !== product.sku);
+            others.sort(() => 0.5 - Math.random());
+            recommended = recommended.concat(others.slice(0, 4 - recommended.length));
+        }
+
+        const recommendedGrid = document.getElementById('recommendedGrid');
+        if (recommendedGrid) {
+            recommendedGrid.innerHTML = recommended.map(p => {
+                let priceDisplay = `<strong>₹ ${p.basePrice}</strong> INR`;
+                let sizesDisplay = 'Available Sizes: 12" H X 3" D X 8.5" W (Customizable)';
+                
+                if (p.category === 'fountain' || p.category === 'bench') {
+                    priceDisplay = `<a href="inquiry.html?sku=${p.sku}" style="text-decoration: underline; color: inherit;"><strong>Contact for pricing or more details</strong></a>`;
+                    sizesDisplay = '';
+                } else if (customPrices[p.category]) {
+                    priceDisplay = `<strong>₹ ${customPrices[p.category]["12"]}</strong> INR`;
+                }
+
+                return `
+                <div class="product-card" data-category="${p.category}" data-price="${p.basePrice}">
+                    <div class="product-image-container">
+                        <span class="badge-in-stock" style="background: #1a1a2e; color: #fff;">SALE</span>
+                        <img src="${p.image}" alt="${p.title}" loading="lazy">
+                        <div class="watermark-overlay">© SHREE JI</div>
+                        <a href="https://wa.me/918947967791?text=${p.sku}" class="zoom-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> <small>+91 7877379557</small>
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3>${p.title}</h3>
+                        <div class="card-sku">Product ID : ${p.sku}</div>
+                        <div class="card-price">Price : ${priceDisplay}</div>
+                        
+                        <p class="list-desc">Handcrafted ${p.title} in premium makrana marble with exquisite detailing. This masterpiece perfectly exemplifies our mastery in traditional stone carving.</p>
+                        <div class="list-sizes">${sizesDisplay}</div>
+                        <div style="display: flex; gap: 10px; margin-top: auto; width: 100%;">
+                            <a href="product.html?sku=${p.sku}" class="btn-teal-view" style="flex: 1; text-align: center; padding: 10px 5px; white-space: nowrap; font-size: 0.7rem;">VIEW DETAILS</a>
+                            <a href="https://wa.me/918947967791?text=${p.sku}" class="btn-teal-view" style="flex: 1; text-align: center; padding: 10px 5px; white-space: nowrap; font-size: 0.7rem; background: var(--primary-color); color: #fff; border-color: var(--primary-color);">INQUIRE NOW</a>
+                        </div>
+                    </div>
+                </div>`;
+            }).join('');
+        }
+    }
+
+    // --- Reviews Slider Drag to Scroll ---
+    const slider = document.getElementById('reviewsSlider');
+    if (slider) {
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        slider.addEventListener('mousedown', (e) => {
+            isDown = true;
+            slider.style.cursor = 'grabbing';
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+        });
+        slider.addEventListener('mouseleave', () => {
+            isDown = false;
+            slider.style.cursor = 'grab';
+        });
+        slider.addEventListener('mouseup', () => {
+            isDown = false;
+            slider.style.cursor = 'grab';
+        });
+        slider.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            const walk = (x - startX) * 2; // scroll-fast
+            slider.scrollLeft = scrollLeft - walk;
+        });
+        slider.style.cursor = 'grab';
+    }
 });
