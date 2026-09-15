@@ -864,6 +864,78 @@ window.PRODUCTS_DATA = [
         "category": "bench"
     },
     {
+        "sku": "SJM-PAN-0876",
+        "title": "PanchMukhi Hanuman Ji",
+        "image": "images/PANCHMUKHI HANUMAAN JI MARBLE MURTY (1).png",
+        "basePrice": 24000,
+        "material": "Premium Makrana Marble",
+        "category": "panchmukhi_hanuman"
+    },
+    {
+        "sku": "SJM-PAN-5207",
+        "title": "PanchMukhi Hanuman Ji",
+        "image": "images/PANCHMUKHI HANUMAAN JI MARBLE MURTY (2).png",
+        "basePrice": 24000,
+        "material": "Premium Makrana Marble",
+        "category": "panchmukhi_hanuman"
+    },
+    {
+        "sku": "SJM-PAN-7641",
+        "title": "PanchMukhi Hanuman Ji",
+        "image": "images/PANCHMUKHI HANUMAAN JI MARBLE MURTY (3).png",
+        "basePrice": 24000,
+        "material": "Premium Makrana Marble",
+        "category": "panchmukhi_hanuman"
+    },
+    {
+        "sku": "SJM-PAN-1221",
+        "title": "PanchMukhi Hanuman Ji",
+        "image": "images/PANCHMUKHI HANUMAAN JI MARBLE MURTY (4).png",
+        "basePrice": 24000,
+        "material": "Premium Makrana Marble",
+        "category": "panchmukhi_hanuman"
+    },
+    {
+        "sku": "SJM-PAN-2293",
+        "title": "PanchMukhi Hanuman Ji",
+        "image": "images/PANCHMUKHI HANUMAAN JI MARBLE MURTY (5).png",
+        "basePrice": 24000,
+        "material": "Premium Makrana Marble",
+        "category": "panchmukhi_hanuman"
+    },
+    {
+        "sku": "SJM-PAN-1757",
+        "title": "PanchMukhi Hanuman Ji",
+        "image": "images/PANCHMUKHI HANUMAAN JI MARBLE MURTY (6).png",
+        "basePrice": 24000,
+        "material": "Premium Makrana Marble",
+        "category": "panchmukhi_hanuman"
+    },
+    {
+        "sku": "SJM-PAN-5109",
+        "title": "PanchMukhi Hanuman Ji",
+        "image": "images/PANCHMUKHI HANUMAAN JI MARBLE MURTY (7).png",
+        "basePrice": 24000,
+        "material": "Premium Makrana Marble",
+        "category": "panchmukhi_hanuman"
+    },
+    {
+        "sku": "SJM-PAN-8527",
+        "title": "PanchMukhi Hanuman Ji",
+        "image": "images/PANCHMUKHI HANUMAAN JI MARBLE MURTY (8).png",
+        "basePrice": 24000,
+        "material": "Premium Makrana Marble",
+        "category": "panchmukhi_hanuman"
+    },
+    {
+        "sku": "SJM-PAN-8787",
+        "title": "PanchMukhi Hanuman Ji",
+        "image": "images/PANCHMUKHI HANUMAAN JI MARBLE MURTY (9).png",
+        "basePrice": 24000,
+        "material": "Premium Makrana Marble",
+        "category": "panchmukhi_hanuman"
+    },
+    {
         "sku": "SJM-PAR-3091",
         "title": "Parvati Mataji",
         "image": "images/PARWATI MATA JI MARBLE MURTY 01.jpg",
@@ -1256,22 +1328,6 @@ window.PRODUCTS_DATA = [
         "category": "hanuman"
     },
     {
-        "sku": "SJM-PAN-1465",
-        "title": "PanchMukhi Hanuman Ji",
-        "image": "images/hanumaan ji marble murty 04.jpg",
-        "basePrice": 24000,
-        "material": "Premium Makrana Marble",
-        "category": "panchmukhi_hanuman"
-    },
-    {
-        "sku": "SJM-PAN-6664",
-        "title": "PanchMukhi Hanuman Ji",
-        "image": "images/hanumaan ji marble murty 05.jpg",
-        "basePrice": 24000,
-        "material": "Premium Makrana Marble",
-        "category": "panchmukhi_hanuman"
-    },
-    {
         "sku": "SJM-HAN-2522",
         "title": "Hanuman Ji",
         "image": "images/hanumaan ji marble murty 06.jpg",
@@ -1350,14 +1406,6 @@ window.PRODUCTS_DATA = [
         "basePrice": 15000,
         "material": "Premium Makrana Marble",
         "category": "hanuman"
-    },
-    {
-        "sku": "SJM-PAN-0655",
-        "title": "PanchMukhi Hanuman Ji",
-        "image": "images/hanumaan ji marble murty 16 .jpg.png",
-        "basePrice": 24000,
-        "material": "Premium Makrana Marble",
-        "category": "panchmukhi_hanuman"
     },
     {
         "sku": "SJM-SHI-7113",

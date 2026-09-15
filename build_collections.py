@@ -9,7 +9,7 @@ categories = [
     {"id": "ganesh", "name": "Ganesh Ji", "prefixes": ["ganesh ji"]},
     {"id": "shiv", "name": "Shiv Ji", "prefixes": ["shiv ji"]},
     {"id": "hanuman", "name": "Hanuman Ji", "prefixes": ["hanumaan ji"]},
-    {"id": "panchmukhi_hanuman", "name": "PanchMukhi Hanuman Ji", "prefixes": ["panchmukhi hanuman"]},
+    {"id": "panchmukhi_hanuman", "name": "PanchMukhi Hanuman Ji", "prefixes": ["panchmukhi hanuman", "panchmukhi hanumaan"]},
     {"id": "fountain", "name": "Fountains", "prefixes": ["fountain", "fountin"]},
     {"id": "ganga", "name": "Ganga Maa", "prefixes": ["ganga maa"]},
     {"id": "lakshmi_narayan", "name": "Lakshmi Narayan Ji", "prefixes": ["lakshmi narayan", "lakshmi ji and narayan ji"]},
@@ -57,23 +57,13 @@ for file in files:
     file_lower = file.lower()
     matched_cat = None
     
-    # Hardcoded overrides for specific PanchMukhi Hanuman Ji files
-    panchmukhi_files = [
-        "hanumaan ji marble murty 04.jpg",
-        "hanumaan ji marble murty 05.jpg",
-        "hanumaan ji marble murty 16 .jpg.png"
-    ]
-    
-    if file_lower in panchmukhi_files:
-        matched_cat = next(cat for cat in categories if cat["id"] == "panchmukhi_hanuman")
-    else:
-        for cat in categories:
-            for prefix in cat["prefixes"]:
-                if file_lower.startswith(prefix):
-                    matched_cat = cat
-                    break
-            if matched_cat:
+    for cat in categories:
+        for prefix in cat["prefixes"]:
+            if file_lower.startswith(prefix):
+                matched_cat = cat
                 break
+        if matched_cat:
+            break
             
     if matched_cat:
         # Generate deterministic details based on file name

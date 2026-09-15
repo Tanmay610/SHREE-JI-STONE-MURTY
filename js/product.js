@@ -39,8 +39,16 @@ document.addEventListener('DOMContentLoaded', () => {
         sizeSelector.style.display = 'none';
         whatsappBtn.innerHTML = '<i class="fas fa-envelope"></i> Contact for pricing or more details';
         whatsappBtn.href = `inquiry.html?sku=${product.sku}`;
-        return; // Skip standard size/price logic
-    }
+        
+        const descEl = document.querySelector('.pd-description');
+        if (descEl) {
+            if (category === 'bench') {
+                descEl.innerHTML = descEl.innerHTML.replace('statue', 'bench');
+            } else if (category === 'fountain') {
+                descEl.innerHTML = descEl.innerHTML.replace('statue', 'fountain');
+            }
+        }
+    } else {
 
     const customPrices = {
         'ganesh': { "12": 20500, "15": 24000, "18": 35500, "24": 55500, "30": 65500 },
@@ -109,6 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
             updatePriceAndLink();
         });
     });
+    } // end else
 
     // --- Recommended Products Logic ---
     if (window.PRODUCTS_DATA) {
