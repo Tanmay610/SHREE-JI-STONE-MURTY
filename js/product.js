@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'ram_darbar': { "12": 27500, "18": 42000, "24": 62500, "30": 79500 }
     };
 
-    if (category === 'fountain' || category === 'bench') {
+    if (category === 'fountain' || category === 'bench' || category === 'jali') {
         priceWrap.style.display = 'none';
         sizeSelector.style.display = 'none';
         whatsappBtn.innerHTML = '<i class="fas fa-envelope"></i> Contact for pricing or more details';
@@ -56,6 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 descEl.innerHTML = descEl.innerHTML.replace('statue', 'bench');
             } else if (category === 'fountain') {
                 descEl.innerHTML = descEl.innerHTML.replace('statue', 'fountain');
+            } else if (category === 'jali') {
+                descEl.innerHTML = descEl.innerHTML.replace('statue', 'jali');
             }
         }
     } else {
@@ -140,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 let priceDisplay = `<strong>₹ ${p.basePrice}</strong> INR`;
                 let sizesDisplay = 'Available Sizes: 12" H X 3" D X 8.5" W (Customizable)';
                 
-                if (p.category === 'fountain' || p.category === 'bench') {
+                if (p.category === 'fountain' || p.category === 'bench' || p.category === 'jali') {
                     priceDisplay = `<a href="inquiry.html?sku=${p.sku}" style="text-decoration: underline; color: inherit;"><strong>Contact for pricing or more details</strong></a>`;
                     sizesDisplay = '';
                 } else if (customPrices[p.category]) {

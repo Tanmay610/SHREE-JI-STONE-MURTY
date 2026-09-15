@@ -22,7 +22,8 @@ categories = [
     {"id": "durga", "name": "Durga Mataji", "prefixes": ["durga mata"]},
     {"id": "mahaveer", "name": "Mahaveer Jain", "prefixes": ["mahaveer jain"]},
     {"id": "bal_radha_krishna", "name": " Radha and Krishna ji", "prefixes": ["bal gopal radha and krishna"]},
-    {"id": "ram_darbar", "name": "Ram Darbar", "prefixes": ["ram darbar"]}
+    {"id": "ram_darbar", "name": "Ram Darbar", "prefixes": ["ram darbar"]},
+    {"id": "jali", "name": "Marble Jali", "prefixes": ["marble jali"]}
 ]
 
 products_data = []
@@ -96,7 +97,7 @@ for file in files:
         price_display = f"<strong>₹ {base_price}</strong> INR"
         sizes_display = 'Available Sizes: 12" H X 3" D X 8.5" W (Customizable)'
         
-        if matched_cat["id"] in ["fountain", "bench"]:
+        if matched_cat["id"] in ["fountain", "bench", "jali"]:
             price_display = f'<a href="inquiry.html?sku={sku}" style="text-decoration: underline; color: inherit;"><strong>Contact for pricing or more details</strong></a>'
             sizes_display = ""
             

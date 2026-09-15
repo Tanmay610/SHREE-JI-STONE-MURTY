@@ -864,6 +864,198 @@ window.PRODUCTS_DATA = [
         "category": "bench"
     },
     {
+        "sku": "SJM-JAL-7905",
+        "title": "Marble Jali",
+        "image": "images/MARBLE JALI  (1).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "jali"
+    },
+    {
+        "sku": "SJM-JAL-5019",
+        "title": "Marble Jali",
+        "image": "images/MARBLE JALI  (10).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "jali"
+    },
+    {
+        "sku": "SJM-JAL-3675",
+        "title": "Marble Jali",
+        "image": "images/MARBLE JALI  (11).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "jali"
+    },
+    {
+        "sku": "SJM-JAL-8382",
+        "title": "Marble Jali",
+        "image": "images/MARBLE JALI  (12).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "jali"
+    },
+    {
+        "sku": "SJM-JAL-7817",
+        "title": "Marble Jali",
+        "image": "images/MARBLE JALI  (13).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "jali"
+    },
+    {
+        "sku": "SJM-JAL-1805",
+        "title": "Marble Jali",
+        "image": "images/MARBLE JALI  (14).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "jali"
+    },
+    {
+        "sku": "SJM-JAL-4500",
+        "title": "Marble Jali",
+        "image": "images/MARBLE JALI  (15).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "jali"
+    },
+    {
+        "sku": "SJM-JAL-4094",
+        "title": "Marble Jali",
+        "image": "images/MARBLE JALI  (16).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "jali"
+    },
+    {
+        "sku": "SJM-JAL-5730",
+        "title": "Marble Jali",
+        "image": "images/MARBLE JALI  (17).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "jali"
+    },
+    {
+        "sku": "SJM-JAL-5849",
+        "title": "Marble Jali",
+        "image": "images/MARBLE JALI  (18).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "jali"
+    },
+    {
+        "sku": "SJM-JAL-9065",
+        "title": "Marble Jali",
+        "image": "images/MARBLE JALI  (19).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "jali"
+    },
+    {
+        "sku": "SJM-JAL-0897",
+        "title": "Marble Jali",
+        "image": "images/MARBLE JALI  (2).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "jali"
+    },
+    {
+        "sku": "SJM-JAL-1390",
+        "title": "Marble Jali",
+        "image": "images/MARBLE JALI  (20).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "jali"
+    },
+    {
+        "sku": "SJM-JAL-5685",
+        "title": "Marble Jali",
+        "image": "images/MARBLE JALI  (21).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "jali"
+    },
+    {
+        "sku": "SJM-JAL-3374",
+        "title": "Marble Jali",
+        "image": "images/MARBLE JALI  (22).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "jali"
+    },
+    {
+        "sku": "SJM-JAL-7725",
+        "title": "Marble Jali",
+        "image": "images/MARBLE JALI  (23).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "jali"
+    },
+    {
+        "sku": "SJM-JAL-3157",
+        "title": "Marble Jali",
+        "image": "images/MARBLE JALI  (24).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "jali"
+    },
+    {
+        "sku": "SJM-JAL-4053",
+        "title": "Marble Jali",
+        "image": "images/MARBLE JALI  (3).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "jali"
+    },
+    {
+        "sku": "SJM-JAL-6648",
+        "title": "Marble Jali",
+        "image": "images/MARBLE JALI  (4).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "jali"
+    },
+    {
+        "sku": "SJM-JAL-8665",
+        "title": "Marble Jali",
+        "image": "images/MARBLE JALI  (5).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "jali"
+    },
+    {
+        "sku": "SJM-JAL-5237",
+        "title": "Marble Jali",
+        "image": "images/MARBLE JALI  (6).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "jali"
+    },
+    {
+        "sku": "SJM-JAL-6580",
+        "title": "Marble Jali",
+        "image": "images/MARBLE JALI  (7).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "jali"
+    },
+    {
+        "sku": "SJM-JAL-7291",
+        "title": "Marble Jali",
+        "image": "images/MARBLE JALI  (8).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "jali"
+    },
+    {
+        "sku": "SJM-JAL-4323",
+        "title": "Marble Jali",
+        "image": "images/MARBLE JALI  (9).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "jali"
+    },
+    {
         "sku": "SJM-PAN-0876",
         "title": "PanchMukhi Hanuman Ji",
         "image": "images/PANCHMUKHI HANUMAAN JI MARBLE MURTY (1).png",
