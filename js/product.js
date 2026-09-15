@@ -34,6 +34,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const sizeSelector = document.querySelector('.pd-size-selector');
     const whatsappBtn = document.getElementById('btnWhatsappCheckout');
 
+    const customPrices = {
+        'ganesh': { "12": 20500, "15": 24000, "18": 35500, "24": 55500, "30": 65500 },
+        'panchmukhi_hanuman': { "12": 24000, "18": 38500, "24": 55000, "30": 67500 },
+        'ganga': { "12": 20500, "18": 36500, "24": 48500, "30": 65000 },
+        'lakshmi_narayan': { "12": 27500, "18": 38500, "24": 49500, "30": 69500 },
+        'datta': { "12": 24500, "18": 38500, "24": 49500, "30": 69500 },
+        'durga': { "12": 18500, "18": 35000, "24": 45500, "30": 60000 },
+        'ram_darbar': { "12": 27500, "18": 42000, "24": 62500, "30": 79500 }
+    };
+
     if (category === 'fountain' || category === 'bench') {
         priceWrap.style.display = 'none';
         sizeSelector.style.display = 'none';
@@ -50,17 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     } else {
 
-    const customPrices = {
-        'ganesh': { "12": 20500, "15": 24000, "18": 35500, "24": 55500, "30": 65500 },
-        'panchmukhi_hanuman': { "12": 24000, "18": 38500, "24": 55000, "30": 67500 },
-        'ganga': { "12": 20500, "18": 36500, "24": 48500, "30": 65000 },
-        'lakshmi_narayan': { "12": 27500, "18": 38500, "24": 49500, "30": 69500 },
-        'datta': { "12": 24500, "18": 38500, "24": 49500, "30": 69500 },
-        'durga': { "12": 18500, "18": 35000, "24": 45500, "30": 60000 },
-        'ram_darbar': { "12": 27500, "18": 42000, "24": 62500, "30": 79500 }
-    };
-
-    let activeCustomPrices = null;
+        let activeCustomPrices = null;
     if (customPrices[category]) {
         activeCustomPrices = customPrices[category];
         // Rebuild size buttons for categories with custom prices
