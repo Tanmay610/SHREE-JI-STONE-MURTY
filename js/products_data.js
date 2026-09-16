@@ -1056,6 +1056,70 @@ window.PRODUCTS_DATA = [
         "category": "jali"
     },
     {
+        "sku": "SJM-TUL-8108",
+        "title": "Marble Tulshi Pot",
+        "image": "images/MARBLE TULSHI POT  (1).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "tulshi_pot"
+    },
+    {
+        "sku": "SJM-TUL-8445",
+        "title": "Marble Tulshi Pot",
+        "image": "images/MARBLE TULSHI POT  (2).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "tulshi_pot"
+    },
+    {
+        "sku": "SJM-TUL-5498",
+        "title": "Marble Tulshi Pot",
+        "image": "images/MARBLE TULSHI POT  (3).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "tulshi_pot"
+    },
+    {
+        "sku": "SJM-TUL-0276",
+        "title": "Marble Tulshi Pot",
+        "image": "images/MARBLE TULSHI POT  (4).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "tulshi_pot"
+    },
+    {
+        "sku": "SJM-TUL-8925",
+        "title": "Marble Tulshi Pot",
+        "image": "images/MARBLE TULSHI POT  (5).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "tulshi_pot"
+    },
+    {
+        "sku": "SJM-TUL-4412",
+        "title": "Marble Tulshi Pot",
+        "image": "images/MARBLE TULSHI POT  (6).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "tulshi_pot"
+    },
+    {
+        "sku": "SJM-TUL-5301",
+        "title": "Marble Tulshi Pot",
+        "image": "images/MARBLE TULSHI POT  (7).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "tulshi_pot"
+    },
+    {
+        "sku": "SJM-TUL-2418",
+        "title": "Marble Tulshi Pot",
+        "image": "images/MARBLE TULSHI POT  (8).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "tulshi_pot"
+    },
+    {
         "sku": "SJM-PAN-0876",
         "title": "PanchMukhi Hanuman Ji",
         "image": "images/PANCHMUKHI HANUMAAN JI MARBLE MURTY (1).png",
