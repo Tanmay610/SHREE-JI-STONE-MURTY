@@ -1192,6 +1192,86 @@ window.PRODUCTS_DATA = [
         "category": "panchmukhi_hanuman"
     },
     {
+        "sku": "SJM-PAR-2740",
+        "title": "Parvati Mataji",
+        "image": "images/PARWATI MATA JI MARBLE MURTY  (1).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "parvati"
+    },
+    {
+        "sku": "SJM-PAR-9413",
+        "title": "Parvati Mataji",
+        "image": "images/PARWATI MATA JI MARBLE MURTY  (10).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "parvati"
+    },
+    {
+        "sku": "SJM-PAR-0205",
+        "title": "Parvati Mataji",
+        "image": "images/PARWATI MATA JI MARBLE MURTY  (2).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "parvati"
+    },
+    {
+        "sku": "SJM-PAR-2677",
+        "title": "Parvati Mataji",
+        "image": "images/PARWATI MATA JI MARBLE MURTY  (3).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "parvati"
+    },
+    {
+        "sku": "SJM-PAR-5664",
+        "title": "Parvati Mataji",
+        "image": "images/PARWATI MATA JI MARBLE MURTY  (4).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "parvati"
+    },
+    {
+        "sku": "SJM-PAR-3422",
+        "title": "Parvati Mataji",
+        "image": "images/PARWATI MATA JI MARBLE MURTY  (5).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "parvati"
+    },
+    {
+        "sku": "SJM-PAR-8120",
+        "title": "Parvati Mataji",
+        "image": "images/PARWATI MATA JI MARBLE MURTY  (6).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "parvati"
+    },
+    {
+        "sku": "SJM-PAR-7644",
+        "title": "Parvati Mataji",
+        "image": "images/PARWATI MATA JI MARBLE MURTY  (7).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "parvati"
+    },
+    {
+        "sku": "SJM-PAR-7101",
+        "title": "Parvati Mataji",
+        "image": "images/PARWATI MATA JI MARBLE MURTY  (8).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "parvati"
+    },
+    {
+        "sku": "SJM-PAR-5115",
+        "title": "Parvati Mataji",
+        "image": "images/PARWATI MATA JI MARBLE MURTY  (9).png",
+        "basePrice": 15000,
+        "material": "Premium Makrana Marble",
+        "category": "parvati"
+    },
+    {
         "sku": "SJM-PAR-3091",
         "title": "Parvati Mataji",
         "image": "images/PARWATI MATA JI MARBLE MURTY 01.jpg",
