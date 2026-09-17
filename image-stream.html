@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Stream Hero Demo</title>
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Image Stream Hero Demo</title>
+<style>
         :root {
             --foreground: #101317;
             --background: #FAFAFA;
@@ -77,27 +78,25 @@
     </style>
 </head>
 <body>
-
-    <div id="hero-container" class="demo-container">
-        <!-- Content overlaid on top of the 3D stream -->
-        <div class="overlay-content">
-            <div class="overlay-header">
-                <h1 class="overlay-title">
+<div class="demo-container" id="hero-container">
+<!-- Content overlaid on top of the 3D stream -->
+<div class="overlay-content">
+<div class="overlay-header">
+<h1 class="overlay-title">
                     Your work,
-                    <br />
+                    <br/>
                     front and centre.
                 </h1>
-            </div>
-            <p class="overlay-desc">
+</div>
+<p class="overlay-desc">
                 A hero that leads with the images instead of describing them. Swap in
                 your own and the corridor rebuilds around them.
             </p>
-        </div>
-    </div>
-
-    <!-- Include the Vanilla JS Component -->
-    <script src="js/image-stream-hero.js"></script>
-    <script>
+</div>
+</div>
+<!-- Include the Vanilla JS Component -->
+<script defer="" src="js/image-stream-hero.js"></script>
+<script>
         const IMAGES = [
             { src: "https://images.unsplash.com/photo-1544265005-4c071671fc6c?auto=format&fit=crop&q=80&w=800", alt: "Statue" },
             { src: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&q=80&w=800", alt: "Art" },

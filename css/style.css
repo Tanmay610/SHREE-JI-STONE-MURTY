@@ -1339,3 +1339,12 @@ a {
         gap: 10px;
     }
 }
+
+/* A11Y Touch Targets */
+a, button, .btn {
+    min-height: 48px;
+    min-width: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
