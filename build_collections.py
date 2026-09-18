@@ -23,6 +23,7 @@ categories = [
     {"id": "mahaveer", "name": "Mahaveer Jain", "prefixes": ["mahaveer jain"]},
     {"id": "bal_radha_krishna", "name": " Radha and Krishna ji", "prefixes": ["bal gopal radha and krishna"]},
     {"id": "ram_darbar", "name": "Ram Darbar", "prefixes": ["ram darbar"]},
+    {"id": "saraswati", "name": "Saraswati Mataji", "prefixes": ["sarswati mata", "saraswati mata"]},
     {"id": "jali", "name": "Marble Jali", "prefixes": ["marble jali"]},
     {"id": "tulshi_pot", "name": "Marble Tulshi Pot", "prefixes": ["marble tulshi pot"]}
 ]
@@ -81,7 +82,8 @@ for file in files:
             "lakshmi_narayan": 27500,
             "datta": 24500,
             "durga": 18500,
-            "ram_darbar": 27500
+            "ram_darbar": 27500,
+            "saraswati": 21500
         }
         base_price = base_prices.get(matched_cat["id"], 15000)
         material = "Premium Makrana Marble" if matched_cat["id"] != "fountain" else "Natural Sandstone & Marble"

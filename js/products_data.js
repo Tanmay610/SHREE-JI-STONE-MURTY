@@ -1384,6 +1384,102 @@ window.PRODUCTS_DATA = [
         "category": "ram_darbar"
     },
     {
+        "sku": "SJM-SAR-9122",
+        "title": "Saraswati Mataji",
+        "image": "images/SARSWATI MATA JI MARBLE MURTY (1).png",
+        "basePrice": 21500,
+        "material": "Premium Makrana Marble",
+        "category": "saraswati"
+    },
+    {
+        "sku": "SJM-SAR-5261",
+        "title": "Saraswati Mataji",
+        "image": "images/SARSWATI MATA JI MARBLE MURTY (10).png",
+        "basePrice": 21500,
+        "material": "Premium Makrana Marble",
+        "category": "saraswati"
+    },
+    {
+        "sku": "SJM-SAR-3354",
+        "title": "Saraswati Mataji",
+        "image": "images/SARSWATI MATA JI MARBLE MURTY (11).png",
+        "basePrice": 21500,
+        "material": "Premium Makrana Marble",
+        "category": "saraswati"
+    },
+    {
+        "sku": "SJM-SAR-1771",
+        "title": "Saraswati Mataji",
+        "image": "images/SARSWATI MATA JI MARBLE MURTY (12).png",
+        "basePrice": 21500,
+        "material": "Premium Makrana Marble",
+        "category": "saraswati"
+    },
+    {
+        "sku": "SJM-SAR-2710",
+        "title": "Saraswati Mataji",
+        "image": "images/SARSWATI MATA JI MARBLE MURTY (2).png",
+        "basePrice": 21500,
+        "material": "Premium Makrana Marble",
+        "category": "saraswati"
+    },
+    {
+        "sku": "SJM-SAR-8764",
+        "title": "Saraswati Mataji",
+        "image": "images/SARSWATI MATA JI MARBLE MURTY (3).png",
+        "basePrice": 21500,
+        "material": "Premium Makrana Marble",
+        "category": "saraswati"
+    },
+    {
+        "sku": "SJM-SAR-9276",
+        "title": "Saraswati Mataji",
+        "image": "images/SARSWATI MATA JI MARBLE MURTY (4).png",
+        "basePrice": 21500,
+        "material": "Premium Makrana Marble",
+        "category": "saraswati"
+    },
+    {
+        "sku": "SJM-SAR-9118",
+        "title": "Saraswati Mataji",
+        "image": "images/SARSWATI MATA JI MARBLE MURTY (5).png",
+        "basePrice": 21500,
+        "material": "Premium Makrana Marble",
+        "category": "saraswati"
+    },
+    {
+        "sku": "SJM-SAR-4851",
+        "title": "Saraswati Mataji",
+        "image": "images/SARSWATI MATA JI MARBLE MURTY (6).png",
+        "basePrice": 21500,
+        "material": "Premium Makrana Marble",
+        "category": "saraswati"
+    },
+    {
+        "sku": "SJM-SAR-7126",
+        "title": "Saraswati Mataji",
+        "image": "images/SARSWATI MATA JI MARBLE MURTY (7).png",
+        "basePrice": 21500,
+        "material": "Premium Makrana Marble",
+        "category": "saraswati"
+    },
+    {
+        "sku": "SJM-SAR-3366",
+        "title": "Saraswati Mataji",
+        "image": "images/SARSWATI MATA JI MARBLE MURTY (8).png",
+        "basePrice": 21500,
+        "material": "Premium Makrana Marble",
+        "category": "saraswati"
+    },
+    {
+        "sku": "SJM-SAR-6008",
+        "title": "Saraswati Mataji",
+        "image": "images/SARSWATI MATA JI MARBLE MURTY (9).png",
+        "basePrice": 21500,
+        "material": "Premium Makrana Marble",
+        "category": "saraswati"
+    },
+    {
         "sku": "SJM-FOU-4438",
         "title": "Fountains",
         "image": "images/fountain 01.jpg",
