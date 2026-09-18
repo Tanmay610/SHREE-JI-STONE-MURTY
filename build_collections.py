@@ -83,7 +83,7 @@ for file in files:
             "datta": 24500,
             "durga": 18500,
             "ram_darbar": 27500,
-            "saraswati": 21500
+            "saraswati": 20500
         }
         base_price = base_prices.get(matched_cat["id"], 15000)
         material = "Premium Makrana Marble" if matched_cat["id"] != "fountain" else "Natural Sandstone & Marble"
