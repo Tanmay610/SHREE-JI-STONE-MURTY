@@ -12,10 +12,10 @@ app.use(helmet({
 }));
 app.use(compression());
 
-// Serve static files (frontend) with caching
+// Serve static files (frontend)
 app.use(express.static(path.join(__dirname), {
-  maxAge: '30d',
-  etag: true
+  maxAge: 0,
+  etag: false
 }));
 
 // Example API endpoint – returns a static product list
