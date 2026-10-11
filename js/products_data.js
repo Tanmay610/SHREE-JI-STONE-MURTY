@@ -1,13 +1,5 @@
 window.PRODUCTS_DATA = [
     {
-        "sku": "SJM-BAL-6406",
-        "title": " Radha and Krishna ji",
-        "image": "images/BAL GOPAL RADHA AND KRISHNA JI MARVBLE MURTY 01.jpg",
-        "basePrice": 22000,
-        "material": "Premium Makrana Marble",
-        "category": "bal_radha_krishna"
-    },
-    {
         "sku": "SJM-BAL-5450",
         "title": " Radha and Krishna ji",
         "image": "images/BAL GOPAL RADHA AND KRISHNA JI MARVBLE MURTY 02.jpg",
@@ -27,14 +19,6 @@ window.PRODUCTS_DATA = [
         "sku": "SJM-BAL-3976",
         "title": " Radha and Krishna ji",
         "image": "images/BAL GOPAL RADHA AND KRISHNA JI MARVBLE MURTY 04 .jpg",
-        "basePrice": 22000,
-        "material": "Premium Makrana Marble",
-        "category": "bal_radha_krishna"
-    },
-    {
-        "sku": "SJM-BAL-6362",
-        "title": " Radha and Krishna ji",
-        "image": "images/BAL GOPAL RADHA AND KRISHNA JI MARVBLE MURTY 05.jpg",
         "basePrice": 22000,
         "material": "Premium Makrana Marble",
         "category": "bal_radha_krishna"

@@ -28,6 +28,8 @@ categories = [
     {"id": "tulshi_pot", "name": "Marble Tulshi Pot", "prefixes": ["marble tulshi pot"]}
 ]
 
+excluded_skus = {"SJM-BAL-6362", "SJM-BAL-6406"}
+
 products_data = []
 
 filters_html = '            <div class="catalog-filters">\n'
@@ -73,6 +75,8 @@ for file in files:
         import hashlib
         stable_hash = int(hashlib.md5(file.encode('utf-8')).hexdigest(), 16)
         sku = f"SJM-{matched_cat['id'][:3].upper()}-{str(stable_hash % 9999).zfill(4)}"
+        if sku in excluded_skus:
+            continue
         base_prices = {
             "fountain": 35000,
             "ganesh": 20500,

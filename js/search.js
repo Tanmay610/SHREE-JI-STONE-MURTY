@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Asynchronously load products data so search works on all pages
     const script = document.createElement('script');
-    script.src = 'js/products_data.js?v=8'; // bumped cache version
+    script.src = 'js/products_data.js?v=9'; // bumped cache version
     script.onload = () => {
         if (window.PRODUCTS_DATA) {
             searchData = window.PRODUCTS_DATA.map(p => {
