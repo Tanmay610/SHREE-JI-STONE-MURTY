@@ -16,56 +16,27 @@ app.set('trust proxy', 1);
 // 2. Hide technology stack information
 app.disable('x-powered-by');
 
-// 3. Security Headers via Helmet & Strict CSP
+// 3. Security Headers via Helmet (Cross-Origin and Localhost Safe)
 app.use(helmet({
-  contentSecurityPolicy: {
-    directives: {
-      defaultSrc: ["'self'"],
-      scriptSrc: [
-        "'self'",
-        "'unsafe-inline'",
-        "https://cdn.jsdelivr.net",
-        "https://cdnjs.cloudflare.com"
-      ],
-      styleSrc: [
-        "'self'",
-        "'unsafe-inline'",
-        "https://fonts.googleapis.com",
-        "https://cdn.jsdelivr.net",
-        "https://cdnjs.cloudflare.com"
-      ],
-      fontSrc: [
-        "'self'",
-        "https://fonts.gstatic.com",
-        "https://cdnjs.cloudflare.com",
-        "data:"
-      ],
-      imgSrc: [
-        "'self'",
-        "data:",
-        "blob:",
-        "https:"
-      ],
-      frameSrc: [
-        "'self'",
-        "https://www.google.com"
-      ],
-      connectSrc: ["'self'"],
-      objectSrc: ["'none'"],
-      baseUri: ["'self'"],
-      formAction: ["'self'"],
-      upgradeInsecureRequests: []
-    }
-  },
-  crossOriginResourcePolicy: { policy: "cross-origin" },
-  crossOriginOpenerPolicy: { policy: "same-origin" },
+  contentSecurityPolicy: false, // Prevents blocking frontend CDNs and avoids forcing HTTPS on localhost
+  hsts: false, // Handled conditionally below to allow localhost HTTP and clear any cached HSTS
+  crossOriginOpenerPolicy: false, // Prevents iframe/cross-origin resource isolation issues
+  crossOriginResourcePolicy: false,
+  originAgentCluster: false,
   referrerPolicy: { policy: "strict-origin-when-cross-origin" },
   xContentTypeOptions: true,
   xFrameOptions: { action: "sameorigin" }
 }));
 
-// 4. Custom Permissions Policy & Additional Protection Headers
+// 4. Custom Permissions Policy, XSS Defense & Dynamic HSTS Management
 app.use((req, res, next) => {
+  // If running in production over HTTPS, enforce strict transport security
+  if (isProd && (req.secure || req.headers['x-forwarded-proto'] === 'https')) {
+    res.setHeader('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload');
+  } else {
+    // In local development / HTTP, tell the browser to immediately clear any cached HSTS for localhost
+    res.setHeader('Strict-Transport-Security', 'max-age=0');
+  }
   res.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=(), payment=()');
   res.setHeader('X-XSS-Protection', '1; mode=block');
   next();
