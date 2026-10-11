@@ -69,7 +69,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (filtered.length === 0) {
-            searchResults.innerHTML = `<div class="search-empty">No results found for "${query}"</div>`;
+            const emptyDiv = document.createElement('div');
+            emptyDiv.className = 'search-empty';
+            emptyDiv.textContent = `No results found for "${query}"`;
+            searchResults.appendChild(emptyDiv);
             return;
         }
 

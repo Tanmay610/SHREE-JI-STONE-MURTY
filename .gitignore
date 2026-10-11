@@ -1,6 +1,49 @@
+# Dependencies
 node_modules/
+.npm/
+
+# Environment Variables & Sensitive Secrets
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+
+# Operating System Files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs & Debugging
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Test & Audit Reports
 lighthouse-report.json
 lighthouse-report-final.json
+
+# Python Cache & Virtual Environments
 *.pyc
+*.pyo
 __pycache__/
+.pytest_cache/
+venv/
+.venv/
+env/
+
+# Editor & IDE Directories
+.vscode/
+.idea/
+*.swp
+*.swo
