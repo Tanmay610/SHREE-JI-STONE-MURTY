@@ -2,6 +2,6 @@ Contact: mailto:shreejistonemurty@gmail.com
 Contact: tel:+91-7877379557
 Expires: 2027-12-31T23:59:59.000Z
 Preferred-Languages: en, hi
-Canonical: https://shreejistonemurty.com/.well-known/security.txt
-Policy: https://shreejistonemurty.com/about.html
-Acknowledgments: https://shreejistonemurty.com/about.html
+Canonical: https://shreejistonemurty.in/.well-known/security.txt
+Policy: https://shreejistonemurty.in/about.html
+Acknowledgments: https://shreejistonemurty.in/about.html
